@@ -1,0 +1,138 @@
+<div class="container-fluid">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Property List</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                    <li class="breadcrumb-item">Property</li>
+                    <li class="breadcrumb-item active">List</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                    <div class="page_action">
+                        <a [routerLink]="['/admin/addpackage']" routerLinkActive="router-link-active"    class="btn btn-primary">Add New</a>
+                        <a href="property-grid.html" class="btn btn-secondary">Property Grid</a>
+                    </div>
+                    <div class="p-2 d-flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="body">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12">
+                            <div class="form-group">
+                              <span>Destination</span>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Search...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <span>Duration</span>
+                                <select class="form-control show-tick">
+                                    <option value="">-- Nights --</option>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="2">3</option>
+                                    <option value="2">4</option>
+                                    <option value="2">5</option>
+                                    <option value="2">6</option>
+                                    <option value="1">7</option>
+                                    <option value="1">8</option>
+                                    <option value="2">9</option>
+                                    <option value="2">10</option>
+                                    <option value="2">11</option>
+                                    <option value="2">12</option>
+                                    <option value="2">13</option>
+                                    <option value="2">14</option>
+                                    <option value="2">15</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <span>Travel Month</span>
+                                <select class="form-control show-tick">
+                                    <option value="">-- Month --</option>
+                                    <option value="1">Jan</option>
+                                    <option value="1">Feb</option>
+                                    <option value="2">Mar</option>
+                                    <option value="2">Apr</option>
+                                    <option value="2">May</option>
+                                    <option value="2">Jun</option>
+                                    <option value="1">Jul</option>
+                                    <option value="1">Aug</option>
+                                    <option value="2">Sep</option>
+                                    <option value="2">Oct</option>
+                                    <option value="2">Nov</option>
+                                    <option value="2">Dec</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                  <div class="body">
+                 <div class="row">
+                  <div class="preview col-lg-4 col-md-12">
+                    <div class="preview-pic tab-content">
+                        <div class="tab-pane active" id="product_1"><img src="assets/images/ecommerce/1.png" class="img-fluid" /></div>
+                        <div class="tab-pane" id="product_2"><img src="assets/images/ecommerce/2.png" class="img-fluid"/></div>
+                        <div class="tab-pane" id="product_3"><img src="assets/images/ecommerce/3.png" class="img-fluid"/></div>
+                        <div class="tab-pane" id="product_4"><img src="assets/images/ecommerce/4.png" class="img-fluid"/></div>
+                        <div class="tab-pane" id="product_5"><img src="assets/images/ecommerce/5.png" class="img-fluid"/></div>
+                    </div>
+
+                  </div>
+                  <div class="details col-lg-8 col-md-12">
+                    <div class="row">
+                      <h3 class="product-title mb-0">Goa Package</h3>
+                    </div>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="icon-star text-warning"></span>
+                            <span class="icon-star text-warning"></span>
+                            <span class="icon-star text-warning"></span>
+                            <span class="icon-star text-warning"></span>
+                            <span class="icon-star text-muted"></span>
+                        </div>
+                        <span class="m-l-10">41 reviews</span>
+                         <div>
+                          <span>Duration: 3Nights/4Days</span>
+                         </div>
+                         <div>
+                          <span>Cities Covered: Delhi,Agra,Jaipur</span>
+                         </div>
+                    </div>
+                    <hr>
+                    <h5 class="price m-t-0">Price: <span class="text-warning">$180</span></h5>
+                    <p>Per Person on Double Sharing basis</p>
+                    <p class="product-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <!-- <p class="vote"><strong>78%</strong> of buyers enjoyed this product! <strong>(23 votes)</strong></p> -->
+                    <p class="vote"><strong>Package Valid Till:</strong><strong>23/12/22</strong></p>
+
+                    <div class="action">
+                      <button class="btn btn-primary" type="button">Download</button>
+                  </div>
+                  </div>
+                 </div>
+                 </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

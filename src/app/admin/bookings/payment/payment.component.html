@@ -1,0 +1,1083 @@
+ 
+        <div class="container-fluid">
+          <div class="block-header">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <h2>Payments</h2>
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                        <li class="breadcrumb-item">Bookings</li>
+                        <li class="breadcrumb-item active">Payments</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex flex-row-reverse">
+                        <!-- <div class="page_action">
+                            <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                            <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                        </div> -->
+                        <div class="p-2 d-flex">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row clearfix">
+          <div class="container-fluid"> 
+            <div class="row clearfix">
+              <div class="col-lg-12">
+                <div class="card">                   
+                    <div class="body">
+                      <section class="time-line-box">
+                        <div class="swiper-container text-center"> 
+                            <div class="swiper-wrapper">
+                                <div   class="swiper-slide">
+                                  <div  class="timestamp"><span class="date">Booking Status</span></div>
+                                  <div class="status"><span>Pending</span></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="timestamp"><span class="date">Booking Stauts</span></div>
+                                  <div class="status"><span>Completed</span></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="timestamp"><span class="date">Voucher Status</span></div>
+                                  <div class="status"><span>Pending</span></div>
+                                </div>
+                                <div class="swiper-slide">
+                                  <div class="timestamp"><span class="date">Voucher Status</span></div>
+                                  <div class="status"><span>Issued</span></div>
+                                </div>
+                                 
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                   </section> 
+                </div>
+            </div>
+            </div>
+            </div> 
+        </div>
+          <div class="col-lg-12 col-md-12 col-sm-12"><!--Payment File-->
+            <div class="card">
+              <div class="header">
+                <h2>Payment File</h2>
+              </div>
+              <div class="body">
+                <div class="table-responsive">
+                  <table  class="table">
+                    <thead class="thead-grey">
+                      <tr>
+                        <th>
+                          Details
+                        </th>
+                        <th>
+                          Description
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Sale Date</td>
+                        <td><input type="date" value="5-sep-22" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Booking Entry Date</td>
+                        <td><input type="date-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Booking Id</td>
+                        <td><input type="text" value="GHDOM-85462-15-0001" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Voucher Status</td>
+                        <td><select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Voucher Pending</option>
+                          <option value="2">Voucher Issued</option>
+                          <option value="3">Voucher Cancelled</option>
+                          <option value="3">Voucher Approved</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td>Payment Status</td>
+                        <td><select class="custom-select" id="inputGroupSelect01">
+                          <option selected>Choose...</option>
+                          <option value="1">Open</option>
+                          <option value="2">Pending</option>
+                          <option value="3">Closed</option>
+                          <option value="4">Trip Cancelled</option>
+                        </select></td>
+                      </tr>
+                      <tr>
+                        <td>Itinerary Reference Number</td>
+                        <td><input type="text" value="GHRN15428" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Itinerary Executive</td>
+                        <td><input type="text" value="Kalyan Reddy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Trip Start Date</td>
+                        <td><input type="date" value="09/25/2022" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Customer Name</td>
+                        <td><input type="text" value="Rajashekhar Reddy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                      <tr>
+                        <td>Destination</td>
+                        <td><input type="text" value="kerala" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+           <div style="overflow-y: scroll;" class="col-lg-12 col-md-12 col-sm-12"><!--Payables-->
+            <div class="card">
+                <div class="header">
+                    <h2>Payables</h2>
+                </div>
+
+                <div class="body"><!--payables list-->
+                  <nav>
+                    <div class="nav nav-tabs col-md-12" id="nav-tab" role="tablist">
+                      <button  class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Flight/Train/Bus</button>
+                      <button   class="nav-link" id="nav-hotel-tab" data-bs-toggle="tab" data-bs-target="#nav-hotel" type="button" role="tab" aria-controls="nav-hotel" aria-selected="false">Hotel</button>
+                      <button   class="nav-link" id="nav-cab-tab" data-bs-toggle="tab" data-bs-target="#nav-cab" type="button" role="tab" aria-controls="nav-cab" aria-selected="false">Cab</button>
+                      <button   class="nav-link" id="nav-cruise-tab" data-bs-toggle="tab" data-bs-target="#nav-cruise" type="button" role="tab" aria-controls="nav-cruise" aria-selected="false">Cruise</button>
+                    </div>
+                   </nav>
+                   <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                      <div class="col-md-12">
+                        <div class="table-responsive"><!--transportation component-->
+                            <div class="header">
+                              <span><strong>Transportation Details</strong></span>
+                            </div>
+                            <table class="table"><!--Transportation Table-->
+                              <thead>
+                                <tr>
+                                  <th>
+                                    BookingStatus
+                                  </th>
+                                  <th>
+                                    Payables
+                                  </th>
+                                  <th>
+                                    Suppliers
+                                  </th>
+                                  <th>Payables</th>
+                                  <th>AdvancePaid</th>
+                                  <th>Booked Price</th>
+                                  <th>
+                                    Difference<!--payables - booked price is the answer-->
+                                  </th>
+                                  <th>PaymentType</th>
+                                  <th>PaymentStatus</th>
+                                  <th>PaymentDate</th>
+                                  <th>PendingPayable</th> 
+                                  <th>Confirmation</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <label class="toggle-switch theme-switch">
+                                          <input type="checkbox">
+                                          <span class="toggle-switch-slider"></span>
+                                      </label> 
+                                    </li>
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:80px" value="Flight" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                      <input type="text" value="TBO" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:90px" value="35,183.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                              <td>
+                               <input type="text" style="width:90px" value="34,0000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                             <td>
+                               <input type="text" value="1,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td> 
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Open</option>
+                                  <option value="2">Closed</option>
+                                  <option value="3">Pending</option>
+                                  <option value="3">Trip Cancelled</option>
+                                </select>
+                               </td> 
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <label class="toggle-switch theme-switch">
+                                          <input type="checkbox">
+                                          <span class="toggle-switch-slider"></span>
+                                      </label> 
+                                    </li>
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:80px" value="Bus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                      <input type="text" value="TBO" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:90px" value="35,183.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                              <td>
+                               <input type="text" style="width:90px" value="34,0000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                             <td>
+                               <input type="text" value="1,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td> 
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Open</option>
+                                  <option value="2">Closed</option>
+                                  <option value="3">Pending</option>
+                                  <option value="3">Trip Cancelled</option>
+                                </select>
+                               </td> 
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <label class="toggle-switch theme-switch">
+                                          <input type="checkbox">
+                                          <span class="toggle-switch-slider"></span>
+                                      </label> 
+                                    </li>
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:80px" value="Train" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                      <input type="text" value="TBO" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:90px" value="35,183.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                              <td>
+                               <input type="text" style="width:90px" value="34,0000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                             <td>
+                               <input type="text" value="1,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td> 
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Open</option>
+                                  <option value="2">Closed</option>
+                                  <option value="3">Pending</option>
+                                  <option value="3">Trip Cancelled</option>
+                                </select>
+                               </td> 
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                </tr>
+                              </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                    </div>
+                    <div   class="tab-pane fade" id="nav-hotel" role="tabpanel" aria-labelledby="nav-hotel-tab"><!--hotel Component-->
+                      <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">
+                        <div class="table-responsive">
+                        <div class="header">
+                          <span><strong>Hotel Details</strong></span>
+                        </div>
+                        <table style="overflow: scroll;" class="table"><!--Hotel details-->
+                          <thead>
+                            <tr>
+                              <th>
+                                Location
+                              </th>
+                              <th>
+                                Payables
+                              </th>
+                              <th>
+                                SuppliersName
+                              </th>
+                              <th>
+                                SuppliersContact
+                              </th>
+                              <th>RoomCost</th>
+                                <th>No.ofRooms</th>
+                                <th>No.ofNights</th>
+                                <th>HotelCost</th>
+                                <th>HotelSupplement</th>
+                                <th>TotalCost</th>
+                                <th>NegotiationonHotels</th>
+                                <th>NetPayable</th>
+                                <th>BlockedTill</th>
+                                <th>PaymentDeadline</th>
+                                <th>FinalPay</th>
+                                <th>AdvancePaid</th>
+                                <th>PaymentType</th>
+                                <th>PaymentDate</th>
+                                <th>PendingPayable</th>
+                                <th>PendingStatus</th>
+                                <th>Confirmation No.</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td> 
+                                  <input type="text" style="width:80px" value="Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                 
+                              </td>
+                              <td> 
+                                  <input type="text" style="width:150px" value="Hotel C7 Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                 
+                              </td>
+                              <td>  
+                                    <input type="text" style="width:100px" value="Ben Jose" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      
+                              </td>
+                              <td>
+                                <input type="text" style="width:100px" value="9852654646" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="4,800" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="24,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="5,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Completed Payment</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <input type="text" style="width:80px" value="INR 0" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                              <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Pending</option>
+                                  <option value="2">Open</option>
+                                  <option value="3">Cancellation</option>
+                                  <option value="3">Closed</option>
+                                </select>
+                              </td>
+                              <td>
+                                <input type="text" style="width:120px" value="SDM-MR/1245" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+                            </tr>
+                            <!-- <tr>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input type="text" value="Thekkedy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input type="text" value="Abad Palace" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                </div>
+                              </td>
+                              <td>
+                                 <div class="input-group mb-3">
+                                  <input type="text" value="Rate Chart" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                 </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input type="text" value="Goa" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                </div>
+                              </td>
+                              <td>
+                                <div class="input-group mb-3">
+                                  <input type="text" value="Deluxe House Boat" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                </div>
+                              </td>
+                              <td><div class="input-group mb-3">
+                                <input type="text" value="MMT" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              </td>
+                            </tr> -->
+                          </tbody>
+                        </table>
+                        </div>
+                        <!-- <div class="body table-responsive social_media_table">
+                          <div class="header">
+                            <span><strong>Hotel Payables</strong></span>
+                          </div>
+                            <table style="overflow: scroll;" class="table">Hotel Payables
+                              <thead>
+                                <tr>
+                                  <th>Location</th>
+                                <th>RoomCost</th>
+                                <th>No.of Rooms</th>
+                                <th>No.of Nights</th>
+                                <th>HotelCost</th>
+                                <th>Hotel Supplement</th>
+                                <th>TotalCost</th>
+                                <th>Negotiation onHotels</th>
+                                <th>NetPayable</th>
+                                <th>BlockedTill</th>
+                                <th>Payment Deadline</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr> 
+                                   
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="text" value="Thekkedy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="4,800" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="24,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="5,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="text" value="Goa" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="4,800" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="24,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="5,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,900" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                          <div class="header">
+                            <span><strong>Hotel Negotiations</strong></span>
+                          </div>
+                          <table class="table  ">Hotel Negotiations
+                            <thead>
+                              <tr>
+                                <th>Location</th>
+                                 
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr> 
+                                
+                              </tr>
+                              <tr>
+                                <td>
+                                  <input type="text" value="Thekkedy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Advance Payment</option>
+                                    <option value="2">Completed Payment</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="INR 0" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Pending</option>
+                                    <option value="2">Open</option>
+                                    <option value="3">Cancellation</option>
+                                    <option value="3">Closed</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input type="text" value="SDM-MR/1245" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></td>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <input type="text" value="Goa" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Advance Payment</option>
+                                    <option value="2">Completed Payment</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="INR 0" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Pending</option>
+                                    <option value="2">Open</option>
+                                    <option value="3">Cancellation</option>
+                                    <option value="3">Closed</option>
+                                  </select>
+                                </td>
+                                <td>
+                                  <input type="text" value="SDM-MR/1245" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="header">
+                            <span><strong>Hotel Payments</strong></span>
+                          </div>
+                          <table class="table  ">Payments Table
+                            <thead>
+                              <tr>
+                                <th>Location</th>
+                                <th>Final Payable</th>
+                                <th>Advance Paid</th>
+                                <th>Payment Type</th>
+                                <th>Payment Date</th>
+                                <th>Pending Payable</th>
+                                <th>Payment Status</th>
+                                <th>Confirmation</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input type="text" value="Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                    <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Open</option>
+                                    <option value="2">Closed</option>
+                                    <option value="3">Pending</option>
+                                    <option value="3">Trip Cancelled</option>
+                                  </select>
+                                 </td>
+                                <td>
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table> -->
+                          <div class="table-responsive"> 
+                          <div class="header">
+                            <span><strong>Hotel Credit Notes</strong></span>
+                          </div>
+                          <table class="table  "><!--Credit Notes-->
+                            <thead>
+                              <tr>
+                                <th>Location</th>
+                                <th>CN Issued Date</th>
+                                <th>Towards Ref.No</th>
+                                <th>Towards Booking ID</th>
+                                <th>Amount</th>
+                                <th>Valid Till</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input type="text" value="Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="GHRN15428" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="GHDOM-85462-15-0001" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="text" value="6,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-cab" role="tabpanel" aria-labelledby="nav-cab-tab"><!--cab component-->
+                      <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false">
+                        <div class="col-md-12">
+                          <div class="table-responsive">
+                            <div class="header">
+                              <span><strong>Travel Details</strong></span>
+                            </div>
+                            <table class="table ">
+                              <thead>
+                                <tr>
+                                  <th>
+                                    Location
+                                  </th>
+                                  <th>
+                                    Payables
+                                  </th>
+                                  <th>
+                                    SuppliersName
+                                  </th>
+                                  <th>SuppliersContact</th>
+                                  <th>Payables</th>
+                                  <th>Negotiation</th>
+                                  <th>NetPayable</th>
+                                  <th>Blocked Till</th>
+                                  <th>Final Payable</th>
+                                  <th>Advance Paid</th>
+                                  <th>Payment Type</th>
+                                  <th>Payment Date</th>
+                                  <th>Pending Payable</th>
+                                  <th>Payment Status</th>
+                                  <th>Confirmation</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <input type="text" value="kochi" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                  </td>
+                                  <td>
+                                    <input type="text" value="cab" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                    <input type="text" value="Ben Jose" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                      
+                                 </td>
+                                 <td>
+                                  <input type="text" value="9989965656" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                 </td>
+                                 <td>
+                                  <input type="text" value="50,000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                 </td>
+                                 <td>
+                                  <input type="text" value="500" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                 </td>
+                                 <td>
+                                  <input type="text" value="49,500" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                 </td>
+                                 <td> 
+                                    <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                   
+                                 </td> 
+                                 <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+  
+                              </td>
+                              <td>
+                                <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+  
+                            </td>
+                             <td>
+                              <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">Advance Payment</option>
+                                <option value="2">Complete Payment</option>
+                              </select>
+                             </td>
+                              <td>
+                                <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+  
+                              </td>
+                              <td>
+                                <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+  
+                              </td>
+                              <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Open</option>
+                                  <option value="2">Closed</option>
+                                  <option value="3">Pending</option>
+                                  <option value="3">Trip Cancelled</option>
+                                </select>
+                               </td>
+                              <td>
+                                <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                              </td>
+  
+                                </tr> 
+                              </tbody>
+                            </table>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-cruise" role="tabpanel" aria-labelledby="nav-cruise-tab">
+                      <div role="tabpanel" class="tab-pane" id="history" aria-expanded="false"> 
+                      <div class="col-md-12">
+                        <div class="table-responsive"><!--transportation component-->
+                            <div class="header">
+                              <span><strong>Cruise Details</strong></span>
+                            </div>
+                            <table class="table"><!--Transportation Table-->
+                              <thead>
+                                <tr>
+                                  <th>
+                                    BookingStatus
+                                  </th>
+                                  <th>
+                                    Payables
+                                  </th>
+                                  <th>
+                                    Suppliers
+                                  </th>
+                                  <th>Payables</th>
+                                  <th>AdvancePaid</th>
+                                  <th>Booked Price</th>
+                                  <th>
+                                    Difference<!--payables - booked price is the answer-->
+                                  </th>
+                                  <th>PaymentType</th>
+                                  <th>PaymentStatus</th>
+                                  <th>PaymentDate</th>
+                                  <th>PendingPayable</th> 
+                                  <th>Confirmation</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <label class="toggle-switch theme-switch">
+                                          <input type="checkbox">
+                                          <span class="toggle-switch-slider"></span>
+                                      </label> 
+                                    </li>
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:80px" value="Cruise" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                      <input type="text" value="TBO" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" style="width:90px" value="35,183.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" style="width:80px" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                              <td>
+                               <input type="text" style="width:90px" value="34,0000" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                             <td>
+                               <input type="text" value="1,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                             </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td> 
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Open</option>
+                                  <option value="2">Closed</option>
+                                  <option value="3">Pending</option>
+                                  <option value="3">Trip Cancelled</option>
+                                </select>
+                               </td> 
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                </td>
+                                </tr>
+                                <!-- <tr>
+                                  <td>
+                                    <input type="text" value="Train" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                  <td>
+                                      <input type="text" value="IRCTC" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" value="2,100.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                               <td>
+                                <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">Advance Payment</option>
+                                  <option value="2">Complete Payment</option>
+                                </select>
+                               </td>
+                                <td>
+                                  <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <input type="text" value="Bus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+                                  </td>
+                                  <td>
+                                      <input type="text" value="RedBus" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" value="4,800.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                </td>
+                                <td>
+                                  <input type="text" value="35,183" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                              </td>
+                                <td>
+                                  <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">Advance Payment</option>
+                                    <option value="2">Complete Payment</option>
+                                  </select>
+                                 </td>
+                                  <td>
+                                    <input type="date"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+                                  <td>
+                                    <input type="text" value="0.00" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" >
+
+                                  </td>
+
+                                </tr> -->
+                              </tbody>
+                            </table> 
+                        </div>
+                    </div>
+                  </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+           </div>
+
+
+
+        </div> 
+

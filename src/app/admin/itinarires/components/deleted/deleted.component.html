@@ -1,0 +1,1006 @@
+<h2 mat-dialog-title>Install Angular</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="container-fluid">
+    <div class="block-header">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <h2>Itinerary Form</h2>
+          <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+            <li class="breadcrumb-item">Itineraries</li>
+            <li class="breadcrumb-item active">Itinerary Form</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="d-flex flex-row-reverse">
+            <div class="page_action">
+              <!-- <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button> -->
+            </div>
+            <div class="p-2 d-flex">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row clearfix"> 
+        <div class="col-lg-12 col-md-12  col-sm-12 ">
+          <div class="card">
+            <div class="header">
+              <h4>Add Client</h4>
+            </div>
+            <div class="body">
+              <div class="row clearfix">
+                <div class="col-md-6">
+                    <span for="basic-url">Form Filled By</span>
+                    <div class="input-group mb-3"> 
+                      <label>{{data.formraiser}}</label> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <span for="basic-url">Contacted By</span>
+                  <div class="input-group mb-3"> 
+                    <label>{{data.itinerary}}</label> 
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <span for="basic-url">Raisedate</span>
+                <div class="input-group mb-3"> 
+                  <label>{{data.raisedate}}</label> 
+                </div>
+              </div>
+              <div class="col-md-6">
+                <span for="basic-url">Trip Type</span> 
+                <div class="input-group mb-3"> 
+                  <label>{{data.type}}</label> 
+                </div>
+               </div>
+                <div class="col-md-6">
+                    <span for="basic-url">Package Type</span>
+                      <div class="input-group mb-3">
+                        <label>{{data.packagetype}}</label> 
+                         
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <span for="basic-url">Customer Type</span>
+                      <div class="input-group mb-3">
+                        <label>{{data.customertype}}</label>
+                         
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <span for="basic-url">Ref No:</span>
+                    <div class="input-group mb-3"> 
+                      <label>{{data.refno}}</label> 
+                    </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="header">
+              <h4>Partner Details</h4>
+            </div>
+            <div class="body">
+              <div class="row clearfix">
+                <div class="col-md-6">
+                    <span for="basic-url">Select Partner</span>
+                    <div class="input-group mb-3">
+                      <label>{{data.partnerdetails}}</label>
+                       
+                    </div>
+                  </div> 
+                  <div class="col-md-6">
+                    <span for="basic-url">Source Name*</span>
+                    <div class="input-group mb-3">
+                      <label>{{data.sourcename}}</label> 
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <span for="basic-url">Source Role</span>
+                    <div class="input-group mb-3">
+                      <label>{{data.sourcerole}}</label>  
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" >
+            <div class="header">
+              <h4>Customer Information</h4>
+            </div>
+            <div class="body"> 
+              <div class="card">
+                <div class="input-group mb-3">
+                  <div class="body">
+                    <div class="row clearfix">
+                      <div class="col-md-6">
+                        <span for="basic-url">Customer Name*</span>
+                        <div class="input-group mb-3">
+                          <label>{{data.customername}}</label>
+                           
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <span for="basic-url">Customer Number*</span>
+                        <div class="input-group mb-3">
+                          <label>{{data.customernumber}}</label> 
+                          
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <span for="basic-url">Customer Location</span>
+                        <div class="input-group mb-3">
+                          <label>{{data.customerlocation}}</label> 
+                        </div>
+                      </div>
+                       
+                    <div class="col-md-6">
+                        <span for="basic-url">Prefered Time to Call</span><br/>
+  
+                        <div class="col-md-6">
+                            <span for="basic-url">From</span>
+                            <div  class="input-group mb-3">
+                              <label>{{data.preferfrom}}</label> 
+                                 
+                            </div>
+                            <span >To</span>
+                            <div class="input-group mb-3">
+                              <label>{{data.preferto}}</label>  
+                            </div>
+                        </div>
+  
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Holiday information -->
+          <div class="card">
+            <div class="header">
+                <h4>Holiday Information</h4>
+            </div>
+            <div class="body">
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6">
+                                <div class="input-group mb-3" style="justify-content:space-evenly"><span for="basic-url">Holiday Type</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="male" type="radio" checked><span><i></i>Domestic</span></label></div>
+                                      <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="female" type="radio"><span> International</span></label></div>
+                                    </div>
+                               </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Start Airport/Train/Bus</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.startfrom}}</label>  
+                                   
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Holiday Destination</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.destination}}</label>
+                                   
+                                </div>
+                              </div>
+                             <div class="col-md-6">
+                               <span for="basic-url">Travel Flexibility(How flexible is customer with change of dates?)</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.travelflex}}</label> 
+                                </div>
+                             </div>
+                             <div class="col-md-6">
+                                <span for="basic-url">Cities To Visit</span>
+                                 <div class="input-group mb-3">
+                                  <label>{{data.cities}}</label>  
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Trip Start Date</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.tripdate}}</label>
+                                     
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Trip End Date</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.enddate}}</label>
+                                    
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Trip Duration</span>
+                                <div class="input-group mb-3">
+                                  <label>{{data.duration}}</label>
+                                     
+                                </div>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+  
+          </div>
+          <div class="card">
+            <div class="header">
+                <h4>Passenger Information</h4>
+            </div>
+            <div class="body">
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-6"> 
+                                  <span>Adults(< 12 Years)</span>
+                                  <label>{{data.adults}}</label>
+                                   
+                                </div>
+                                <div class="col-md-6"> 
+                                  <span>Children(> 12 Years)</span>
+                                  <label>{{data.child}}</label>
+                                  
+                                </div>
+   
+                                <div class="col-md-6">
+                                    <span>Infants(0-2 Years)</span>
+                                    <label>{{data.infant}}</label>
+                                </div> 
+                                <div class="col-md-6">
+                                    <span>No of Passengers</span>
+                                    <label>{{data.passenger}}</label>
+                                    
+                                </div>
+                            </div>
+  
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+          </div>
+          <div class="card">
+            <div class="header">
+                <h4>Hotel & Meal Plan Information</h4>
+            </div>
+            <div class="body">
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-6">
+                                    <span for="basic-url">Hotel Standard</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.hstandard}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                   <span for="basic-url">Hotel Type</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.htype}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span for="basic-url">Room Type</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.roomtype}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span for="basic-url">Hotel/Room Preference</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.hpreference}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span>Number of Rooms</span>
+                                    <label>{{data.noofrooms}}</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <span>Any Specific Requirement Regarding Accommodation</span>
+                                    <label>{{data.specific}}</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <span for="basic-url">Meal Plan</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.meal}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span for="basic-url">Food Preferences</span>
+                                      <div class="input-group mb-3">
+                                        <label>{{data.foodpreferences}}</label>
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <span>Any Specific Requirement Regarding Meal</span>
+                                    <label>{{data.specificreq}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>
+  
+          </div>
+          <div class="card">
+            <div class="header">
+                <h4>Sight Seeings & Attractions Information</h4>
+            </div>
+            <div class="body">
+                <div class="input-group mb-3">
+                    <div class="card">
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-md-6">
+                                    <span>Any Specific Tours Or Excursions Required</span>
+                                    <label>{{data.specifictour}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <div class="card">
+                <div class="header">
+                     <h4>Select Quick Inclusions</h4>
+                </div>
+                <div class="body">
+                    <div class="input-group mb-3">
+                        <div class="card">
+                            <div class="body">
+                                <div class="row clearfix">
+                                    <div class="col-md-6">
+                                        <span>Visa</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Honeymoon Inclusions</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Travel Insurance</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Adventure Activities</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Guide</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Entrance Tickets</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Day-1 Breakfast</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Early Chicken</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Late Chicken</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Birthday/Anniversary Inclusions</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span>Vehicle Preference</span>
+                                        <input type="checkbox" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h4>Budget Information</h4>
+               </div>
+               <div class="body">
+                   <div class="input-group mb-3">
+                       <div class="card">
+                           <div class="body">
+                                <div class="row clearfix">
+                                     <div class="col-md-6">
+                                        <span>Budget For Entire Package</span>
+                                        <input type="range" />
+                                     </div>
+                                     <div class="col-md-6">
+                                        <span>Budget For Person</span>
+                                        <input type="range" />
+                                     </div>
+                                     <div class="col-md-6">
+                                        <span>Is Customer Interested In Holiday EMI's?</span>
+                                        <input type="checkbox" />
+                                     </div>
+                                </div>
+  
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h4>Competetive Quotation Information</h4>
+               </div>
+               <div class="body">
+                   <div class="input-group mb-3">
+                       <div class="card">
+                           <div class="body">
+                                <div class="row clearfix">
+                                      <div class="col-md-6">
+                                        <span>Please Upload Competetive Quote If Any</span>
+                                        <div class="input-group mb-3">
+  
+                                            <div class="custom-file">
+                                              <label>{{data.pdf}}</label>
+                                            </div>
+                                        </div>
+                                        <p>Only .xls, .xslx and .csv are allowed. Click download sample to get sample excel file.</p>
+                                      </div>
+                                </div>
+  
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="header">
+                    <h4>Inputs & Comments</h4>
+               </div>
+               <div class="body">
+                   <div class="input-group mb-3">
+                       <div class="card">
+                           <div class="body">
+                                <div class="row clearfix">
+                                      <div class="col-md-6">
+                                        <span>Form Raiser Inputs & Comments If Any</span>
+                                        <label>{{data.comments}}</label>
+                                      </div>
+                                </div>
+  
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+  
+  
+           
+        </div>
+        <div style="justify-content: center;" class="input-group-append">
+          <button mat-button [mat-dialog-close]="true" class="btn btn-danger" (click)="confirm()" (click)="delete()" cdkFocusInitial>Delete</button>
+           
+        </div> 
+       
+    </div>
+  </div>
+</mat-dialog-content> 
+ 
+<!-- <div class="container-fluid">
+  <div class="block-header">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h2>Itinerary Form</h2>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+          <li class="breadcrumb-item">Itineraries</li>
+          <li class="breadcrumb-item active">Itinerary Form</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-row-reverse">
+          <div class="page_action">
+            <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+            <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+          </div>
+          <div class="p-2 d-flex">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix"> 
+      <div class="col-lg-12 col-md-12  col-sm-12 ">
+        <div class="card">
+          <div class="header">
+            <h4>Add Client</h4>
+          </div>
+          <div class="body">
+            <div class="row clearfix">
+              <div class="col-md-6">
+                  <span for="basic-url">Form Filled By</span>
+                  <div class="input-group mb-3"> 
+                    <input [(ngModel)]="data.formraiser" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+              </div>
+               
+            <div class="col-md-6">
+              <span for="basic-url">Raisedate</span>
+              <div class="input-group mb-3"> 
+                <input  [(ngModel)]="data.raisedate" type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <span for="basic-url">Trip Type</span>
+              <select   [(ngModel)]="data.type" class="custom-select" id="inputGroupSelect01">
+                <option    *ngFor="let trip of triptype" [value]="trip.value" >{{trip.name}}</option>
+              </select> 
+             </div>
+              <div class="col-md-6">
+                  <span for="basic-url">Package Type</span>
+                    <div class="input-group mb-3">
+                      <select   [(ngModel)]="data.packagetype" class="custom-select" id="inputGroupSelect01">
+                        <option    *ngFor="let item of packagetype" [value]="item.value" >{{item.name}}</option>
+                      </select> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <span for="basic-url">Customer Type</span>
+                    <div class="input-group mb-3">
+                      <select   [(ngModel)]="data.customertype" class="custom-select" id="inputGroupSelect01">
+                       <option    *ngFor="let cust of customertype" [value]="cust.value" >{{cust.name}}</option>
+                      </select> 
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <span for="basic-url">Ref No:</span>
+                  <div class="input-group mb-3"> 
+                    <input type="text" [(ngModel)]="data.refno" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h4>Partner Details</h4>
+          </div>
+          <div class="body">
+            <div class="row clearfix">
+              <div class="col-md-6">
+                  <span for="basic-url">Select Partner</span>
+                  <div class="input-group mb-3">
+                    <select  [(ngModel)]="data.partnerdetails" class="custom-select" id="inputGroupSelect01">
+                     <option    *ngFor="let part of partnerdetails" [value]="part.value" >{{part.name}}</option>
+                    </select> 
+                  </div>
+                </div> 
+                <div class="col-md-6">
+                  <span for="basic-url">Source Name*</span>
+                  <div class="input-group mb-3">
+                    <input [(ngModel)]="data.sourcename" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <span for="basic-url">Source Role</span>
+                  <div class="input-group mb-3">
+                    <input [(ngModel)]="data.sourcerole" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="header">
+            <h4>Customer Information</h4>
+          </div>
+          <div class="body"> 
+            <div class="card">
+              <div class="input-group mb-3">
+                <div class="body">
+                  <div class="row clearfix">
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Name*</span>
+                      <div class="input-group mb-3">
+                        <input [(ngModel)]="data.customername" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Number*</span>
+                      <div class="input-group mb-3">
+                        <input type="text"  [(ngModel)]="data.customernumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Location</span>
+                      <div class="input-group mb-3">
+                        <input type="text"  [(ngModel)]="data.customerlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                    </div>
+                     
+                  <div class="col-md-6">
+                      <span for="basic-url">Prefered Time to Call</span><br/>
+
+                      <div class="col-md-6">
+                          <span for="basic-url">From</span>
+                          <div  class="input-group mb-3">
+                              <input type="time"  [(ngModel)]="data.preferfrom" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                          </div>
+                          <span >To</span>
+                          <div class="input-group mb-3">
+                           <input type="time"  [(ngModel)]="data.preferto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                          </div>
+                      </div>
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="header">
+              <h4>Holiday Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                        <div class="row clearfix">
+                            <div class="col-md-6">
+                              <div class="input-group mb-3" style="justify-content:space-evenly"><span for="basic-url">Holiday Type</span>
+                                  <div class="input-group mb-3">
+                                      <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="male" type="radio" checked><span><i></i>Domestic</span></label></div>
+                                    <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="female" type="radio"><span> International</span></label></div>
+                                  </div>
+                             </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Start Airport/Train/Bus</span>
+                              <div class="input-group mb-3">
+                                <input type="text" [(ngModel)]="data.startfrom" placeholder="Start from" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Holiday Destination</span>
+                              <div class="input-group mb-3">
+                                <input type="text" [(ngModel)]="data.destination" placeholder="Holiday Destination" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            </div>
+                           <div class="col-md-6">
+                             <span for="basic-url">Travel Flexibility(How flexible is customer with change of dates?)</span>
+                              <div class="input-group mb-3">
+                                <select  [(ngModel)]="data.travelflex" class="custom-select" id="inputGroupSelect01">
+                                  <option    *ngFor="let travel of travelflex" [value]="travel.value" >{{travel.name}}</option>
+                                 </select> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <span for="basic-url">Cities To Visit</span>
+                               <div class="input-group mb-3">
+                                <select  [(ngModel)]="data.cities" class="custom-select" id="inputGroupSelect01">
+                                  <option    *ngFor="let city of cities" [value]="city.value" >{{city.name}}</option>
+                                 </select> 
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Trip Start Date</span>
+                              <div class="input-group mb-3">
+                                  <input type="date" [(ngModel)]="data.tripdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Trip End Date</span>
+                              <div class="input-group mb-3">
+                                  <input type="date" [(ngModel)]="data.enddate"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Trip Duration</span>
+                              <div class="input-group mb-3">
+                                  <input  type="text" [(ngModel)]="data.duration" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                              </div>
+                            </div>
+                         </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Passenger Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6"> 
+                                <span>Adults(< 12 Years)</span>
+                                <input type="number" [(ngModel)]="data.adults" class="form-control"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6"> 
+                                <span>Children(> 12 Years)</span>
+                                <input type="number" class="form-control" [(ngModel)]="data.child" aria-label="Small"  aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+ 
+                              <div class="col-md-6">
+                                  <span>Infants(0-2 Years)</span>
+                                  <input type="number"  [(ngModel)]="data.infant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div> 
+                              <div class="col-md-6">
+                                  <span>No of Passengers</span>
+                                  <input type="number" [(ngModel)]="data.passenger" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> 
+                                  
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Hotel & Meal Plan Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6">
+                                  <span for="basic-url">Hotel Standard</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.hstandard" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let standard of hstandard" [value]="standard.value" >{{standard.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                 <span for="basic-url">Hotel Type</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.htype" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let htype of htype" [value]="htype.value" >{{htype.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Room Type</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.roomtype" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let room of roomtype" [value]="room.value" >{{room.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Hotel/Room Preference</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.hpreference" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let preference of hpreference" [value]="preference.value" >{{preference.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Number of Rooms</span>
+                                  <input type="number" [(ngModel)]="data.numofrooms" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Any Specific Requirement Regarding Accommodation</span>
+                                  <input type="text" [(ngModel)]="data.specific" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Meal Plan</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.meal" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let food of meal" [value]="food.value" >{{food.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Food Preferences</span>
+                                    <div class="input-group mb-3">
+                                      <select  [(ngModel)]="data.foodpreferences" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let fpreference of foodpreferences" [value]="fpreference.value" >{{fpreference.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Any Specific Requirement Regarding Meal</span>
+                                  <input type="text" [(ngModel)]="data.specificreq" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Sight Seeings & Attractions Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6">
+                                  <span>Any Specific Tours Or Excursions Required</span>
+                                  <textarea type="text" [(ngModel)]="data.specifictour" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+          <div class="card">
+              <div class="header">
+                   <h4>Select Quick Inclusions</h4>
+              </div>
+              <div class="body">
+                  <div class="input-group mb-3">
+                      <div class="card">
+                          <div class="body">
+                              <div class="row clearfix">
+                                  <div class="col-md-6">
+                                      <span>Visa</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Honeymoon Inclusions</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Travel Insurance</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Adventure Activities</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Guide</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Entrance Tickets</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Day-1 Breakfast</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Early Chicken</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Late Chicken</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Birthday/Anniversary Inclusions</span>
+                                      <input type="checkbox" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <span>Vehicle Preference</span>
+                                      <input type="checkbox" />
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Budget Information</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                   <div class="col-md-6">
+                                      <span>Budget For Entire Package</span>
+                                      <input type="range" />
+                                   </div>
+                                   <div class="col-md-6">
+                                      <span>Budget For Person</span>
+                                      <input type="range" />
+                                   </div>
+                                   <div class="col-md-6">
+                                      <span>Is Customer Interested In Holiday EMI's?</span>
+                                      <input type="checkbox" />
+                                   </div>
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Competetive Quotation Information</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <span>Please Upload Competetive Quote If Any</span>
+                                      <div class="input-group mb-3">
+
+                                          <div class="custom-file">
+                                              <input [(ngModel)]="data.pdf"id="file" 
+                                              type="file"       class="custom-file-input" id="inputGroupFile03">
+                                              <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                                          </div>
+                                      </div>
+                                      <p>Only .xls, .xslx and .csv are allowed. Click download sample to get sample excel file.</p>
+                                    </div>
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Inputs & Comments</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <span>Form Raiser Inputs & Comments If Any</span>
+                                       <textarea type="text" [(ngModel)]="data.comments" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                    </div>
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+
+
+         
+      </div>
+      <div style="justify-content: center;" class="input-group-append">
+        <button (click)="deleteitinerary(data.id)" class="btn btn-secondary" type="submit">Delete</button>
+        <button (click)="delete()" class="btn btn-secondary" type="submit">update</button>
+      </div> 
+     
+  </div>
+</div> -->

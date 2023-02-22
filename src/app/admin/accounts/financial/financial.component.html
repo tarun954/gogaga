@@ -1,0 +1,353 @@
+ 
+      <div class="container-fluid">
+        <div class="block-header">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h2>Employee List</h2>
+                  <ul class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                      <li class="breadcrumb-item">Employee</li>
+                      <li class="breadcrumb-item active">Employee List</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="d-flex flex-row-reverse">
+                      <div class="page_action">
+                        <button type="button" [routerLink]="['/admin/accounts/accountsform']" routerLinkActive="router-link-active"  class="btn btn-secondary" data-toggle="modal" data-target="#addcontact">Add New</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12">
+                  <div class="card">
+                       <div class="row clearfix">
+                        <div class="col-md-6">
+                          <div class="header">
+                            <h2>Financial<small>Basic example without any additional modification classes</small> </h2>
+                        </div>
+                         </div>
+                       </div>
+                       <div class="body">
+                        <div class="table-responsive"> 
+                        <mat-form-field>
+                          <mat-label>Filter</mat-label>
+                          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+                        </mat-form-field>
+
+                        <div class="mat-elevation-z8">
+                          <table mat-table [dataSource]="dataSource" matSort>
+
+                            <!-- ID Column -->
+                            <ng-container matColumnDef="transactionnumber">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Transaction Number</th>
+                              <td mat-cell *matCellDef="let row"> {{row.transactionnumber}} </td>
+                            </ng-container>
+
+                            <!-- Progress Column -->
+                            <ng-container matColumnDef="ghrn">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>GHRN Number</th>
+                              <td mat-cell *matCellDef="let row"> {{row.ghrn}}</td>
+                            </ng-container>
+
+                            <!-- Name Column -->
+                            <ng-container matColumnDef="transactiondate">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Transaction Date </th>
+                              <td mat-cell *matCellDef="let row"> {{row.transactiondate}} </td>
+                            </ng-container>
+
+                            <!-- Fruit Column -->
+                            <ng-container matColumnDef="transactionparticular">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Transaction Particulars </th>
+                              <td mat-cell *matCellDef="let row"> {{row.transactionparticular}} </td>
+                            </ng-container>
+                            <ng-container matColumnDef="transactiontype">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Transaction Type</th>
+                              <td mat-cell *matCellDef="let row"> {{row.transactiontype}} </td>
+                            </ng-container>
+                            <ng-container matColumnDef="type">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Type</th>
+                              <td mat-cell *matCellDef="let row"> {{row.type}} </td>
+                            </ng-container> 
+                            <ng-container matColumnDef="balance">
+                              <th mat-header-cell *matHeaderCellDef mat-sort-header>Balance</th>
+                              <td mat-cell *matCellDef="let row">{{row.balance}}</td>
+                            </ng-container>
+
+                            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+                            <!-- Row shown when there is no matching data. -->
+                            <tr class="mat-row" *matNoDataRow>
+                              <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                            </tr>
+                          </table>
+
+                          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                       </div> 
+                       </div>
+                      <!-- <div class="col-md-12">
+                        <div class="input-group mb-3">
+                          <div class="card">
+                            <div class="body">
+                              <div class="row clearfix">
+                                <div class="col-md-6">
+                                  <span for="basic-url">Search Value</span>
+                                   <div class="input-group mb-3">
+                                     <select class="custom-select" id="inputGroupSelect01">
+                                       <option selected>Choose...</option>
+                                       <option value="1">Phone number</option>
+                                       <option value="2">Email ID</option>
+                                       <option value="3">Exicutive Three</option>
+                                     </select>
+                                   </div>
+                                   <div class="input-group mb-3">
+                                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-secondary" type="button">Search</button>
+                                    </div>
+                                   </div>
+                                  </div>
+                                <div class="col-md-6">
+                                  <span for="basic-url">Search by Bank</span>
+                                  <div class="input-group mb-3">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                      <option selected>Choose...</option>
+                                      <option value="1">HDFC Bank</option>
+                                      <option value="2">ICICI Bank 1</option>
+                                      <option value="3">ICICI Bank 2</option>
+                                      <option value="4">RBL Bank</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <span>From:</span>
+                                   <div class="input-group mb-3">
+                                   <input type="date"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                   </div>
+                                  </div>
+                                <div class="col-md-6">
+                                  <span>To:</span>
+                                  <div class="input-group mb-3">
+                                   <input type="date"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="body">
+                          <div class="table-responsive">
+                              <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                                  <thead>
+                                      <tr>
+                                          <th>Transaction Number</th>
+                                          <th>Transaction Date</th>
+                                          <th>GHRN Number</th>
+                                          <th>Transaction  Particulars</th>
+                                          <th>Transaction Type</th>
+                                          <th>Credit</th>
+                                          <th>Debit</th>
+                                          <th>Balance</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>000002</td>
+                                          <td>22-Dec-2022</td>
+                                          <td>GHRN1235</td>
+                                          <td>235669101231-Bathtoom cleaning</td>
+                                          <td>Expenses</td>
+                                          <td style="background-color: rgb(175, 233, 175);" ></td>
+                                          <td style="background-color: rgb(245, 162, 162);" >2729717/-</td>
+                                          <td>2729717/-</td>
+                                      </tr>
+                                      <tr>
+                                        <td>000001</td>
+                                        <td>22-Dec-2022</td>
+                                        <td>GHRN1234</td>
+                                        <td>235669101231-Bathtoom cleaning</td>
+                                        <td>Expenses</td>
+                                        <td style="background-color: rgb(175, 233, 175);" ></td>
+                                        <td style="background-color: rgb(245, 162, 162);" >2729717/-</td>
+                                        <td>2729717/-</td>
+                                    </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item">Upload Calc </a></li>
+                                                    <li><a class="dropdown-item">Assign</a></li>
+                                                    <li><a class="dropdown-item">Delete</a></li>
+                                                  </ul>
+                                                </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item">Upload Calc </a></li>
+                                                    <li><a class="dropdown-item">Assign</a></li>
+                                                    <li><a class="dropdown-item">Delete</a></li>
+                                                  </ul>
+                                                </div>
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item"> Upload Calc </a></li>
+                                                  </ul>
+                                                </div>
+
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item"> Upload Calc </a></li>
+                                                  </ul>
+                                                </div>
+
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item"> Upload Calc </a></li>
+                                                  </ul>
+                                                </div>
+
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item"> Upload Calc </a></li>
+                                                  </ul>
+                                                </div>
+
+                                          </td>
+                                      </tr>
+                                      <tr>
+                                          <td>GHRN12345</td>
+                                          <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                          <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                          <td>Goa<br/>14/12/2023<br/></td>
+                                          <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                          <td>10/12/2023<br/>Uday</td>
+                                          <td>Version1<br/>version2</td>
+                                          <td>
+                                              <div class="dropdown">
+                                                  <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Actions
+                                                  </a>
+                                                  <ul style="width: 100px;" class="dropdown-menu">
+                                                    <li><a class="dropdown-item">view </a></li>
+                                                    <li><a class="dropdown-item">Edit </a></li>
+                                                    <li><a class="dropdown-item">Create Report </a></li>
+                                                    <li><a class="dropdown-item"> Upload Calc </a></li>
+                                                  </ul>
+                                                </div>
+
+                                          </td>
+                                      </tr>
+
+                              </tbody>
+                          </table>
+
+            </div>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+
+      </div> 

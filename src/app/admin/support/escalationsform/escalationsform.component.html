@@ -1,0 +1,107 @@
+<body data-theme="light" class="font-nunito">
+  <div id="wrapper" class="theme-cyan">
+    <div id="main-content">
+        <div class="container-fluid">
+          <div class="block-header">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Marketing Form</h2>
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                  <li class="breadcrumb-item">Itineraries</li>
+                  <li class="breadcrumb-item active">Itinerary Form</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                  <div class="page_action">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                  </div>
+                  <div class="p-2 d-flex">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row clearfix">
+            <div class="col-lg-12 col-md-12  col-sm-12 ">
+              <form [formGroup]="EscalationsForm" (ngSubmit)="OnSubmit()" class="card">
+                <div class="header">
+                  <h4>Personal Details</h4>
+                </div>
+                <div class="body">
+                  <div class="row clearfix">
+                    <div class="col-md-6">
+                        <span for="basic-url">Partner Name</span>
+                        <div class="input-group mb-3">
+                          <input formControlName="partnername" type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                      <span for="basic-url">Partner Location</span>
+                      <div class="input-group mb-3">
+                        <input type="text" formControlName="partnerlocation"     class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <span for="basic-url">Partner Code</span>
+                    <div class="input-group mb-3">
+                      <input type="text" formControlName="partnercode"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                </div>
+                  <div class="col-md-6">
+                    <span for="basic-url">Escalation Regarding</span>
+                    <div class="input-group mb-3">
+                      <select formControlName="escalationregarding" class="custom-select" id="inputGroupSelect01">
+                        <option *ngFor="let escalation of escalationsregarding" [value]="escalation.value">{{escalation.name}}</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <span for="basic-url">Concern Specific</span>
+                  <div class="input-group mb-3">
+                    <select  formControlName="concernspecific" class="custom-select" id="inputGroupSelect01">
+                      <option  *ngFor="let concern of concernspecific" [value]="concern.value" class="custom-select" id="inputGroupSelect01">
+                        {{concern.name}}</option>
+                    </select>
+                  </div>
+                 </div>
+                   <div class="col-md-6">
+                    <span for="basic-url">Regarding any Request</span>
+                    <div class="input-group mb-3">
+                      <input formControlName="regardingrequest" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                   </div>
+                   <div class="col-md-6">
+                    <span for="basic-url">Regarding any Employee</span>
+                    <div class="input-group mb-3">
+                      <input type="text" formControlName="regardingemployee" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                   </div>
+                   <div class="col-md-6">
+                    <span for="basic-url">Request to Elobarate Your Concern</span>
+                    <div class="input-group mb-3">
+                      <input type="text" formControlName="requestconcern" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                    </div>
+                   </div>
+                  </div>
+                </div>
+                <div class="row clearfix">
+                  <div style="justify-content: center;" class=" input-group-append">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+                 </div>
+              </form>
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+       </div>
+    </div>
+</body>

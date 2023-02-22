@@ -1,0 +1,101 @@
+ 
+      <div class="container-fluid">
+        <div class="block-header">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h2>Accounts</h2>
+                  <ul class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                      <li class="breadcrumb-item">Employee</li>
+                      <li class="breadcrumb-item active">Accounts</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="d-flex flex-row-reverse">
+                      <div class="page_action">
+                          <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                          <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                      </div>
+                      <div class="p-2 d-flex">
+  
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+       <div class="col-md-12">
+        <div class="row clearfix" >
+          <div class="card"><!--customer details-->
+            <div class="row clearfix">
+                    <div class="body">
+                        <div>
+                            <h4>Accounts Form</h4>
+                        </div>
+                         <form [formGroup]="financialForm" (ngSubmit)="OnSubmit()" >
+                          <div class="row clearfix">
+                            <div class="col-md-6">
+                              <span for="basic-url">Transaction Date</span>
+                              <div class="input-group mb-3">
+                                  <input type="date" formControlName="transactiondate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                               </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Trancation Particulars</span>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" formControlName="transactionparticular"  aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span>Trancation Type</span>
+                              <div class="input-group mb-3">
+                                <select  formControlName="transactiontype" class="custom-select" id="inputGroupSelect01">
+                                  <option    *ngFor="let item of transactiontype" [value]="item.value" >{{item.name}}</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Towards GHRN Number</span>
+                                <div class="input-group mb-3">
+                                    <input type="text" formControlName="ghrn" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Amount</span>
+                                <div class="input-group mb-3">
+                                    <input type="text" formControlName="amount" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Bank Name</span>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" formControlName="bankname" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Trancation Number</span>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" formControlName="transactionnumber" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span>Type</span>
+                              <mat-radio-group aria-label="Select an option" formControlName="type">
+                                <mat-radio-button value="credit">Credit</mat-radio-button>
+                                <mat-radio-button value="debit">Debit</mat-radio-button>
+                              </mat-radio-group>
+                            </div>
+                                <div class="input-group mb-3">
+                                     <button type="submit" class="btn btn-secondary">Upload Transaction</button>
+                                 </div>
+                          </div>
+                         </form>
+  
+  
+                    </div>
+            </div>
+          </div>
+        </div>
+       </div>
+  
+      </div> 
+  

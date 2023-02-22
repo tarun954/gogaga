@@ -1,0 +1,24 @@
+ <div mat-dialog-content>
+    <div class="body">
+      <div class="row clearfix">
+        <div class="col-md-12">
+          <div class="col-md-6">
+            <span for="basic-url">Name</span>
+            <div class="input-group mb-3"> 
+              <input class="form-control" type="text" aria-label="Small" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="data.animal">
+            </div>
+          </div> 
+        <div class="col-md-6">
+          <span for="basic-url">Remind</span>
+          <div class="input-group mb-3"> 
+            <input [(ngModel)]="data.time" type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+          </div>
+        </div>
+        </div>
+       </div>
+    </div>
+<div mat-dialog-actions> 
+  <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>save</button>
+</div>
+</div>
+ 

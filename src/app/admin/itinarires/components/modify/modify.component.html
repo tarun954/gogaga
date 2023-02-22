@@ -1,0 +1,68 @@
+
+ 
+<div class="container-fluid">
+  <div class="block-header">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h2>Upload Versions</h2>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+          <li class="breadcrumb-item">Itineraries</li>
+          <li class="breadcrumb-item active">Upload Versions</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-row-reverse">
+          <div class="page_action">
+            
+          </div>
+          <div class="p-2 d-flex">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row clearfix"> 
+      <div class="col-lg-12 col-md-12  col-sm-12 ">
+          <div class="card">
+            <div class="header">
+              <h4>Upload Versions</h4>
+            </div>
+            <div class="body">
+              <div class="row clearfix">
+          <form [formGroup]="versionsform">
+              <div class="modal-header">
+                <h5 class="modal-title">Upload Documents</h5>
+                 
+              </div>
+              
+              <div class="body">
+                <span>Version Name</span>
+                <div class="input-group mb-3">
+                  <input formControlName="name" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                </div>
+                <span>Document</span>
+                <div class="input-group mb-3">
+                  <input formControlName="pdf" type="file" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                </div>
+                <span>Document</span>
+                <div class="input-group mb-3">
+                  <input formControlName="excel" type="file" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                </div>
+  
+  
+              </div> 
+            <div style="justify-content: center;" class="input-group-append">
+              <!-- <button (click)="update()" class="btn btn-secondary" type="submit">Save</button> -->
+               <!-- <button (click)="submit()" class="btn btn-primary" type="submit">Proceed</button> -->
+               <button (click)="published()"   type="submit" class="btn btn-primary">Publish</button>
+            </div> 
+             </form>
+              </div>
+            </div>
+          
+      </div> 
+  </div>
+</div>
+   

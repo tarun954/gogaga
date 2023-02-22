@@ -1,0 +1,222 @@
+<div class="container-fluid">
+    <div class="block-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Lead Form</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                    <li class="breadcrumb-item">Leads</li>
+                    <li class="breadcrumb-item active">Lead Form</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                    <!-- <div class="page_action">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                    </div> -->
+                    <div class="p-2 d-flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="header">
+                    <h2>Lead Form<small>Basic example without any additional modification classes</small> </h2>
+                </div>
+                <div class="body">
+                  <form [formGroup]="leadForm">
+                    <div class="row clearfix">
+                      <div class="col-lg-12">
+                        <div class="card">
+                          <div class="header">
+                            <h4>Add Client</h4>
+                          </div>
+                          <div class="body">
+                            <div class="row clearfix">
+                              <div class="col-md-6">
+                                <span   for="basic-url">Partner Name (If Raised By Sales or Internal User)</span>
+                                  <div class="input-group mb-3">
+                                    <select  formControlName="partnername" class="custom-select" id="inputGroupSelect01">
+                                      <option    *ngFor="let item of partnername" [value]="item.value" >{{item.name}}</option>
+                                    </select>
+                                  </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Partner Location (If Raised By Sales or Internal User)</span>
+                                  <div class="input-group mb-3">
+                                    <input type="text" formControlName="partnerlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                  </div>
+                              </div>
+                                <!-- <div class="col-md-6">
+                                  <span for="basic-url">Partner Location (If Raised By Sales or Internal User)</span>
+                                  <div class="input-group mb-3">
+                                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                  </div>
+                                </div> -->
+
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="header">
+                            <h4>Form Details</h4>
+                          </div>
+                          <div class="body">
+                            <div class="row clearfix">
+                              <div class="col-md-6">
+                                <span>Form Raised By*</span>
+                                 <div class="input-group mb-3">
+                                   <input formControlName="raisedby" type="text" required class="form-control" aria-label="Default"
+                                     aria-describedby="inputGroup-sizing-default">
+                                 </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Form Raised Contact Number*</span>
+                                <div class="input-group mb-3">
+                                  <input type="text" formControlName="raisedphone" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <span for="basic-url">Contacted By</span>
+                                <div class="input-group mb-3"> 
+                                  <input formControlName="itinerary" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card" >
+                          <div class="header">
+                            <h4>Customer Information</h4>
+                          </div>
+                          <div class="body">
+                            <div class="input-group mb-3">
+                              <div class="card">
+                                <div class="body">
+                                   <div class="col-md-12">
+                                    <div class="input-group mb-3" style="justify-content:space-evenly"><span for="basic-url">Holiday Type</span>
+                                      <div class="input-group mb-3">
+                                          <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="male" type="radio" checked><span><i></i>Domestic</span></label></div>
+                                        <div class="input-group mb-3"><label class="custom-color-green"><input name="gender3" value="female" type="radio"><span> International</span></label></div>
+                                      </div>
+                                    </div>
+                                   </div>
+                                  <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Lead Source</span>
+                                       <div class="input-group mb-3">
+                                         <select class="custom-select" id="inputGroupSelect01">
+                                           <option selected>Choose...</option>
+                                           <option value="1">Relative Friend of Emp/Partner</option>
+                                           <option value="2">Social Media</option>
+                                           <option value="3">Existing Customer Reference</option>
+                                           <option value="4">Walking</option>
+                                           <option value="5">Activity</option>
+                                           <option value="6">Others...</option>
+                                         </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Type Name</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Search Type</span>
+                                       <div class="input-group mb-3">
+                                         <select disabled class="custom-select" id="inputGroupSelect01">
+                                           <option selected>Choose...</option>
+                                           <option value="1">Phone number</option>
+                                           <option value="2">Email ID</option>
+                                           <option value="3">Exicutive Three</option>
+                                         </select>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Search Value</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                        <div class="input-group-append">
+                                          <button class="btn btn-outline-secondary" type="button">Search</button>
+                                        </div>
+                                       </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="input-group mb-3">
+                                <div class="body">
+                                  <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Customer Name*</span>
+                                      <div class="input-group mb-3">
+                                        <input formControlName="customername" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Customer Number*</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" formControlName="customerphone" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Customer Location</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" formControlName="customerlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                       <span for="basic-url">Destination</span>
+                                       <div class="input-group mb-3">
+                                        <input type="text" formControlName="destination" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Number of Pax</span>
+                                    <!-- <div class="input-group-prepend">
+                                      <button class="btn btn-outline-primary" type="button">-</button>
+                                    </div> -->
+                                    <div class="input-group-append">
+                                      <input type="text" formControlName="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+
+                                    <!-- <div class="input-group-append">
+                                      <button class="btn btn-outline-secondary" type="button">+</button>
+                                    </div> -->
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span>Trip Start Date</span>
+
+                                              <div class="input-group date" data-date-autoclose="true" data-provide="datepicker">
+                                                <input formControlName="startdate" type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+
+                                              </div>
+                                    </div>
+
+                                  </div>
+
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn btn-secondary" (click)="addLead()" >Submit</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

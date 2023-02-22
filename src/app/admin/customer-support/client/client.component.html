@@ -1,0 +1,374 @@
+<body data-theme="light" class="font-nunito">
+  <div id="wrapper" class="theme-cyan">
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Table Filter</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Table</li>
+                          <li class="breadcrumb-item active">Table Filter</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" [routerLink]="['/customersupport/clientform']" routerLinkActive="router-link-active"  class="btn btn-primary"><i class="fa fa-download"></i>Client Form</button>
+                               
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Table Filter</h2>
+                      </div>
+                       <div class="body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="all" type="button" role="tab" aria-controls="all" aria-selected="true">All</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="false">Completed</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="submitted-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="submitted" aria-selected="false">Submitted</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pending-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="pending" aria-selected="false">Pending</button>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <table class="table table-filter table-hover mb-0">
+                              <tbody>
+                                  <tr data-status="approved">
+                                      <td>1</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar1.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td width="250px">
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="suspended">
+                                      <td>2</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar2.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>charlotte</td>
+                                      <td>a.charlotte@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-amber" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-warning">Suspended</span></td>
+                                  </tr>
+                                  <tr data-status="blocked">
+                                      <td>3</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar3.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>grayson</td>
+                                      <td>grayson@yahoo.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-coral" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-danger">Blocked</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>4</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar4.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>5</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar5.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>amelia</td>
+                                      <td>amelia@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>6</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar6.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width:32%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>7</td>
+                                      <td><div class="media-object "><img src="assets/images/xs/avatar7.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="tab-pane fade" id="completed" role="tabpanel" aria-labelledby="completed-tab">
+                            <table class="table table-filter table-hover mb-0">
+                              <tbody>
+                                  <tr data-status="approved">
+                                      <td>1</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar1.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td width="250px">
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Completed</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>2</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar4.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Completed</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>3</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar5.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>amelia</td>
+                                      <td>amelia@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Completed</span></td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="tab-pane fade" id="submitted" role="tabpanel" aria-labelledby="submitted-tab">
+                            <table class="table table-filter table-hover mb-0">
+                              <tbody>
+                                  <tr data-status="approved">
+                                      <td>1</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar1.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td width="250px">
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="suspended">
+                                      <td>2</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar2.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>charlotte</td>
+                                      <td>a.charlotte@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-amber" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-warning">Suspended</span></td>
+                                  </tr>
+                                  <tr data-status="blocked">
+                                      <td>3</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar3.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>grayson</td>
+                                      <td>grayson@yahoo.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-coral" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-danger">Blocked</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>4</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar4.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>5</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar5.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>amelia</td>
+                                      <td>amelia@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>6</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar6.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width:32%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>7</td>
+                                      <td><div class="media-object "><img src="assets/images/xs/avatar7.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          <div class="tab-pane fade" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                            <table class="table table-filter table-hover mb-0">
+                              <tbody>
+                                  <tr data-status="approved">
+                                      <td>1</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar1.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td width="250px">
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="suspended">
+                                      <td>2</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar2.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>charlotte</td>
+                                      <td>a.charlotte@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-amber" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-warning">Suspended</span></td>
+                                  </tr>
+                                  <tr data-status="blocked">
+                                      <td>3</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar3.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>grayson</td>
+                                      <td>grayson@yahoo.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-coral" role="progressbar" aria-valuenow="16" aria-valuemin="0" aria-valuemax="100" style="width: 16%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-danger">Blocked</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>4</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar4.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>jacob</td>
+                                      <td>jacob@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="approved">
+                                      <td>5</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar5.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>amelia</td>
+                                      <td>amelia@gnail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-green" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" style="width: 72%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-success">Approved</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>6</td>
+                                      <td><div class="media-object"><img src="assets/images/xs/avatar6.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width:32%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                                  <tr data-status="pending">
+                                      <td>7</td>
+                                      <td><div class="media-object "><img src="assets/images/xs/avatar7.jpg" alt="" width="35px" class="rounded-circle"></div></td>
+                                      <td>michael</td>
+                                      <td>michael@gmail.com</td>
+                                      <td>
+                                          <div class="progress progress-xs">
+                                              <div class="progress-bar l-blue" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="width: 68%;"></div>
+                                          </div>
+                                      </td>
+                                      <td><span class="badge badge-info">Pending</span></td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                       </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+

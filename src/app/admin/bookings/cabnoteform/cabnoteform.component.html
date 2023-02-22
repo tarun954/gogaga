@@ -1,0 +1,96 @@
+ 
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Cab Credit Note Form</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Bookings</li>
+                          <li class="breadcrumb-item active">Cab Credit Notes</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Cab Credit Note Form<small>Basic example without any additional modification classes</small> </h2>
+                      </div>
+                      <div class="body">
+                        <form [formGroup]="cabnoteform" >
+                          <div class="row clearfix">
+                            <div class="col-lg-12">
+                              <div class="card">
+                                <div class="header">
+                                  <h4>Add Credit Note</h4>
+                                </div>
+                                <div class="body">
+                                  <div class="row clearfix">
+                                    <div class="col-md-6">
+                                        <span for="basic-url">Location</span>
+                                        <div class="input-group mb-3">
+                                          <input type="text" formControlName="location"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Supplier Name</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" formControlName="supplier"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Contact Number</span>
+                                      <div class="input-group mb-3">
+                                        <input type="tel" formControlName="contact"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span>Credit Note Date</span>
+                                      <div class="input-group date" data-date-autoclose="true" data-provide="datepicker">
+                                        <input formControlName="credit" type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Present Booking ID</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" formControlName="present"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span for="basic-url">Amount</span>
+                                      <div class="input-group mb-3">
+                                        <input type="text" formControlName="amount"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <span>Valid Till</span>
+                                      <div class="input-group date" data-date-autoclose="true" data-provide="datepicker">
+                                        <input formControlName="valid" type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              <button type="submit" class="btn btn-secondary">Submit</button>
+                            </div>
+
+                          </div>
+                        </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 

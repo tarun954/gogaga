@@ -1,0 +1,51 @@
+ 
+     <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Hotel Credit Notes</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                    <li class="breadcrumb-item">Bookings</li>
+                    <li class="breadcrumb-item active">Hotel Credit Notes</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                    <div class="page_action">
+                      <button type="button"  [routerLink]="['/bookings/hotelcreditnotesform']" routerLinkActive="router-link-active" class="btn btn-secondary" data-toggle="modal" data-target="#addcontact">New Credit Note</button>
+                    </div>
+                    <div class="p-2 d-flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="card">
+          <div class="body">
+            <div class="table-responsive">
+              <div class="header">
+                <span><strong>Hotel Credit Notes</strong></span>
+              </div>
+              <table class="table table-striped"><!--Credit Notes-->
+                <thead>
+                  <tr>
+                    <th>Location</th>
+                    <th>CN Issued Date</th>
+                    <th>Towards Ref.No</th>
+                    <th>Towards Booking ID</th>
+                    <th>Amount</th>
+                    <th>Valid Till</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div> 

@@ -1,0 +1,200 @@
+ 
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h2>Confirmed Packages</h2>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                            <li class="breadcrumb-item">Bookings</li>
+                            <li class="breadcrumb-item active">Confirmed Packages</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex flex-row-reverse">
+                            <div class="page_action">
+                                
+                            </div>
+                            <div class="p-2 d-flex">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Confirmed Packages<small>Basic example without any additional modification classes</small> </h2>
+                        </div>
+                        <div class="body">
+                            <div class="table-responsive">
+                                <!-- <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                                    <thead>
+                                        <tr>
+                                            <th>Ref.no</th>
+                                            <th>Clent Details</th>
+                                            <th>Source</th>
+                                            <th>Package</th>
+                                            <th>Pax Details</th>
+                                            <th>Source Date</th>
+                                            <th>View</th>
+                                            <th>Actions</th>
+                                            <th>Remove</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>GHRN12345</td>
+                                            <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                            <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                            <td>Goa<br/>14/12/2023<br/></td>
+                                            <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                            <td>10/12/2023<br/>Uday</td>
+                                            <td  ><button class="btn btn-primary"><i class="fa fa-calculator"></i></button> <button class="btn btn-secondary"><i class="fa fa-file"></i></button></td>
+                                            <td>
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Actions
+                                                    </a>
+                                                    <ul style="width: 100px;" class="dropdown-menu">
+                                                      <li><a [routerLink]="['/admin/bookings/qualityanalysis']" routerLinkActive="router-link-active"  class="dropdown-item">Quality Analysis</a></li>
+                                                      <li><a [routerLink]="['/admin/bookings/payment']" routerLinkActive="router-link-active"  class="dropdown-item">Payables</a></li>
+
+                                                    </ul>
+                                                  </div>
+                                            </td>
+                                            <td>
+                                               
+                                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Cancel
+                                              </button>
+                                               
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title">Cancellation</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    having a date and time stamp for recording it in database
+                                                    <div class="modal-body">
+                                                      <span>Employee Name</span>
+                                                      <div class="input-group mb-3">
+                                                        <input  type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                                                      </div>
+                                                      <span>Reason for Cancellation</span>
+                                                      <div class="input-group mb-3">
+                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required></textarea>
+                                                      </div>
+
+
+                                                    </div>
+                                                  <div class="modal-footer">
+                                                    <button    type="button" class="btn btn-primary">Cancel</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            </td>
+                                        </tr> 
+                                </tbody>
+                                </table> -->
+                                <div class="col-md-6">
+                                  <div class="input-group mb-3"> 
+                                    <input matInput type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" (keyup)="applyFilter($event)" placeholder="Search" #input>
+                                  </div>
+                                 </div>
+                                
+                                <div class="mat-elevation-z8">
+                                  <table class="table table-bordered table-hover js-basic-example dataTable table-custom" mat-table [dataSource]="dataSource" matSort>
+              
+                                    <tr matColumnDef="id">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>ID/Ref No/RaiseDate</th>
+                                      <td mat-cell *matCellDef="let row"> GHRN{{row.id}}</td>
+                                    </tr>
+                                     
+                                      
+                                    <!-- Name Column -->
+                                    <tr matColumnDef="customername customernumber">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Name  </th>
+                                      <td mat-cell *matCellDef="let row">  <b>{{row.customername}}</b><br>Ph: {{row.customernumber}} </td>
+                                    </tr>
+                                
+                                     
+                                    <!-- role Column -->
+                                    <tr matColumnDef="destination tripdate passenger">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Destination </th>
+                                       <td mat-cell *matCellDef="let row"> {{row.destination}}<br>Trip Date: {{row.tripdate}}<br>Pax: {{row.passenger}}</td>
+                                    </tr> 
+                                     
+                                    <!-- Fruit Column -->
+                                    <tr matColumnDef="action">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
+                                      <td mat-cell *matCellDef="let row"> 
+                                        <button  class="btn btn-secondary" [matMenuTriggerFor]="menu">Actions</button>
+                                     <mat-menu #menu="matMenu">
+                                       <a  mat-menu-item routerLink="/admin/bookings/qualityanalysis/{{row.id}}" routerLinkActive="router-link-active"   class="dropdown-item">Quality Analysis</a> 
+                                        <a mat-menu-item routerLink="/admin/bookings/payment/{{row.id}}" routerLinkActive="router-link-active"  class="dropdown-item">Payables</a>
+                                         
+                                     </mat-menu>
+                                         
+                                      </td>
+                                    </tr>
+                                    <tr matColumnDef="remove">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Upload</th>
+                                      <td mat-cell *matCellDef="let row"> 
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                              Cancel
+                                            </button>
+                                             
+                                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                              <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                  <div class="modal-header">
+                                                    <h5 class="modal-title">Cancellation</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  having a date and time stamp for recording it in database
+                                                  <div class="modal-body">
+                                                    <span>Employee Name</span>
+                                                    <div class="input-group mb-3">
+                                                      <input  type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                                                    </div>
+                                                    <span>Reason for Cancellation</span>
+                                                    <div class="input-group mb-3">
+                                                    <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required></textarea>
+                                                    </div>
+
+
+                                                  </div>
+                                                <div class="modal-footer">
+                                                  <button    type="button" class="btn btn-primary">Cancel</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </td>
+                                    </tr>
+                                
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                
+                                    <!-- Row shown when there is no matching data. -->
+                                    <tr class="mat-row" *matNoDataRow>
+                                      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                                    </tr>
+                                  </table>
+                                
+                                  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                                </div>
+							         </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     

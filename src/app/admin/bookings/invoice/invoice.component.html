@@ -1,0 +1,138 @@
+ 
+  <div class="container-fluid">
+      <div class="block-header">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <h2>Invoices</h2>
+                  <ul class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                      <li class="breadcrumb-item">Extra</li>
+                      <li class="breadcrumb-item active">Invoices</li>
+                  </ul>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                  <div class="d-flex flex-row-reverse">
+                      <div class="page_action">
+                          <button [routerLink]="['/admin/bookings/paymentform']" routerLinkActive="router-link-active"  type="button" class="btn btn-primary"><i class="fa fa-pencil"></i>Create Invoice</button>
+
+                      </div>
+                      <div class="p-2 d-flex">
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row clearfix">
+
+          <div class="col-lg-12 col-md-12">
+              <div class="card invoice1">
+                <div class="header">
+                  <div class="invoice-top clearfix">
+                    <div  class="title">
+                      <img style="width: 200px; height: 100px;"  src="../../assets/images/GOGAGA NEW LOGO FINAL-PNG.png" alt="user" class=" img-fluid">
+                  </div>
+                   </div>
+                </div>
+                <div class="header" >
+                  <h3 style="font-family: 'Ubuntu', sans-serif;">Payment Invoice</h3>
+                </div>
+                  <div class="body">
+                      <div class="invoice-top clearfix">
+                          <div class="info">
+                              <p> Gogaga Holidays Private Limited <br>
+                                G-1, Modern Profound Tech Park, Ground Floor<br/>
+                                White Field Road, Kondapur,Hyderabad-84	<br/>
+                                040 40206965<br/>
+                                GST Number : 36AAGCG1943B2ZY
+                              </p>
+                          </div>
+                          <div class="title">
+                              <h3>Invoice No# 58</h3>
+                              <h6>Destination:<small>Bali</small></h6>
+                              <h6>Trip Start Date:<small>30-Dec-2002</small></h6>
+                          </div>
+                      </div>
+                      <hr>
+                      <div class="invoice-mid clearfix">
+
+                          <!-- <div class="clientlogo">
+                              <img src="assets/images/sm/avatar2.jpg" alt="user" class="rounded-circle img-fluid">
+                          </div> -->
+
+                          <div class="info">
+                            <h6>Client Name</h6>
+                            <p>JohnDoe@gmail.com<br>
+                                555-555-5555</p>
+                            <h6>Project Description</h6>
+                            <p>Proin cursus, dui non tincidunt elementum, tortor ex feugiat enim, at elementum enim quam vel purus. Curabitur semper malesuada urna ut suscipit.</p>
+                        </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+
+                      </div>
+                      <div class="table-responsive">
+                          <table class="table table-hover">
+                              <thead class="thead-dark">
+                                  <tr>
+                                      <th>Description</th>
+                                      <th style="width: 80px;">Total</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td>Package Cost Less GST</td>
+                                      <td>INR ₹142,857</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Goods and Service Tax (GST)</td>
+                                      <td>INR ₹7,143</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Total Package Cost Incl. GST</td>
+                                      <td>INR ₹150,000</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Payment Received</td>
+                                      <td>INR ₹150,000</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Pending Payment</td>
+                                      <td>INR ₹0</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <hr>
+                      <div class="row clearfix">
+                          <div class="col-md-6">
+                              <h5>Note</h5>
+                              <p> This is an auto generated statement and doesnt require signature
+                                <br>
+                                The above Amount may be Complete or Partial Payment towards the Complete Package
+                                <br>
+                                The Package will not be Valid if the above payment is partial payment and complete payment is not received towards the package before due date
+                              </p>
+                          </div>
+                          <div class="col-md-6 text-right">
+                            <strong>Payment Type: <b style="color: rgb(53, 146, 53);">Full Payment</b></strong>
+                              <p class="mb-0"><b>Difference: </b>INR ₹0</p>
+                              <p class="mb-0 m-t-10"> Total Pending Payment: <b style="color: rgb(53, 146, 53);"> INR ₹0</b></p>
+                          </div>
+                          <div>
+                            <h6 style="color: rgb(53, 146, 53); ">We wish you a very Happy Holiday</h6>
+                          </div>
+                          <div class="hidden-print col-md-12 text-right">
+                              <hr>
+                              <button class="btn btn-outline-secondary"><i class="icon-printer"></i></button>
+                              <button class="btn btn-primary">Submit</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div> 

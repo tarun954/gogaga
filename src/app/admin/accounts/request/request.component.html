@@ -1,0 +1,82 @@
+<body data-theme="light" class="font-nunito">
+  <div id="wrapper" class="theme-cyan">
+    <div id="main-content">
+      <div class="block-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Accounts</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                    <li class="breadcrumb-item">Employee</li>
+                    <li class="breadcrumb-item active">Accounts</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                    <div class="page_action">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                        <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                    </div>
+                    <div class="p-2 d-flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="col-md-12">
+      <div class="row clearfix" >
+        <div class="card"><!--customer details-->
+          <div class="header">
+            <h4>Accounts Form</h4>
+          </div>
+          <div class="row clearfix">
+            <div class="body">
+              <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone No.</th>
+                        <th>Location</th>
+                        <th>Request Date</th>
+                        <th>Type Acess</th>
+                        <th>Assigned to</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      Arun
+                    </td>
+                    <td>99855995</td>
+                    <td>Hyderabad</td>
+                    <td> 12-DEC-2022 </td>
+                    <td> <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Super Partner</option>
+                      <option value="2">Sales Partner</option>
+                      <option value="3">Lead Generator</option>
+                      <option value="4">Employee</option>
+                    </select></td>
+                    <td> <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Kalyan</option>
+                      <option value="2">Girish</option>
+                      <option value="3">Asif</option>
+                      <option value="4">Altan</option>
+                    </select></td>
+                    <td><button class="btn btn-primary" [routerLink]="['/userpermissions']" routerLinkActive="router-link-active" >Tasks</button></td>
+                </tr>
+
+            </tbody>
+            </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+
+    </div>
+  </div>
+</body>

@@ -1,0 +1,2994 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>:: Iconic :: Form Advanced</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Iconic Bootstrap 4.5.0 Admin Template">
+<meta name="author" content="WrapTheme, design by: ThemeMakker.com">
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<!-- VENDOR CSS -->
+<!-- <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css"> -->
+<!-- <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css">
+<link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" href="assets/vendor/bootstrap-colorpicker/css/bootstrap-colorpicker.css" />
+<link rel="stylesheet" href="assets/vendor/multi-select/css/multi-select.css"> -->
+<!-- <link rel="stylesheet" href="assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.css">
+<link rel="stylesheet" href="assets/vendor/nouislider/nouislider.min.css" />
+<link rel="stylesheet" href="assets/vendor/parsleyjs/css/parsley.css">
+<link rel="stylesheet" href="assets/vendor/cropper/cropper.min.css">
+<link rel="stylesheet" href="assets/vendor/dropify/css/dropify.min.css">
+<link rel="stylesheet" href="assets/vendor/bootstrap-markdown/bootstrap-markdown.min.css">
+<link rel="stylesheet" href="assets/vendor/summernote/dist/summernote.css"/>
+-->
+
+<!-- MAIN CSS -->
+<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+
+
+<!-- Demo CSS not Include in project -->
+<style>
+    .demo-card label{ display: block; position: relative;}
+    .demo-card .col-lg-4{ margin-bottom: 30px;}
+</style>
+
+</head>
+<body data-theme="light" class="font-nunito">
+
+<div id="wrapper" class="theme-cyan">
+
+    <!-- Page Loader -->
+    <!-- <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30"><img src="assets/images/logo-icon.svg" width="48" height="48" alt="Iconic"></div>
+            <p>Please wait...</p>
+        </div>
+    </div> -->
+
+    <!-- Top navbar div start -->
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-bars"></i></button>
+                <button type="button"  class="btn-toggle-fullwidth"><i class="fa fa-bars"></i></button>
+                <a href="index.html"></a>
+            </div>
+
+            <div class="navbar-right">
+                <form id="navbar-search" class="navbar-form search-form">
+                    <input value="" class="form-control" placeholder="Search here..." type="text">
+                    <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+                </form>
+
+                <div id="navbar-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                                <i class="fa fa-bell"></i>
+                                <span class="notification-dot"></span>
+                            </a>
+                            <ul class="dropdown-menu notifications">
+                                <li class="header"><strong>You have 4 new Notifications</strong></li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="icon-info text-warning"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
+                                                <span class="timestamp">10:00 AM Today</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="icon-like text-success"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text">Your New Campaign <strong>Holiday Sale</strong> is approved.</p>
+                                                <span class="timestamp">11:30 AM Today</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                    <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="icon-pie-chart text-info"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text">Website visits from Twitter is 27% higher than last week.</p>
+                                                <span class="timestamp">04:00 PM Today</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <i class="icon-info text-danger"></i>
+                                            </div>
+                                            <div class="media-body">
+                                                <p class="text">Error on website analytics configurations</p>
+                                                <span class="timestamp">Yesterday</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="footer"><a href="javascript:void(0);" class="more">See all notifications</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="page-login.html" class="icon-menu"><i class="fa fa-power-off"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main left menu -->
+    <div id="left-sidebar" class="sidebar">
+        <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
+        <div class="sidebar-scroll">
+            <div class="user-account">
+                <img src="assets/images/user.png" class="rounded-circle user-photo" alt="User Profile Picture">
+                <div class="dropdown">
+                    <span>Welcome,</span>
+                    <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Pamela Petrus</strong></a>
+                    <ul class="dropdown-menu dropdown-menu-right account">
+                        <li><a href="page-profile2.html"><i class="icon-user"></i>My Profile</a></li>
+                        <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
+                        <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="page-login.html"><i class="icon-power"></i>Logout</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <ul class="row list-unstyled">
+                    <li class="col-4">
+                        <small>Sales</small>
+                        <h6>561</h6>
+                    </li>
+                    <li class="col-4">
+                        <small>Order</small>
+                        <h6>920</h6>
+                    </li>
+                    <li class="col-4">
+                        <small>Revenue</small>
+                        <h6>$23B</h6>
+                    </li>
+                </ul>
+            </div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Chat"><i class="icon-book-open"></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i class="icon-settings"></i></a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#question"><i class="icon-question"></i></a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content padding-0">
+                <div class="tab-pane active" id="menu">
+                    <nav id="left-sidebar-nav" class="sidebar-nav">
+                        <ul id="main-menu" class="metismenu li_animation_delay">
+                            <li>
+                                <a href="#Dashboard" class="has-arrow"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                                <ul>
+                                    <li><a href="index.html">Analytical</a></li>
+                                    <li><a href="h-menu.html">Analytical H-Menu</a></li>
+                                    <li><a href="index9.html">IoT Dashboard</a></li>
+                                    <li><a href="index2.html">Demographic</a></li>
+                                    <li><a href="index6.html">Project Board</a></li>
+                                    <li><a href="index7.html">Crypto Dashboard</a></li>
+                                    <li><a href="index8.html">eCommerce</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#App" class="has-arrow"><i class="fa fa-th-large"></i><span>Ready App</span></a>
+                                <ul>
+                                    <li><a href="app-inbox.html">Inbox</a></li>
+                                    <li><a href="app-chat.html">Chat</a></li>
+                                    <li><a href="app-calendar.html">Calendar</a></li>
+                                    <li><a href="app-contact.html">Contact list</a></li>
+                                    <li><a href="app-contact-grid.html">Contact Card <span class="badge badge-warning float-right">New</span></a></li>
+                                    <li><a href="app-taskboard.html">Taskboard</a></li>
+                                    <li><a href="javascript:void(0);"><span>Blog</span></a>
+                                        <ul>
+                                            <li><a href="blog-dashboard.html">Dashboard</a></li>
+                                            <li><a href="blog-post.html">New Post</a></li>
+                                            <li><a href="blog-list.html">Blog List</a></li>
+                                            <li><a href="blog-details.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="javascript:void(0);"><span>File Manager</span></a>
+                                        <ul>
+                                            <li><a href="file-dashboard.html">Dashboard</a></li>
+                                            <li><a href="file-documents.html">Documents</a></li>
+                                            <li><a href="file-media.html">Media</a></li>
+                                            <li><a href="file-images.html">Images</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Widgets" class="has-arrow"><i class="fa fa-puzzle-piece"></i><span>Widgets</span></a>
+                                <ul>
+                                    <li><a href="widgets-statistics.html">Statistics</a></li>
+                                    <li><a href="widgets-data.html">Data</a></li>
+                                    <li><a href="widgets-chart.html">Chart</a></li>
+                                    <li><a href="widgets-weather.html">Weather</a></li>
+                                    <li><a href="widgets-social.html">Social</a></li>
+                                    <li><a href="widgets-blog.html">Blog</a></li>
+                                    <li><a href="widgets-ecommerce.html">eCommerce</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#uiElements" class="has-arrow"><i class="fa fa-diamond"></i><span>UI Elements</span></a>
+                                <ul>
+                                    <li><a href="ui-typography.html">Typography</a></li>
+                                    <li><a href="ui-tabs.html">Tabs</a></li>
+                                    <li><a href="ui-buttons.html">Buttons</a></li>
+                                    <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                    <li><a href="ui-icons.html">Icons</a></li>
+                                    <li><a href="ui-notifications.html">Notifications</a></li>
+                                    <li><a href="ui-colors.html">Colors</a></li>
+                                    <li><a href="ui-dialogs.html">Dialogs</a></li>
+                                    <li><a href="ui-list-group.html">List Group</a></li>
+                                    <li><a href="ui-media-object.html">Media Object</a></li>
+                                    <li><a href="ui-modals.html">Modals</a></li>
+                                    <li><a href="ui-nestable.html">Nestable</a></li>
+                                    <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                    <li><a href="ui-range-sliders.html">Range Sliders</a></li>
+                                    <li><a href="ui-treeview.html">Treeview</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#charts" class="has-arrow"><i class="fa fa-area-chart"></i><span>Charts</span></a>
+                                <ul>
+                                    <li><a href="chart-apex.html">Apex</a> </li>
+                                    <li><a href="chart-c3.html">C3 Charts</a></li>
+                                    <li><a href="chart-morris.html">Morris</a> </li>
+                                    <li><a href="chart-flot.html">Flot</a> </li>
+                                    <li><a href="chart-chartjs.html">ChartJS</a> </li>
+                                    <li><a href="chart-jquery-knob.html">Jquery Knob</a> </li>
+                                    <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
+                                    <li><a href="chart-peity.html">Peity</a></li>
+                                    <li><a href="chart-gauges.html">Gauges</a></li>
+                                </ul>
+                            </li>
+                            <li class="active">
+                                <a href="#forms" class="has-arrow"><i class="fa fa-pencil"></i><span>Forms</span></a>
+                                <ul>
+                                    <li><a href="forms-validation.html">Form Validation</a></li>
+                                    <li class="active"><a href="forms-advanced.html">Advanced Elements</a></li>
+                                    <li><a href="forms-basic.html">Basic Elements</a></li>
+                                    <li><a href="forms-wizard.html">Form Wizard</a></li>
+                                    <li><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
+                                    <li><a href="forms-cropping.html">Image Cropping</a></li>
+                                    <li><a href="forms-summernote.html">Summernote</a></li>
+                                    <li><a href="forms-editors.html">CKEditor</a></li>
+                                    <li><a href="forms-markdown.html">Markdown</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Tables" class="has-arrow"><i class="fa fa-table"></i><span>Tables</span></a>
+                                <ul>
+                                    <li><a href="table-basic.html">Tables Example<span class="badge badge-info float-right">New</span></a> </li>
+                                    <li><a href="table-normal.html">Normal Tables</a> </li>
+                                    <li><a href="table-jquery-datatable.html">Jquery Datatables</a> </li>
+                                    <li><a href="table-editable.html">Editable Tables</a> </li>
+                                    <li><a href="table-color.html">Tables Color</a> </li>
+                                    <li><a href="table-filter.html">Table Filter <span class="badge badge-info float-right">New</span></a> </li>
+                                    <li><a href="table-dragger.html">Table dragger <span class="badge badge-info float-right">New</span></a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Authentication" class="has-arrow"><i class="fa fa-lock"></i><span>Authentication</span></a>
+                                <ul>
+                                    <li><a href="page-login.html">Login</a></li>
+                                    <li><a href="page-register.html">Register</a></li>
+                                    <li><a href="page-lockscreen.html">Lockscreen</a></li>
+                                    <li><a href="page-forgot-password.html">Forgot Password</a></li>
+                                    <li><a href="page-404.html">Page 404</a></li>
+                                    <li><a href="page-403.html">Page 403</a></li>
+                                    <li><a href="page-500.html">Page 500</a></li>
+                                    <li><a href="page-503.html">Page 503</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Pages" class="has-arrow"><i class="fa fa-file"></i><span>Extra Pages</span></a>
+                                <ul>
+                                    <li><a href="page-blank.html">Blank Page</a> </li>
+                                    <li><a href="page-profile.html">Profile <span class="badge badge-default float-right">v1</span></a></li>
+                                    <li><a href="page-profile2.html">Profile <span class="badge badge-warning float-right">v2</span></a></li>
+                                    <li><a href="page-gallery.html">Image Gallery <span class="badge badge-default float-right">v1</span></a> </li>
+                                    <li><a href="page-gallery2.html">Image Gallery <span class="badge badge-warning float-right">v2</span></a> </li>
+                                    <li><a href="page-timeline.html">Timeline</a></li>
+                                    <li><a href="page-timeline-h.html">Horizontal Timeline</a></li>
+                                    <li><a href="page-pricing.html">Pricing</a></li>
+                                    <li><a href="page-invoices.html">Invoices</a></li>
+                                    <li><a href="page-invoices2.html">Invoices <span class="badge badge-warning float-right">v2</span></a></li>
+                                    <li><a href="page-search-results.html">Search Results</a></li>
+                                    <li><a href="page-helper-class.html">Helper Classes</a></li>
+                                    <li><a href="page-teams-board.html">Teams Board</a></li>
+                                    <li><a href="page-projects-list.html">Projects List</a></li>
+                                    <li><a href="page-maintenance.html">Maintenance</a></li>
+                                    <li><a href="page-testimonials.html">Testimonials</a></li>
+                                    <li><a href="page-faq.html">FAQ</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Maps" class="has-arrow"><i class="fa fa-map"></i><span>Maps</span></a>
+                                <ul>
+                                    <li><a href="map-google.html">Google Map</a></li>
+                                    <li><a href="map-yandex.html">Yandex Map</a></li>
+                                    <li><a href="map-jvectormap.html">jVector Map</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="tab-pane" id="Chat">
+                    <form>
+                        <div class="input-group m-b-20">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </form>
+                    <ul class="right_chat list-unstyled li_animation_delay">
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="assets/images/xs/avatar1.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name d-flex justify-content-between">Chris Fox <i class="fa fa-heart-o font-12"></i></span>
+                                    <span class="message">chrisfox@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="assets/images/xs/avatar2.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name d-flex justify-content-between">Joge Lucky <i class="fa fa-heart-o font-12"></i></span>
+                                    <span class="message">Jogelucky@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="assets/images/xs/avatar3.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name d-flex justify-content-between">Isabella <i class="fa fa-heart-o font-12"></i></span>
+                                    <span class="message">Isabella@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="assets/images/xs/avatar4.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name d-flex justify-content-between">Folisise Chosielie <i class="fa fa-heart font-12"></i></span>
+                                    <span class="message">FolisiseChosielie@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="media">
+                                <img class="media-object" src="assets/images/xs/avatar5.jpg" alt="">
+                                <div class="media-body">
+                                    <span class="name d-flex justify-content-between">Alexander <i class="fa fa-heart-o font-12"></i></span>
+                                    <span class="message">Alexander@gmail.com</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="setting">
+                    <h6>Choose Skin</h6>
+                    <ul class="choose-skin list-unstyled">
+                        <li data-theme="purple"><div class="purple"></div></li>
+                        <li data-theme="blue"><div class="blue"></div></li>
+                        <li data-theme="cyan" class="active"><div class="cyan"></div></li>
+                        <li data-theme="green"><div class="green"></div></li>
+                        <li data-theme="orange"><div class="orange"></div></li>
+                        <li data-theme="blush"><div class="blush"></div></li>
+                        <li data-theme="red"><div class="red"></div></li>
+                    </ul>
+
+                    <ul class="list-unstyled font_setting mt-3">
+                        <li>
+                            <label class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" name="font" value="font-nunito" checked="">
+                                <span class="custom-control-label">Nunito Google Font</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" name="font" value="font-ubuntu">
+                                <span class="custom-control-label">Ubuntu Font</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" name="font" value="font-raleway">
+                                <span class="custom-control-label">Raleway Google Font</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" class="custom-control-input" name="font" value="font-IBMplex">
+                                <span class="custom-control-label">IBM Plex Google Font</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled mt-3">
+                        <li class="d-flex align-items-center mb-2">
+                            <label class="toggle-switch theme-switch">
+                                <input type="checkbox">
+                                <span class="toggle-switch-slider"></span>
+                            </label>
+                            <span class="ml-3">Enable Dark Mode!</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <label class="toggle-switch theme-rtl">
+                                <input type="checkbox">
+                                <span class="toggle-switch-slider"></span>
+                            </label>
+                            <span class="ml-3">Enable RTL Mode!</span>
+                        </li>
+                        <li class="d-flex align-items-center mb-2">
+                            <label class="toggle-switch theme-high-contrast">
+                                <input type="checkbox">
+                                <span class="toggle-switch-slider"></span>
+                            </label>
+                            <span class="ml-3">Enable High Contrast Mode!</span>
+                        </li>
+                    </ul>
+
+                    <hr>
+                    <h6>General Settings</h6>
+                    <ul class="setting-list list-unstyled">
+                        <li>
+                            <label class="fancy-checkbox">
+                                <input type="checkbox" name="checkbox" checked>
+                                <span>Allowed Notifications</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="fancy-checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <span>Offline</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="fancy-checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <span>Location Permission</span>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <a href="#" target="_blank" class="btn btn-block btn-primary">Buy this item</a>
+                    <a href="https://themeforest.net/user/wrraptheme/portfolio" target="_blank" class="btn btn-block btn-secondary">View portfolio</a>
+                </div>
+                <div class="tab-pane" id="question">
+                    <form>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </form>
+                    <ul class="list-unstyled question">
+                        <li class="menu-heading">HOW-TO</li>
+                        <li><a href="javascript:void(0);">How to Create Campaign</a></li>
+                        <li><a href="javascript:void(0);">Boost Your Sales</a></li>
+                        <li><a href="javascript:void(0);">Website Analytics</a></li>
+                        <li class="menu-heading">ACCOUNT</li>
+                        <li><a href="javascript:void(0);">Cearet New Account</a></li>
+                        <li><a href="javascript:void(0);">Change Password?</a></li>
+                        <li><a href="javascript:void(0);">Privacy &amp; Policy</a></li>
+                        <li class="menu-heading">BILLING</li>
+                        <li><a href="javascript:void(0);">Payment info</a></li>
+                        <li><a href="javascript:void(0);">Auto-Renewal</a></li>
+                        <li class="menu-button mt-3">
+                            <a href="../docs/index.html" class="btn btn-primary btn-block">Documentation</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- rightbar icon div -->
+    <div class="right_icon_bar">
+        <ul>
+            <li><a href="app-inbox.html"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="app-chat.html"><i class="fa fa-comments"></i></a></li>
+            <li><a href="app-calendar.html"><i class="fa fa-calendar"></i></a></li>
+            <li><a href="file-dashboard.html"><i class="fa fa-folder"></i></a></li>
+            <li><a href="app-contact.html"><i class="fa fa-id-card"></i></a></li>
+            <li><a href="blog-list.html"><i class="fa fa-globe"></i></a></li>
+            <li><a href="javascript:void(0);"><i class="fa fa-plus"></i></a></li>
+            <li><a href="javascript:void(0);" class="right_icon_btn"><i class="fa fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- manin advantage page advanced content body part -->
+    <div id="main-content">
+        <div class="container-fluid">
+            <div class="block-header">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h2>Advanced Form Elements</h2>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                            <li class="breadcrumb-item">Forms</li>
+                            <li class="breadcrumb-item active">Form Advanced</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="d-flex flex-row-reverse">
+                            <div class="page_action">
+                                <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                                <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                            </div>
+                            <div class="p-2 d-flex">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Color Pickers -->
+            <div class="row clearfix">
+              <div class="col-lg-12 col-md-12  col-sm-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>Color Pickers <small>Taken from <a href="https://github.com/mjolnic/bootstrap-colorpicker/" target="_blank">github.com/mjolnic/bootstrap-colorpicker</a></small> </h2>
+                    </div>
+                    <div class=" body">
+                        <div class="row clearfix">
+                            <div class="col-md-6"> <b>HEX CODE</b>
+                                <div class="input-group colorpicker">
+                                    <input type="text" class="form-control" value="#00AABB">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><span class="input-group-addon"> <i></i> </span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6"> <b>RGB(A) CODE</b>
+                                <div class="input-group colorpicker">
+                                    <input type="text" class="form-control" value="rgba(0,0,0,0.7)">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><span class="input-group-addon"> <i></i> </span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Masked Input -->
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Masked Text Inputs</h2>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="phone" class="control-label">Phone</label>
+                                        <input type="text" id="phone" class="form-control">
+                                        <span class="help-block">(999) 999-9999</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="phone-ex" class="control-label">Phone + Ext</label>
+                                        <input type="text" id="phone-ex" class="form-control">
+                                        <span class="help-block">(999) 999-9999? x99999</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="tax-id" class="control-label">Tax ID</label>
+                                        <input type="text" id="tax-id" class="form-control">
+                                        <span class="help-block">99-9999999</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="ssn" class="control-label">SSN</label>
+                                        <input type="text" id="ssn" class="form-control">
+                                        <span class="help-block">999-99-9999</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="product-key" class="control-label">Product Key</label>
+                                        <input type="text" id="product-key" class="form-control">
+                                        <span class="help-block">a*-999-a999</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Masked Input with icons <small>Taken from <a href="https://github.com/RobinHerbots/jquery.inputmask" target="_blank">github.com/RobinHerbots/jquery.inputmask</a></small> </h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="demo-masked-input">
+                                <div class="row clearfix">
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Date</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="icon-calendar"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control date" placeholder="Ex: 30/07/2016">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Time (24 hour)</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="icon-clock"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control time24" placeholder="Ex: 23:59">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Time (12 hour)</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="icon-clock"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control time12" placeholder="Ex: 11:59 pm">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Date Time</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control datetime" placeholder="Ex: 30/07/2016 23:59">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Mobile Phone Number</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-mobile-phone"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control mobile-phone-number" placeholder="Ex: +00 (000) 000-00-00">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Phone Number</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control phone-number" placeholder="Ex: +00 (000) 000-00-00">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Money (Dollar)</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-dollar"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control money-dollar" placeholder="Ex: 99,99 $">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>IP Address</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-desktop"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control ip" placeholder="Ex: 255.255.255.255">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Credit Card</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control credit-card" placeholder="Ex: 0000 0000 0000 0000">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Email Address</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-envelope-o"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control email" placeholder="Ex: example@example.com">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <b>Serial Key</b>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control key" placeholder="Ex: XXX0-XXXX-XX00-0XXX">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Multi Select -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Multi Select <small>Taken from <a href="https://github.com/lou/multi-select/" target="_blank">github.com/lou/multi-select</a></small> </h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <select id="optgroup" class="ms" multiple="multiple">
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                <option value="AK">Alaska</option>
+                                <option value="HI">Hawaii</option>
+                                </optgroup>
+                                <optgroup label="Pacific Time Zone">
+                                <option value="CA">California</option>
+                                <option value="NV">Nevada</option>
+                                <option value="OR">Oregon</option>
+                                <option value="WA">Washington</option>
+                                </optgroup>
+                                <optgroup label="Mountain Time Zone">
+                                <option value="AZ">Arizona</option>
+                                <option value="CO">Colorado</option>
+                                <option value="ID">Idaho</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="UT">Utah</option>
+                                <option value="WY">Wyoming</option>
+                                </optgroup>
+                                <optgroup label="Central Time Zone">
+                                <option value="AL">Alabama</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TX">Texas</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="WI">Wisconsin</option>
+                                </optgroup>
+                                <optgroup label="Eastern Time Zone">
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="IN">Indiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="OH">Ohio</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WV">West Virginia</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Multiselect</h2>
+                        </div>
+                        <div class="body demo-card">
+                            <div class="row clearfix">
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Default</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect1" name="multiselect1[]" class="multiselect" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms">Mushrooms</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>"Select All" Option Enabled</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect3-all" name="multiselect3[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="multiselect-all">Select All</option>
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms">Mushrooms</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Options Group</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect5" name="multiselect5" class="multiselect-custom" multiple="multiple">
+                                            <optgroup label="Mathematics">
+                                                <option value="analysis">Analysis</option>
+                                                <option value="algebra">Linear Algebra</option>
+                                                <option value="discrete">Discrete Mathematics</option>
+                                                <option value="numerical">Numerical Analysis</option>
+                                                <option value="probability">Probability Theory</option>
+                                            </optgroup>
+                                            <optgroup label="Computer Science">
+                                                <option value="programming">Introduction to Programming</option>
+                                                <option value="automata">Automata Theory</option>
+                                                <option value="complexity">Complexity Theory</option>
+                                                <option value="software">Software Engineering</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Smaller Size</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect-size" name="multiselect7[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Custom Checkbox</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect2" name="multiselect2[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms">Mushrooms</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Single Selection</label>
+                                    <div class="c_multiselect">
+                                        <select id="single-selection" name="single_selection" class="multiselect multiselect-custom">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms">Mushrooms</option>
+                                            <option value="pepperoni">Pepperoni</option>
+                                            <option value="onions">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Filter Enabled</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect4-filter" name="multiselect4[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="bootstrap">Bootstrap</option>
+                                            <option value="bootstrap-marketplace">Bootstrap Marketplace</option>
+                                            <option value="bootstrap-theme">Bootstrap Theme</option>
+                                            <option value="html">HTML</option>
+                                            <option value="html-template">HTML Template</option>
+                                            <option value="wp-marketplace">WordPress Marketplace</option>
+                                            <option value="wp-plugin">WordPress Plugin</option>
+                                            <option value="wp-theme">WordPress Theme</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Disabled Options</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect6" name="multiselect6[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                            <option value="mushrooms" disabled="disabled">Mushrooms</option>
+                                            <option value="pepperoni" disabled="disabled">Pepperoni</option>
+                                            <option value="onions" disabled="disabled">Onions</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Custom Button Class (btn-primary)</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect-color" name="multiselect9[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Custom Button Class (btn-success)</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect-color2" name="multiselect10[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Link (btn-link)</label>
+                                    <div class="c_multiselect">
+                                        <select id="multiselect-link" name="multiselect8[]" class="multiselect multiselect-custom" multiple="multiple">
+                                            <option value="cheese">Cheese</option>
+                                            <option value="tomatoes">Tomatoes</option>
+                                            <option value="mozarella">Mozzarella</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tags Input -->
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Tags Input <small>Taken from <a href="https://github.com/bootstrap-tagsinput/bootstrap-tagsinput" target="_blank">github.com/bootstrap-tagsinput/bootstrap-tagsinput</a></small> </h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="input-group demo-tagsinput-area">
+                                <input type="text" class="form-control" data-role="tagsinput" value="Amsterdam,Washington,Sydney,Beijing,Cairo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Slider -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Input Slider <small>Taken from <a href="http://refreshless.com/nouislider" target="_blank">refreshless.com/nouislider</a> & <a href="http://materializecss.com" target="_blank">materializecss.com</a></small> </h2>
+                            <ul class="header-dropdown">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another Action</a></li>
+                                        <li><a href="javascript:void(0);">Something else</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <div class="row clearfix">
+                                <div class="col-lg-6 col-md-12">
+                                    <p><b>Basic Example</b></p>
+                                    <div id="nouislider_basic_example"></div>
+                                    <div class="m-t-20 font-12"><b>Value: </b><span class="js-nouislider-value"></span></div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <p><b>Range Example</b></p>
+                                    <div id="nouislider_range_example"></div>
+                                    <div class="m-t-20 font-12"><b>Value: </b><span class="js-nouislider-value"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Date Picker</h2>
+                        </div>
+                        <div class="body">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Default</label>
+                                    <div class="input-group mb-3">
+                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>Custom Format (dd/mm/yyyy)</label>
+                                    <div class="input-group mb-3">
+                                        <input data-provide="datepicker" data-date-autoclose="true" class="form-control" data-date-format="dd/mm/yyyy">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12">
+                                    <label>With Component</label>
+                                    <div class="input-group date" data-date-autoclose="true" data-provide="datepicker">
+                                        <input type="text" class="form-control">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary" type="button"><i class="fa fa-calendar"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <label>Range</label>
+                                    <div class="input-daterange input-group" data-provide="datepicker">
+                                        <input type="text" class="input-sm form-control" name="start">
+                                        <span class="input-group-addon">to</span>
+                                        <input type="text" class="input-sm form-control" name="end">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-12">
+                                    <label>Inline</label>
+                                    <div class="inline-datepicker"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- manin basic page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Basic Form Elements</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Form Basic</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-6 col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2> Basic example</h2>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">@</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                              </div>
+                          </div>
+
+                          <label for="basic-url">Your vanity URL</label>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                              </div>
+                              <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">$</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                              <div class="input-group-append">
+                                  <span class="input-group-text">.00</span>
+                              </div>
+                          </div>
+
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">With textarea</span>
+                              </div>
+                              <textarea class="form-control" aria-label="With textarea"></textarea>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Different Sizing</h2>
+                      </div>
+                      <div class="body">
+                          <div class="input-group input-group-sm mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                          </div>
+
+                          <div class="input-group input-group-lg">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Input with Checkboxes and radios</h2>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">
+                                  <input type="checkbox" aria-label="Checkbox for following text input">
+                                  </div>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Text input with checkbox">
+                          </div>
+
+                          <div class="input-group">
+                              <div class="input-group-prepend">
+                                  <div class="input-group-text">
+                                  <input type="radio" aria-label="Radio button for following text input">
+                                  </div>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Text input with radio button">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Multiple addons <small>Multiple add-ons are supported and can be mixed with checkbox and radio input versions.</small></h2>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">$</span>
+                                  <span class="input-group-text">0.00</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
+
+                          <div class="input-group">
+                              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                              <div class="input-group-append">
+                                  <span class="input-group-text">$</span>
+                                  <span class="input-group-text">0.00</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Custom Checkboxes and Radio Buttons</h2>
+                      </div>
+                      <div class="body">
+                          <div class="row">
+                              <div class="col-lg-6 col-md-12">
+                                  <div class="fancy-checkbox">
+                                      <label><input type="checkbox"><span>Fancy Checkbox 1</span></label>
+                                  </div>
+                                  <div class="fancy-checkbox">
+                                      <label><input type="checkbox" checked><span>Fancy Checkbox 2</span></label>
+                                  </div>
+                                  <div class="fancy-checkbox">
+                                      <label><input type="checkbox"><span>Fancy Checkbox 3</span></label>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 col-md-12">
+                                  <div class="fancy-radio">
+                                      <label><input name="gender" value="male" type="radio" checked><span><i></i>Male</span></label>
+                                  </div>
+                                  <div class="fancy-radio">
+                                      <label><input name="gender" value="female" type="radio"><span><i></i>Female</span></label>
+                                  </div>
+                                  <br>
+                                  <label class="fancy-radio"><input name="gender2" value="male" type="radio"><span><i></i>Male</span></label>
+                                  <label class="fancy-radio"><input name="gender2" value="female" type="radio" checked><span><i></i>Female</span></label>
+                                  <br>
+                                  <label class="fancy-radio custom-color-green"><input name="gender3" value="male" type="radio" checked><span><i></i>Male</span></label>
+                                  <label class="fancy-radio custom-color-green"><input name="gender3" value="female" type="radio"><span><i></i>Female</span></label>
+                                  <br>
+                                  <label class="fancy-radio custom-color-green"><input name="gender4" value="male" type="radio"><span><i></i>Male</span></label>
+                                  <label class="fancy-radio custom-color-green"><input name="gender4" value="female" type="radio" checked><span><i></i>Female</span></label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Input Button addons</h2>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                              <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                          </div>
+
+                          <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <h6>Input Button dropdowns</h6>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                  <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Another action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                                  </div>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          </div>
+
+                          <div class="input-group">
+                              <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                  <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Another action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <h6>Input Button wtih Segmented</h6>
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button type="button" class="btn btn-outline-secondary">Action</button>
+                                  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Another action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                                  </div>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                          </div>
+
+                          <div class="input-group">
+                              <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                              <div class="input-group-append">
+                                  <button type="button" class="btn btn-outline-secondary">Action</button>
+                                  <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                  </button>
+                                  <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">Action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Another action</a>
+                                  <a class="dropdown-item" href="javascript:void(0);">Something else here</a>
+                                  <div role="separator" class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="javascript:void(0);">Separated link</a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Custom forms <small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small></h2>
+                      </div>
+                      <div class="body">
+                         <h6>1. Custom select</h6>
+                         <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                              </div>
+                              <select class="custom-select" id="inputGroupSelect01">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <select class="custom-select" id="inputGroupSelect02">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                              <div class="input-group-append">
+                                  <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                              </div>
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                              <select class="custom-select" id="inputGroupSelect03">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                          </div>
+
+                          <div class="input-group">
+                              <select class="custom-select" id="inputGroupSelect04">
+                                  <option selected>Choose...</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                              </select>
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                         <h6>2. Custom file input</h6>
+                         <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text">Upload</span>
+                              </div>
+                              <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                  <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                              </div>
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                  <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                              </div>
+                              <div class="input-group-append">
+                                  <span class="input-group-text" id="">Upload</span>
+                              </div>
+                          </div>
+
+                          <div class="input-group mb-3">
+                              <div class="input-group-prepend">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                              <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                  <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                              </div>
+                          </div>
+
+                          <div class="input-group">
+                              <div class="custom-file">
+                                  <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                  <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                              </div>
+                              <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary" type="button">Button</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- manin cropped page content body part -->
+     <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Image Cropping</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Image Cropping</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Image Cropper</h2>
+                      </div>
+                      <div class="body m-b-10">
+                          <div class="row clearfix">
+                              <div class="col-lg-8 col-md-12">
+                                  <div class="img-container"><img id="image" src="assets/images/auth_bg.jpg" class="img-responsive" alt="Picture"></div>
+                              </div>
+                              <div class="col-lg-4 col-md-12">
+                                  <div class="docs-preview clearfix">
+                                      <div class="img-preview preview-lg"></div>
+                                      <div class="img-preview preview-md"></div>
+                                      <div class="img-preview preview-sm"></div>
+                                      <div class="img-preview preview-xs"></div>
+                                  </div>
+                                  <div class="docs-data">
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text" for="dataX">X</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataX" placeholder="x">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">px</span>
+                                          </div>
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">Y</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataY" placeholder="y">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">px</span>
+                                          </div>
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">Width</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataWidth" placeholder="width">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">px</span>
+                                          </div>
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">Height</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataHeight" placeholder="height">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">px</span>
+                                          </div>
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">Rotate</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataRotate" placeholder="rotate">
+                                          <div class="input-group-append">
+                                              <span class="input-group-text">deg</span>
+                                          </div>
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">ScaleX</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataScaleX" placeholder="scaleX">
+                                      </div>
+
+                                      <div class="input-group">
+                                          <div class="input-group-prepend">
+                                              <span class="input-group-text">ScaleY</span>
+                                          </div>
+                                          <input type="text" class="form-control" id="dataScaleY" placeholder="scaleY">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-lg-8 col-md-12 docs-buttons">
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-info" data-method="setDragMode" data-option="move" title="Move"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setDragMode&quot;, &quot;move&quot;)"> <span class="fa fa-arrows"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-info" data-method="setDragMode" data-option="crop" title="Crop"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setDragMode&quot;, &quot;crop&quot;)"> <span class="fa fa-crop"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-success" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;zoom&quot;, 0.1)"> <span class="fa fa-plus-circle"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-success" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;zoom&quot;, -0.1)"> <span class="fa fa-minus-circle"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, -10, 0)"> <span class="fa fa-arrow-left"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 10, 0)"> <span class="fa fa-arrow-right"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 0, -10)"> <span class="fa fa-arrow-up"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;move&quot;, 0, 10)"> <span class="fa fa-arrow-down"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;rotate&quot;, -45)"> <span class="fa fa-rotate-left"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="rotate" data-option="45" title="Rotate Right"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;rotate&quot;, 45)"> <span class="fa fa-rotate-right"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="scaleX" data-option="-1" title="Flip Horizontal"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;scaleX&quot;, -1)"> <span class="fa fa-arrows-h"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="scaleY" data-option="-1" title="Flip Vertical"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;scaleY&quot;, -1)"> <span class="fa fa-arrows-v"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="crop" title="Crop"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;crop&quot;)"> <span class="fa fa-check"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="clear" title="Clear"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;clear&quot;)"> <span class="fa fa-trash-o"></span> </span></button>
+                                  </div>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="disable" title="Disable"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;disable&quot;)"> <span class="fa fa-lock"></span> </span></button>
+                                      <button type="button" class="btn btn-sm btn-secondary" data-method="enable" title="Enable"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;enable&quot;)"> <span class="fa fa-unlock"></span> </span></button>
+                                  </div>
+
+                                  <button type="button" class="btn btn-sm btn-secondary" data-method="reset" title="Reset"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;reset&quot;)"> <span class="fa fa-refresh"></span> </span></button>
+                                  <label class="btn btn-sm btn-secondary btn-upload" for="inputImage" title="Upload image file">
+                                      <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*">
+                                      <span class="docs-tooltip" data-toggle="tooltip" title="Import image with Blob URLs"> <span class="fa fa-upload"></span> </span>
+                                  </label>
+                                  <button type="button" class="btn btn-sm  btn-secondary" data-method="destroy" title="Destroy"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;destroy&quot;)"> <span class="fa fa-power-off"></span> </span></button>
+
+                                  <div class="btn-group">
+                                      <button type="button" class="btn btn-sm btn-danger" data-method="getCroppedCanvas"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;)"> Get Cropped Canvas </span> </button>
+                                      <button type="button" class="btn btn-sm btn-danger" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 160, &quot;height&quot;: 90 }"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;, { width: 160, height: 90 })"> 160&times;90 </span> </button>
+                                      <button type="button" class="btn btn-sm btn-danger" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 320, &quot;height&quot;: 180 }"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getCroppedCanvas&quot;, { width: 320, height: 180 })"> 320&times;180 </span> </button>
+                                  </div>
+
+                                  <button type="button" class="btn btn-secondary" data-method="getData" data-option data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getData&quot;)"> Get Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="setData" data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setData&quot;, data)"> Set Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="getContainerData" data-option data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getContainerData&quot;)"> Get Container Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="getImageData" data-option data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getImageData&quot;)"> Get Image Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="getCanvasData" data-option data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getCanvasData&quot;)"> Get Canvas Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="setCanvasData" data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setCanvasData&quot;, data)"> Set Canvas Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="getCropBoxData" data-option data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;getCropBoxData&quot;)"> Get Crop Box Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="setCropBoxData" data-target="#putData"> <span class="docs-tooltip" data-toggle="tooltip" title="$().cropper(&quot;setCropBoxData&quot;, data)"> Set Crop Box Data </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="moveTo" data-option="0"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.moveTo(0)"> 0,0 </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="zoomTo" data-option="1"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.zoomTo(1)"> 100% </span> </button>
+                                  <button type="button" class="btn btn-secondary" data-method="rotateTo" data-option="180"> <span class="docs-tooltip" data-toggle="tooltip" title="cropper.rotateTo(180)"> 180° </span> </button>
+
+                                  <input type="text" class="form-control" id="putData" placeholder="Get data to here or set data with this value">
+                              </div>
+                              <div class="col-lg-4 col-md-12 docs-toggles">
+                                  <!-- .btn groups -->
+                                  <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                      <label class="btn btn-secondary active">
+                                          <input type="radio" class="sr-only" id="aspectRatio0" name="aspectRatio" value="1.7777777777777777">
+                                          <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 16 / 9"> 16:9 </span> </label>
+                                      <label class="btn btn-secondary">
+                                          <input type="radio" class="sr-only" id="aspectRatio1" name="aspectRatio" value="1.3333333333333333">
+                                          <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 4 / 3"> 4:3 </span> </label>
+                                      <label class="btn btn-secondary">
+                                          <input type="radio" class="sr-only" id="aspectRatio2" name="aspectRatio" value="1">
+                                          <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 1 / 1"> 1:1 </span> </label>
+                                      <label class="btn btn-secondary">
+                                          <input type="radio" class="sr-only" id="aspectRatio3" name="aspectRatio" value="0.6666666666666666">
+                                          <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: 2 / 3"> 2:3 </span> </label>
+                                      <label class="btn btn-secondary">
+                                          <input type="radio" class="sr-only" id="aspectRatio4" name="aspectRatio" value="NaN">
+                                          <span class="docs-tooltip" data-toggle="tooltip" title="aspectRatio: NaN"> Free </span> </label>
+                                  </div>
+                                  <div class="dropdown dropup docs-options">
+                                      <button type="button" class="btn btn-success btn-block dropdown-toggle" id="toggleOptions" data-toggle="dropdown" aria-expanded="true"> Toggle Options <span class="caret"></span> </button>
+
+                                      <ul class="dropdown-menu" aria-labelledby="toggleOptions" role="menu">
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="responsive" checked> responsive </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="restore" checked> restore </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="checkCrossOrigin" checked> checkCrossOrigin </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="checkOrientation" checked> checkOrientation </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="modal" checked> modal </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="guides" checked> guides </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="center" checked> center </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="highlight" checked> highlight </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="background" checked> background </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="autoCrop" checked> autoCrop </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="movable" checked> movable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="rotatable" checked> rotatable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="scalable" checked> scalable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="zoomable" checked> zoomable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="zoomOnTouch" checked> zoomOnTouch </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="zoomOnWheel" checked> zoomOnWheel </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="cropBoxMovable" checked> cropBoxMovable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="cropBoxResizable" checked> cropBoxResizable </label>
+                                          </li>
+                                          <li role="presentation">
+                                              <label class="checkbox-inline">
+                                                  <input type="checkbox" name="toggleDragModeOnDblclick" checked> toggleDragModeOnDblclick </label>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     </div>
+     <!-- manin dragdrop upload page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Drag & Drop File Upload</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Drag & Drop</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+
+              <div class="col-lg-6 col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Default <small>Taken from: https://github.com/JeremyFagis/dropify</small></h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" class="dropify">
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>With event and default file <small>try to remove the image</small></h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" id="dropify-event" data-default-file="assets/images/auth_bg.jpg">
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Disabled file upload</h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" class="dropify" disabled="disabled">
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-6 col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Limit file type <small>try to upload png or pdf only</small></h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" class="dropify" data-allowed-file-extensions="pdf png">
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Limit file size <small>try to upload file larger than 100 KB</small></h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" class="dropify" data-max-file-size="100K">
+                      </div>
+                  </div>
+                  <div class="card">
+                      <div class="header">
+                          <h2>Custom messages for default <small>replace, remove and error</small></h2>
+                      </div>
+                      <div class="body">
+                          <input type="file" class="dropify-fr">
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+    </div>
+     <!-- manin forms editor page content body part -->
+     <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Form Editors</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Form Editors</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>CKEditor <small>CKEditor is a ready-for-use HTML text editor designed to simplify web content creation. Taken from <a href="http://ckeditor.com/" target="_blank">ckeditor.com</a></small> </h2>
+                      </div>
+                      <div class="body">
+                          <textarea id="ckeditor">
+                              <h2>WYSIWYG Editor</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper sapien non nisl facilisis bibendum in quis tellus. Duis in urna bibendum turpis pretium fringilla. Aenean neque velit, porta eget mattis ac, imperdiet quis nisi. Donec non dui et tortor vulputate luctus. Praesent consequat rhoncus velit, ut molestie arcu venenatis sodales.</p>
+                              <h3>Lacinia</h3>
+                              <ul>
+                                  <li>Suspendisse tincidunt urna ut velit ullamcorper fermentum.</li>
+                                  <li>Nullam mattis sodales lacus, in gravida sem auctor at.</li>
+                                  <li>Praesent non lacinia mi.</li>
+                                  <li>Mauris a ante neque.</li>
+                                  <li>Aenean ut magna lobortis nunc feugiat sagittis.</li>
+                              </ul>
+                              <h3>Pellentesque adipiscing</h3>
+                              <p>Maecenas quis ante ante. Nunc adipiscing rhoncus rutrum. Pellentesque adipiscing urna mi, ut tempus lacus ultrices ac. Pellentesque sodales, libero et mollis interdum, dui odio vestibulum dolor, eu pellentesque nisl nibh quis nunc. Sed porttitor leo adipiscing venenatis vehicula. Aenean quis viverra enim. Praesent porttitor ut ipsum id ornare.</p>
+                          </textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+     </div>
+      <!-- manin markdown page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Markdown</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Markdown</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Markdown Editor</h2>
+                      </div>
+                      <div class="body">
+                          <p class="margin-bottom-30">Markdown editing meet Bootstrap</p>
+                          <textarea id="markdown-editor" name="markdown-content" data-provide="markdown" rows="10"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- manin summernote page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Summernote</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Summernote</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Summernote</h2>
+                      </div>
+                      <div class="body">
+                          <div class="summernote">
+                              Hello there,
+                              <br/>
+                              <p>The toolbar can be customized and it also supports various callbacks such as <code>oninit</code>, <code>onfocus</code>, <code>onpaste</code> and many more.</p>
+                              <p>Please try <b>paste some texts</b> here</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Inline Editor</h2>
+                      </div>
+                      <div class="body">
+                          <div class="inline-editor">
+                              <p class="mb-0">You can select content and edit inline</p>
+                              <h5>Title Heading will be <b>apear here</b></h5>
+                              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+                              <ul class="list-unstyled">
+                                  <li><i class="fa fa-hand-o-right text-success"></i> There are many variations of passages</li>
+                                  <li><i class="fa fa-hand-o-right text-success"></i> If you are going to use a passage of Ipsum</li>
+                                  <li><i class="fa fa-hand-o-right text-success"></i> Contrary to popular belief, Ipsum is not simply</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- Overlay forms texteditors For Sidebars -->
+     <div id="wrapper">
+
+  <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+          <div class="navbar-btn">
+              <button type="button" class="btn-toggle-offcanvas"><i class="lnr lnr-menu fa fa-bars"></i></button>
+          </div>
+
+          <div class="navbar-brand">
+              <a href="index.html">ICONIC</a>
+          </div>
+
+          <div class="navbar-right">
+              <form id="navbar-search" class="navbar-form search-form">
+                  <input value="" class="form-control" placeholder="Search here..." type="text">
+                  <button type="button" class="btn btn-default"><i class="icon-magnifier"></i></button>
+              </form>
+
+              <div id="navbar-menu">
+                  <ul class="nav navbar-nav">
+                      <li>
+                          <a href="file-dashboard.html" class="icon-menu d-none d-sm-block d-md-none d-lg-block"><i class="fa fa-folder-open-o"></i></a>
+                      </li>
+                      <li>
+                          <a href="app-calendar.html" class="icon-menu d-none d-sm-block d-md-none d-lg-block"><i class="icon-calendar"></i></a>
+                      </li>
+                      <li>
+                          <a href="app-chat.html" class="icon-menu d-none d-sm-block"><i class="icon-bubbles"></i></a>
+                      </li>
+                      <li>
+                          <a href="app-inbox.html" class="icon-menu d-none d-sm-block"><i class="icon-envelope"></i><span class="notification-dot"></span></a>
+                      </li>
+                      <li class="dropdown">
+                          <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown">
+                              <i class="icon-bell"></i>
+                              <span class="notification-dot"></span>
+                          </a>
+                          <ul class="dropdown-menu notifications">
+                              <li class="header"><strong>You have 4 new Notifications</strong></li>
+                              <li>
+                                  <a href="javascript:void(0);">
+                                      <div class="media">
+                                          <div class="media-left">
+                                              <i class="icon-info text-warning"></i>
+                                          </div>
+                                          <div class="media-body">
+                                              <p class="text">Campaign <strong>Holiday Sale</strong> is nearly reach budget limit.</p>
+                                              <span class="timestamp">10:00 AM Today</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="javascript:void(0);">
+                                      <div class="media">
+                                          <div class="media-left">
+                                              <i class="icon-like text-success"></i>
+                                          </div>
+                                          <div class="media-body">
+                                              <p class="text">Your New Campaign <strong>Holiday Sale</strong> is approved.</p>
+                                              <span class="timestamp">11:30 AM Today</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                               <li>
+                                  <a href="javascript:void(0);">
+                                      <div class="media">
+                                          <div class="media-left">
+                                              <i class="icon-pie-chart text-info"></i>
+                                          </div>
+                                          <div class="media-body">
+                                              <p class="text">Website visits from Twitter is 27% higher than last week.</p>
+                                              <span class="timestamp">04:00 PM Today</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="javascript:void(0);">
+                                      <div class="media">
+                                          <div class="media-left">
+                                              <i class="icon-info text-danger"></i>
+                                          </div>
+                                          <div class="media-body">
+                                              <p class="text">Error on website analytics configurations</p>
+                                              <span class="timestamp">Yesterday</span>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li class="footer"><a href="javascript:void(0);" class="more">See all notifications</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="javascript:void(0);" class="dropdown-toggle icon-menu" data-toggle="dropdown"><i class="icon-equalizer"></i></a>
+                          <ul class="dropdown-menu user-menu menu-icon">
+                              <li class="menu-heading">ACCOUNT SETTINGS</li>
+                              <li><a href="javascript:void(0);"><i class="icon-note"></i> <span>Basic</span></a></li>
+                              <li><a href="javascript:void(0);"><i class="icon-equalizer"></i> <span>Preferences</span></a></li>
+                              <li><a href="javascript:void(0);"><i class="icon-lock"></i> <span>Privacy</span></a></li>
+                              <li><a href="javascript:void(0);"><i class="icon-bell"></i> <span>Notifications</span></a></li>
+                              <li class="menu-heading">BILLING</li>
+                              <li><a href="javascript:void(0);"><i class="icon-credit-card"></i> <span>Payments</span></a></li>
+                              <li><a href="javascript:void(0);"><i class="icon-printer"></i> <span>Invoices</span></a></li>
+                              <li><a href="javascript:void(0);"><i class="icon-refresh"></i> <span>Renewals</span></a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="page-login.html" class="icon-menu"><i class="icon-login"></i></a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <div id="left-sidebar" class="sidebar">
+      <button type="button" class="btn-toggle-offcanvas"><i class="fa fa-arrow-left"></i></button>
+      <div class="sidebar-scroll">
+          <div class="user-account">
+              <img src="assets/images/user.png" class="rounded-circle user-photo" alt="User Profile Picture">
+              <div class="dropdown">
+                  <span>Welcome,</span>
+                  <a href="javascript:void(0);" class="dropdown-toggle user-name" data-toggle="dropdown"><strong>Pamela Petrus</strong></a>
+                  <ul class="dropdown-menu dropdown-menu-right account">
+                      <li><a href="page-profile2.html"><i class="icon-user"></i>My Profile</a></li>
+                      <li><a href="app-inbox.html"><i class="icon-envelope-open"></i>Messages</a></li>
+                      <li><a href="javascript:void(0);"><i class="icon-settings"></i>Settings</a></li>
+                      <li class="divider"></li>
+                      <li><a href="page-login.html"><i class="icon-power"></i>Logout</a></li>
+                  </ul>
+              </div>
+              <hr>
+              <ul class="row list-unstyled">
+                  <li class="col-4">
+                      <small>Sales</small>
+                      <h6>456</h6>
+                  </li>
+                  <li class="col-4">
+                      <small>Order</small>
+                      <h6>1350</h6>
+                  </li>
+                  <li class="col-4">
+                      <small>Revenue</small>
+                      <h6>$2.13B</h6>
+                  </li>
+              </ul>
+          </div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+              <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#menu">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Chat"><i class="icon-book-open"></i></a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#setting"><i class="icon-settings"></i></a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#question"><i class="icon-question"></i></a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content p-l-0 p-r-0">
+              <div class="tab-pane active" id="menu">
+                  <nav id="left-sidebar-nav" class="sidebar-nav">
+                      <ul id="main-menu" class="metismenu li_animation_delay">
+                          <li>
+                              <a href="#Dashboard" class="has-arrow"><i class="icon-home"></i> <span>Dashboard</span></a>
+                              <ul>
+                                  <li><a href="index.html">Analytical</a></li>
+                                  <li><a href="h-menu.html">Analytical H-Menu</a></li>
+                                  <li><a href="index2.html">Demographic</a></li>
+                                  <li><a href="index3.html">Hospital</a></li>
+                                  <li><a href="index4.html">University</a></li>
+                                  <li><a href="index5.html">Real Estate</a></li>
+                                  <li><a href="index6.html">Project Board</a></li>
+                                  <li><a href="index7.html">Cryptocurrency</a></li>
+                                  <li><a href="index8.html">eCommerce</a></li>
+                                  <li><a href="index9.html">IoT</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#App" class="has-arrow"><i class="icon-grid"></i> <span>App</span></a>
+                              <ul>
+                                  <li><a href="app-inbox.html">Inbox</a></li>
+                                  <li><a href="app-chat.html">Chat</a></li>
+                                  <li><a href="app-calendar.html">Calendar</a></li>
+                                  <li><a href="app-contact.html">Contact list</a></li>
+                                  <li><a href="app-contact-grid.html">Contact Card <span class="badge badge-warning float-right">New</span></a></li>
+                                  <li><a href="app-taskboard.html">Taskboard</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#FileManager" class="has-arrow"><i class="icon-folder"></i> <span>File Manager</span></a>
+                              <ul>
+                                  <li><a href="file-dashboard.html">Dashboard</a></li>
+                                  <li><a href="file-documents.html">Documents</a></li>
+                                  <li><a href="file-media.html">Media</a></li>
+                                  <li><a href="file-images.html">Images</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Blog" class="has-arrow"><i class="icon-globe"></i> <span>Blog</span></a>
+                              <ul>
+                                  <li><a href="blog-dashboard.html">Dashboard</a></li>
+                                  <li><a href="blog-post.html">New Post</a></li>
+                                  <li><a href="blog-list.html">Blog List</a></li>
+                                  <li><a href="blog-details.html">Blog Detail</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#uiElements" class="has-arrow"><i class="icon-diamond"></i> <span>UI Elements</span></a>
+                              <ul>
+                                  <li><a href="ui-typography.html">Typography</a></li>
+                                  <li><a href="ui-tabs.html">Tabs</a></li>
+                                  <li><a href="ui-buttons.html">Buttons</a></li>
+                                  <li><a href="ui-bootstrap.html">Bootstrap UI</a></li>
+                                  <li><a href="ui-icons.html">Icons</a></li>
+                                  <li><a href="ui-notifications.html">Notifications</a></li>
+                                  <li><a href="ui-colors.html">Colors</a></li>
+                                  <li><a href="ui-dialogs.html">Dialogs</a></li>
+                                  <li><a href="ui-list-group.html">List Group</a></li>
+                                  <li><a href="ui-media-object.html">Media Object</a></li>
+                                  <li><a href="ui-modals.html">Modals</a></li>
+                                  <li><a href="ui-nestable.html">Nestable</a></li>
+                                  <li><a href="ui-progressbars.html">Progress Bars</a></li>
+                                  <li><a href="ui-range-sliders.html">Range Sliders</a></li>
+                                  <li><a href="ui-treeview.html">Treeview</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Widgets" class="has-arrow"><i class="icon-puzzle"></i> <span>Widgets</span></a>
+                              <ul>
+                                  <li><a href="widgets-statistics.html">Statistics</a></li>
+                                  <li><a href="widgets-data.html">Data</a></li>
+                                  <li><a href="widgets-chart.html">Chart</a></li>
+                                  <li><a href="widgets-weather.html">Weather</a></li>
+                                  <li><a href="widgets-social.html">Social</a></li>
+                                  <li><a href="widgets-blog.html">Blog</a></li>
+                                  <li><a href="widgets-ecommerce.html">eCommerce</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Authentication" class="has-arrow"><i class="icon-lock"></i> <span>Authentication</span></a>
+                              <ul>
+                                  <li><a href="page-login.html">Login</a></li>
+                                  <li><a href="page-register.html">Register</a></li>
+                                  <li><a href="page-lockscreen.html">Lockscreen</a></li>
+                                  <li><a href="page-forgot-password.html">Forgot Password</a></li>
+                                  <li><a href="page-404.html">Page 404</a></li>
+                                  <li><a href="page-403.html">Page 403</a></li>
+                                  <li><a href="page-500.html">Page 500</a></li>
+                                  <li><a href="page-503.html">Page 503</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Pages" class="has-arrow"><i class="icon-docs"></i> <span>Pages</span></a>
+                              <ul>
+                                  <li><a href="page-blank.html">Blank Page</a> </li>
+                                  <li><a href="page-profile.html">Profile <span class="badge badge-default float-right">v1</span></a></li>
+                                  <li><a href="page-profile2.html">Profile <span class="badge badge-warning float-right">v2</span></a></li>
+                                  <li><a href="page-gallery.html">Image Gallery <span class="badge badge-default float-right">v1</span></a> </li>
+                                  <li><a href="page-gallery2.html">Image Gallery <span class="badge badge-warning float-right">v2</span></a> </li>
+                                  <li><a href="page-timeline.html">Timeline</a></li>
+                                  <li><a href="page-timeline-h.html">Horizontal Timeline</a></li>
+                                  <li><a href="page-pricing.html">Pricing</a></li>
+                                  <li><a href="page-invoices.html">Invoices</a></li>
+                                  <li><a href="page-invoices2.html">Invoices <span class="badge badge-warning float-right">v2</span></a></li>
+                                  <li><a href="page-search-results.html">Search Results</a></li>
+                                  <li><a href="page-helper-class.html">Helper Classes</a></li>
+                                  <li><a href="page-teams-board.html">Teams Board</a></li>
+                                  <li><a href="page-projects-list.html">Projects List</a></li>
+                                  <li><a href="page-maintenance.html">Maintenance</a></li>
+                                  <li><a href="page-testimonials.html">Testimonials</a></li>
+                                  <li><a href="page-faq.html">FAQ</a></li>
+                              </ul>
+                          </li>
+                          <li class="active">
+                              <a href="#forms" class="has-arrow"><i class="icon-pencil"></i> <span>Forms</span></a>
+                              <ul>
+                                  <li><a href="forms-validation.html">Form Validation</a></li>
+                                  <li><a href="forms-advanced.html">Advanced Elements</a></li>
+                                  <li><a href="forms-basic.html">Basic Elements</a></li>
+                                  <li><a href="forms-wizard.html">Form Wizard</a></li>
+                                  <li><a href="forms-dragdropupload.html">Drag &amp; Drop Upload</a></li>
+                                  <li><a href="forms-cropping.html">Image Cropping</a></li>
+                                  <li><a href="forms-summernote.html">Summernote</a></li>
+                                  <li><a href="forms-editors.html">CKEditor</a></li>
+                                  <li class="active"><a href="forms-markdown.html">Markdown</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Tables" class="has-arrow"><i class="icon-tag"></i> <span>Tables</span></a>
+                              <ul>
+                                  <li><a href="table-basic.html">Tables Example<span class="badge badge-info float-right">New</span></a> </li>
+                                  <li><a href="table-normal.html">Normal Tables</a> </li>
+                                  <li><a href="table-jquery-datatable.html">Jquery Datatables</a> </li>
+                                  <li><a href="table-editable.html">Editable Tables</a> </li>
+                                  <li><a href="table-color.html">Tables Color</a> </li>
+                                  <li><a href="table-filter.html">Table Filter <span class="badge badge-info float-right">New</span></a> </li>
+                                  <li><a href="table-dragger.html">Table dragger <span class="badge badge-info float-right">New</span></a> </li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#charts" class="has-arrow"><i class="icon-bar-chart"></i> <span>Charts</span></a>
+                              <ul>
+                                  <li><a href="chart-morris.html">Morris</a> </li>
+                                  <li><a href="chart-flot.html">Flot</a> </li>
+                                  <li><a href="chart-chartjs.html">ChartJS</a> </li>
+                                  <li><a href="chart-jquery-knob.html">Jquery Knob</a> </li>
+
+                                  <li><a href="chart-sparkline.html">Sparkline Chart</a></li>
+                                  <li><a href="chart-peity.html">Peity</a></li>
+                                  <li><a href="chart-c3.html">C3 Charts</a></li>
+                                  <li><a href="chart-gauges.html">Gauges</a></li>
+                              </ul>
+                          </li>
+                          <li>
+                              <a href="#Maps" class="has-arrow"><i class="icon-map"></i> <span>Maps</span></a>
+                              <ul>
+                                  <li><a href="map-google.html">Google Map</a></li>
+                                  <li><a href="map-yandex.html">Yandex Map</a></li>
+                                  <li><a href="map-jvectormap.html">jVector Map</a></li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </nav>
+              </div>
+              <div class="tab-pane p-l-15 p-r-15" id="Chat">
+                  <form>
+                      <div class="input-group m-b-20">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                  </form>
+                  <ul class="right_chat list-unstyled li_animation_delay">
+                      <li class="online">
+                          <a href="javascript:void(0);">
+                              <div class="media">
+                                  <img class="media-object " src="assets/images/xs/avatar4.jpg" alt="">
+                                  <div class="media-body">
+                                      <span class="name">Chris Fox</span>
+                                      <span class="message">Designer, Blogger</span>
+                                      <span class="badge badge-outline status"></span>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="online">
+                          <a href="javascript:void(0);">
+                              <div class="media">
+                                  <img class="media-object " src="assets/images/xs/avatar5.jpg" alt="">
+                                  <div class="media-body">
+                                      <span class="name">Joge Lucky</span>
+                                      <span class="message">Java Developer</span>
+                                      <span class="badge badge-outline status"></span>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="offline">
+                          <a href="javascript:void(0);">
+                              <div class="media">
+                                  <img class="media-object " src="assets/images/xs/avatar2.jpg" alt="">
+                                  <div class="media-body">
+                                      <span class="name">Isabella</span>
+                                      <span class="message">CEO, Thememakker</span>
+                                      <span class="badge badge-outline status"></span>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="offline">
+                          <a href="javascript:void(0);">
+                              <div class="media">
+                                  <img class="media-object " src="assets/images/xs/avatar1.jpg" alt="">
+                                  <div class="media-body">
+                                      <span class="name">Folisise Chosielie</span>
+                                      <span class="message">Art director, Movie Cut</span>
+                                      <span class="badge badge-outline status"></span>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                      <li class="online">
+                          <a href="javascript:void(0);">
+                              <div class="media">
+                                  <img class="media-object " src="assets/images/xs/avatar3.jpg" alt="">
+                                  <div class="media-body">
+                                      <span class="name">Alexander</span>
+                                      <span class="message">Writter, Mag Editor</span>
+                                      <span class="badge badge-outline status"></span>
+                                  </div>
+                              </div>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="tab-pane p-l-15 p-r-15" id="setting">
+                  <h6>Choose Skin</h6>
+                  <ul class="choose-skin list-unstyled">
+                      <li data-theme="purple">
+                          <div class="purple"></div>
+                          <span>Purple</span>
+                      </li>
+                      <li data-theme="blue">
+                          <div class="blue"></div>
+                          <span>Blue</span>
+                      </li>
+                      <li data-theme="cyan" class="active">
+                          <div class="cyan"></div>
+                          <span>Cyan</span>
+                      </li>
+                      <li data-theme="green">
+                          <div class="green"></div>
+                          <span>Green</span>
+                      </li>
+                      <li data-theme="orange">
+                          <div class="orange"></div>
+                          <span>Orange</span>
+                      </li>
+                      <li data-theme="blush">
+                          <div class="blush"></div>
+                          <span>Blush</span>
+                      </li>
+                  </ul>
+                  <hr>
+                  <h6>General Settings</h6>
+                  <ul class="setting-list list-unstyled">
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox">
+                              <span>Report Panel Usag</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox" checked>
+                              <span>Email Redirect</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox" checked>
+                              <span>Notifications</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox">
+                              <span>Auto Updates</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox">
+                              <span>Offline</span>
+                          </label>
+                      </li>
+                      <li>
+                          <label class="fancy-checkbox">
+                              <input type="checkbox" name="checkbox">
+                              <span>Location Permission</span>
+                          </label>
+                      </li>
+                  </ul>
+
+                  <a href="#" target="_blank" class="btn btn-block btn-primary">Buy this item</a>
+                  <a href="https://themeforest.net/user/wrraptheme/portfolio" target="_blank" class="btn btn-block btn-secondary">View portfolio</a>
+              </div>
+              <div class="tab-pane p-l-15 p-r-15" id="question">
+                  <form>
+                      <div class="input-group">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="icon-magnifier"></i></span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Search...">
+                      </div>
+                  </form>
+                  <ul class="list-unstyled question">
+                      <li class="menu-heading">HOW-TO</li>
+                      <li><a href="javascript:void(0);">How to Create Campaign</a></li>
+                      <li><a href="javascript:void(0);">Boost Your Sales</a></li>
+                      <li><a href="javascript:void(0);">Website Analytics</a></li>
+                      <li class="menu-heading">ACCOUNT</li>
+                      <li><a href="javascript:void(0);">Cearet New Account</a></li>
+                      <li><a href="javascript:void(0);">Change Password?</a></li>
+                      <li><a href="javascript:void(0);">Privacy &amp; Policy</a></li>
+                      <li class="menu-heading">BILLING</li>
+                      <li><a href="javascript:void(0);">Payment info</a></li>
+                      <li><a href="javascript:void(0);">Auto-Renewal</a></li>
+                      <li class="menu-button m-t-30">
+                          <a href="javascript:void(0);" class="btn btn-primary"><i class="icon-question"></i> Need Help?</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row clearfix">
+                  <div class="col-lg-5 col-md-8 col-sm-12">
+                      <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> Form Markdown</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="icon-home"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Form Markdown</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-7 col-md-4 col-sm-12 text-right">
+                      <div class="inlineblock text-center m-r-15 m-l-15 hidden-sm">
+                          <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1" data-line-Color="#00c5dc"
+                              data-fill-Color="transparent">3,5,1,6,5,4,8,3</div>
+                          <span>Visitors</span>
+                      </div>
+                      <div class="inlineblock text-center m-r-15 m-l-15 hidden-sm">
+                          <div class="sparkline text-left" data-type="line" data-width="8em" data-height="20px" data-line-Width="1" data-line-Color="#f4516c"
+                              data-fill-Color="transparent">4,6,3,2,5,6,5,4</div>
+                          <span>Visits</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Markdown Editor</h2>
+                      </div>
+                      <div class="body">
+                          <p class="margin-bottom-30">Markdown editing meet Bootstrap</p>
+                          <textarea id="markdown-editor" name="markdown-content" data-provide="markdown" rows="10"></textarea>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+     </div>
+    <!-- manin forms validations page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Form Validation</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Form Validation</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Basic Validation</h2>
+                      </div>
+                      <div class="body">
+                          <form id="basic-form" method="post" novalidate>
+                              <div class="form-group">
+                                  <label>Text Input</label>
+                                  <input type="text" class="form-control" required>
+                              </div>
+                              <div class="form-group">
+                                  <label>Email Input</label>
+                                  <input type="email" class="form-control" required>
+                              </div>
+                              <div class="form-group">
+                                  <label>Text Area</label>
+                                  <textarea class="form-control" rows="5" cols="30" required></textarea>
+                              </div>
+                              <div class="form-group">
+                                  <label>Checkbox</label>
+                                  <br/>
+                                  <label class="fancy-checkbox">
+                                      <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                      <span>Option 1</span>
+                                  </label>
+                                  <label class="fancy-checkbox">
+                                      <input type="checkbox" name="checkbox">
+                                      <span>Option 2</span>
+                                  </label>
+                                  <label class="fancy-checkbox">
+                                      <input type="checkbox" name="checkbox">
+                                      <span>Option 3</span>
+                                  </label>
+                                  <p id="error-checkbox"></p>
+                              </div>
+                              <div class="form-group">
+                                  <label>Radio Button</label>
+                                  <br />
+                                  <label class="fancy-radio">
+                                      <input type="radio" name="gender" value="male" required data-parsley-errors-container="#error-radio">
+                                      <span><i></i>Male</span>
+                                  </label>
+                                  <label class="fancy-radio">
+                                      <input type="radio" name="gender" value="female">
+                                      <span><i></i>Female</span>
+                                  </label>
+                                  <p id="error-radio"></p>
+                              </div>
+                              <div class="form-group">
+                                  <label for="food">Multiselect</label>
+                                  <br/>
+                                  <select id="food" name="food[]" class="multiselect multiselect-custom" multiple="multiple" data-parsley-required data-parsley-trigger-after-failure="change" data-parsley-errors-container="#error-multiselect">
+                                      <option value="cheese">Cheese</option>
+                                      <option value="tomatoes">Tomatoes</option>
+                                      <option value="mozarella">Mozzarella</option>
+                                      <option value="mushrooms">Mushrooms</option>
+                                      <option value="pepperoni">Pepperoni</option>
+                                      <option value="onions">Onions</option>
+                                  </select>
+                                  <p id="error-multiselect"></p>
+                              </div>
+                              <br>
+                              <button type="submit" class="btn btn-primary">Validate</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Advanced Validation</h2>
+                      </div>
+                      <div class="body">
+                          <form id="advanced-form" data-parsley-validate novalidate>
+                              <div class="form-group">
+                                  <label for="text-input1">Min. 8 Characters</label>
+                                  <input type="text" id="text-input1" class="form-control" required data-parsley-minlength="8">
+                              </div>
+                              <div class="form-group">
+                                  <label for="text-input2">Between 5-10 Characters</label>
+                                  <input type="text" id="text-input2" class="form-control" required data-parsley-length="[5,10]">
+                              </div>
+                              <div class="form-group">
+                                  <label for="text-input3">Min. Number ( >= 5 )</label>
+                                  <input type="text" id="text-input3" class="form-control" required data-parsley-min="5">
+                              </div>
+                              <div class="form-group">
+                                  <label for="text-input4">Between 20-30</label>
+                                  <input type="text" id="text-input4" class="form-control" required data-parsley-range="[20,30]">
+                              </div>
+                              <div class="form-group">
+                                  <label>Select Min. 2 Options</label>
+                                  <br />
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox2" required data-parsley-mincheck="2" data-parsley-errors-container="#error-checkbox2">
+                                      <span>Option 1</span>
+                                  </label>
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox2">
+                                      <span>Option 2</span>
+                                  </label>
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox2">
+                                      <span>Option 3</span>
+                                  </label>
+                                  <p id="error-checkbox2"></p>
+                              </div>
+                              <div class="form-group">
+                                  <label>Select Between 1-2 Options</label>
+                                  <br />
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox3" required data-parsley-check="[1,2]" data-parsley-errors-container="#error-checkbox3">
+                                      <span>Option 1</span>
+                                  </label>
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox3">
+                                      <span>Option 2</span>
+                                  </label>
+                                  <label class="control-inline fancy-checkbox">
+                                      <input type="checkbox" name="checkbox3">
+                                      <span>Option 3</span>
+                                  </label>
+                                  <p id="error-checkbox3"></p>
+                              </div>
+                              <br/>
+                              <button type="submit" class="btn btn-primary">Validate</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+    <!-- manin forms wizard page content body part -->
+    <div id="main-content">
+      <div class="container-fluid">
+          <div class="block-header">
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <h2>Form Wizard</h2>
+                      <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                          <li class="breadcrumb-item">Forms</li>
+                          <li class="breadcrumb-item active">Form Wizard</li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <div class="d-flex flex-row-reverse">
+                          <div class="page_action">
+                              <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                          </div>
+                          <div class="p-2 d-flex">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Basic Example - Horizontal Layout</h2>
+                          <ul class="header-dropdown">
+                              <li class="dropdown">
+                                  <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                      <li><a href="javascript:void(0);">Action</a></li>
+                                      <li><a href="javascript:void(0);">Another Action</a></li>
+                                      <li><a href="javascript:void(0);">Something else</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="body">
+                          <div id="wizard_horizontal">
+                              <h2>First Step</h2>
+                              <section>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
+                                      arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
+                                      dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
+                                      dolor, tristique ac tempus nec, iaculis quis nisi. </p>
+                              </section>
+                              <h2>Second Step</h2>
+                              <section>
+                                  <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
+                                      ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
+                                      tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
+                                      nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
+                                      a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
+                                      arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                      velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                      iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
+                              </section>
+                              <h2>Third Step</h2>
+                              <section>
+                                  <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                      condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                      Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                      Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                      commodo lectus sollicitudin in auctor mauris venenatis. </p>
+                              </section>
+                              <h2>Forth Step</h2>
+                              <section>
+                                  <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                      vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                      ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                      Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                      tortor. </p>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Basic Example - Vertical Layout</h2>
+                          <ul class="header-dropdown">
+                              <li class="dropdown">
+                                  <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                      <li><a href="javascript:void(0);">Action</a></li>
+                                      <li><a href="javascript:void(0);">Another Action</a></li>
+                                      <li><a href="javascript:void(0);">Something else</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="body">
+                          <div id="wizard_vertical">
+                              <h2>First Step</h2>
+                              <section>
+                                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
+                                      arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
+                                      dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
+                                      dolor, tristique ac tempus nec, iaculis quis nisi. </p>
+                              </section>
+                              <h2>Second Step</h2>
+                              <section>
+                                  <p> Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
+                                      ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
+                                      tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
+                                      nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
+                                      a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
+                                      arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                      velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                      iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus. </p>
+                              </section>
+                              <h2>Third Step</h2>
+                              <section>
+                                  <p> Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                      condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                      Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                      Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                      commodo lectus sollicitudin in auctor mauris venenatis. </p>
+                              </section>
+                              <h2>Forth Step</h2>
+                              <section>
+                                  <p> Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                      vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                      ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                      Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                      tortor. </p>
+                              </section>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="row clearfix">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="card">
+                      <div class="header">
+                          <h2>Advanced Form Example With Validation</h2>
+                          <ul class="header-dropdown">
+                              <li class="dropdown">
+                                  <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                      <li><a href="javascript:void(0);">Action</a></li>
+                                      <li><a href="javascript:void(0);">Another Action</a></li>
+                                      <li><a href="javascript:void(0);">Something else</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </div>
+                      <div class="body">
+                          <form id="wizard_with_validation" method="POST">
+                              <h3>Account Information</h3>
+                              <fieldset>
+                                  <div class="form-group form-float">
+                                      <input type="text" class="form-control" placeholder="Username *" name="username" required>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <input type="password" class="form-control" placeholder="Password *" name="password" id="password" required>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <input type="password" class="form-control" placeholder="Confirm Password *" name="confirm" required>
+                                  </div>
+                              </fieldset>
+                              <h3>Profile Information</h3>
+                              <fieldset>
+                                  <div class="form-group form-float">
+                                      <input type="text" name="name" placeholder="First Name *" class="form-control" required>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <input type="text" name="surname" placeholder="Last Name *" class="form-control" required>
+                                  </div>
+                                  <div class="form-group form-float">
+                                          <input type="email" name="email" placeholder="Email *" class="form-control" required>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <textarea name="address" cols="30" rows="3" placeholder="Address *" class="form-control no-resize" required></textarea>
+                                  </div>
+                                  <div class="form-group form-float">
+                                      <input min="18" type="number" name="age" placeholder="Age *" class="form-control" required>
+                                      <div class="help-info">The warning step will show up if age is less than 18</div>
+                                  </div>
+                              </fieldset>
+                              <h3>Terms Conditions - Finish</h3>
+                              <fieldset>
+                                  <input id="acceptTerms-2" name="acceptTerms" type="checkbox" required>
+                                  <label for="acceptTerms-2">I agree with the Terms and Conditions.</label>
+                              </fieldset>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+    </div>
+
+  </div>
+
+<!-- Show the cropped image in modal -->
+<div class="modal docs-cropped" id="getCroppedCanvasModal" aria-hidden="true" aria-labelledby="getCroppedCanvasTitle" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="title" id="getCroppedCanvasModal">Cropped</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+              <a class="btn btn-primary" id="download" href="javascript:void(0);" download="cropped.jpg">Download</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Javascript -->
+<script src="assets/bundles/libscripts.bundle.js"></script>
+<script src="assets/bundles/vendorscripts.bundle.js"></script>
+
+<script src="assets/vendor/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script> <!-- Bootstrap Colorpicker Js -->
+<script src="assets/vendor/jquery-inputmask/jquery.inputmask.bundle.js"></script> <!-- Input Mask Plugin Js -->
+<script src="assets/vendor/jquery.maskedinput/jquery.maskedinput.min.js"></script>
+<script src="assets/vendor/multi-select/js/jquery.multi-select.js"></script> <!-- Multi Select Plugin Js -->
+<script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.js"></script> <!-- Bootstrap Tags Input Plugin Js -->
+<script src="assets/vendor/nouislider/nouislider.js"></script> <!-- noUISlider Plugin Js -->
+
+
+<!-- page js file -->
+<script src="assets/bundles/mainscripts.bundle.js"></script>
+<script src="../js/pages/forms/advanced-form-elements.js"></script>
+</body>
+</html>
+

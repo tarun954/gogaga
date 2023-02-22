@@ -1,0 +1,9 @@
+
+.input-group-text:hover{
+    background-color: #6c757d;
+    color: white;
+}
+.form-c{
+    border-radius: 5px;
+    border: 1px solid grey;
+}

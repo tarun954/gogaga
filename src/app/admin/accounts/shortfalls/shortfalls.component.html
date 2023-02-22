@@ -1,0 +1,67 @@
+ 
+    <div class="container-fluid">
+      <div class="block-header">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h2>Shortfalls</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                    <li class="breadcrumb-item">Accounts</li>
+                    <li class="breadcrumb-item active">Shortfalls</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex flex-row-reverse">
+                    <div class="page_action">
+                      <button  class="btn btn-secondary" [routerLink]="['/accounts/shortfallform']" routerLinkActive="router-link-active" >Create Shortfall</button>
+                    </div>
+                    <div class="p-2 d-flex">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <div class="col-md-12">
+          <div class="card">
+            <div class="row clearfix">
+              <div class="col-md-6 header">
+                <h4>Partner Short Falls</h4>
+              </div>
+            </div>
+            <div class="body">
+              <div class="table-responsive">
+                <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                    <thead>
+                        <tr>
+                            <th>Partner Name</th>
+                            <th>GHRN ID</th>
+                            <th>Transaction Date</th>
+                            <th>Short Fall Amount</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Arun
+                        </td>
+                        <td>GHRN12345</td>
+                        <td> 12-DEC-2022 </td>
+                        <td>10,000</td>
+                        <td>Pending</td>
+                        <td><button class="btn btn-primary">Clear Shortfall</button></td>
+                    </tr>
+
+                </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+    </div> 

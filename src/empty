@@ -1,0 +1,1703 @@
+<div class="row clearfix">
+                                        <div class="col-lg-12">
+                                            <div class="card">
+                                                <div class="header">
+                                                    <h2>Hover Rows <small>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</small> </h2>
+                                                </div>
+                                                <div class="body table-responsive">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Location</th>
+                                                                <th>ContactPerson</th>
+                                                                <th>ContactNumber</th>
+                                                                <th>HotelStandard</th>
+                                                                <th>Checkin Date</th>
+                                                                <th>Checkout Date</th>
+                                                                <th>RoomStandared</th>
+                                                                <th>MealPlan</th>
+                                                                <th>Vendor</th>
+                                                                <th>Confirmation</th>
+                                                                <th>RoomOccupancy</th>
+                                                                <th>No.ofRooms</th>
+                                                                <th>No.ofNights</th>
+                                                                <th>PerroomCost</th>
+                                                                <th>TotalRoomCost</th>
+                                                                <th>HotelSupplimentaries</th>
+                                                                <th>SupplimentariesCost</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><input type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"><br/>
+                                                                    <input type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                <td><input type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                <td><input type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                <td> <select   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" class="custom-select" id="inputGroupSelect01">
+                                                                    <option selected>Choose...</option>
+                                                                    <option value="1">1 Star</option>
+                                                                    <option value="1">2 Star</option>
+                                                                    <option value="1">3 Star</option>
+                                                                    <option value="1">4 Star</option>
+                                                                    <option value="1">5 Star</option>
+                                                                    <option value="1">UnRated</option>
+                                                                    <option value="1">Google Rating 1 Star</option>
+                                                                    <option value="1">Google Rating 2 Star</option>
+                                                                    <option value="1">Google Rating 3 Star</option>
+                                                                    <option value="1">Google Rating 4 Star</option>
+                                                                    <option value="1">Google Rating 5 Star</option>
+                                                                  </select></td>
+                                                                  <td><input type="date" value={} class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><input type="text"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
+                                                                  <td> <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /> </td>
+                                                                  <td> <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><div class="custom-file">
+                                                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label></div></td>
+                                                                  <td><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td><input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                  <td>123</td><!--relfect the mathmatical calculation of no.ofrooms,nights and cost of room-->
+                                                                  <td><select   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" class="custom-select" id="inputGroupSelect01">
+                                                                    <option selected>Choose...</option>
+                                                                    <option value="1">Honeymoon Inclusions</option>
+                                                                    <option value="1">Activity</option>
+                                                                    <option value="1">Early Checkin</option>
+                                                                    <option value="1">Late Checkout</option>
+                                                                    <option value="1">Extra Breakfast</option>
+                                                                    <option value="1">Extra Meal</option>
+                                                                    <option value="1">Room Heater</option>
+                                                                    <option value="1">Excursions</option>
+                                                                    <option value="1">Others..</option>
+                                                                  </select></td>
+                                                                  <td><input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="block-header">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                                <h2>Case Analysis</h2>
+                                                <ul class="breadcrumb">
+                                                    <li class="breadcrumb-item"><a [routerLink]="['/admin/dashboard']" routerLinkActive="router-link-active" ><i class="fa fa-dashboard"></i></a></li>
+                                                    <li class="breadcrumb-item">Bookings</li>
+                                                    <li class="breadcrumb-item active">Case Analysis</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                      </div>
+                                          <div class="row clearfix">
+                                            <div class="col-lg-12 col-md-12  col-sm-12 ">
+                                              <div class="col-md-12">
+                                                <div class="card">
+                                                  <div class="header">
+                                                    <h4>GHRN12345</h4>
+                                                  </div> 
+                                                  <div class="body">
+                                                    <div class="row clearfix">
+                                                      <div class="col-md-12">
+                                                        <div class="card"> <!--form info card-->
+                                    
+                                                            <div class="header">
+                                                                <h2>Customer Info</h2>
+                                                            </div>
+                                                             <div class="body">
+                                                              <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <thead class="thead-dark">
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                            <th class="text-right">Detatils</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                    
+                                                                        <tr>
+                                                                            <td class="col-md-9">Customer Name</td>
+                                                                            <td class="col-md-3 text-right"><input type="text" value="Vinay" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="col-md-9">Email ID</td>
+                                                                            <td class="col-md-3 text-right"><input type="text" value="Vinay@gmail.com" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="col-md-9">Contact No.</td>
+                                                                            <td class="col-md-3 text-right"><input type="tel" value="99898896567" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                    
+                                    
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                             </div>
+                                                            </div>
+                                                    </div>
+                                                      <div class="col-md-12">
+                                                          <div class="card"> <!--form info card-->
+                                    
+                                                              <div class="header">
+                                                                  <h2>Form Info</h2>
+                                                              </div>
+                                                               <div class="body">
+                                                                <div class="table-responsive">
+                                                                  <table class="table">
+                                                                      <thead class="thead-dark">
+                                                                          <tr>
+                                                                              <th>Description</th>
+                                                                              <th class="text-right">Detatils</th>
+                                                                          </tr>
+                                                                      </thead>
+                                                                      <tbody>
+                                    
+                                                                          <tr>
+                                                                              <td class="col-md-9">Form Raisedf by</td>
+                                                                              <td class="col-md-3 text-right"><strong>Akshitha</strong></td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                              <td class="col-md-9">Package Type:</td>
+                                                                              <td class="col-md-3 text-right"><strong>Budget</strong></td>
+                                                                          </tr>
+                                                                          <tr>
+                                                                              <td class="col-md-9">Customer Type:</td>
+                                                                              <td class="col-md-3 text-right"><strong>New Customer</strong></td>
+                                                                          </tr>
+                                    
+                                    
+                                                                      </tbody>
+                                                                  </table>
+                                                              </div>
+                                                               </div>
+                                                              </div>
+                                                      </div>
+                                                      <div class="col-md-12"><!--Partner Info-->
+                                                                  <div    class="card">
+                                                                      <div class="header">
+                                                                          <h2>Partner Info</h2>
+                                                                      </div>
+                                                                       <div class="body">
+                                                                        <div class="table-responsive">
+                                                                          <table class="table">
+                                                                              <thead class="thead-dark">
+                                                                                  <tr>
+                                                                                      <th>Description</th>
+                                                                                      <th class="text-right">Detatils</th>
+                                                                                  </tr>
+                                                                              </thead>
+                                                                              <tbody>
+                                    
+                                                                                  <tr>
+                                                                                      <td class="col-md-9"><h5>Srikanth</h5><br/><small>Sales Partner</small>-SP 3486</td>
+                                                                                      <td class="col-md-3 text-right">Slab-10%</td>
+                                                                                  </tr>
+                                                                                  <div class="input-group" id="adv-search">
+                                                                                    <input type="text" class="form-control" placeholder="Search here..." />
+                                                                                    <div class="input-group-btn">
+                                                                                        <div class="btn-group" role="group">
+                                                                                            <div class="dropdown dropdown-lg">
+                                                                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                                                                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                                                    <form class="form-horizontal" role="form">
+                                                                                                        <div class="form-group">
+                                                                                                        <label for="filter">Filter by</label>
+                                                                                                        <select class="form-control">
+                                                                                                            <option value="0" selected>All Iconic</option>
+                                                                                                            <option value="1">Featured</option>
+                                                                                                            <option value="2">Most popular</option>
+                                                                                                            <option value="3">Top rated</option>
+                                                                                                            <option value="4">Most commented</option>
+                                                                                                        </select>
+                                                                                                        </div>
+                                                                                                        <div class="form-group">
+                                                                                                            <input class="form-control" type="text" placeholder="Author" />
+                                                                                                        </div>
+                                                                                                        <div class="form-group">
+                                                                                                            <input class="form-control" type="text" placeholder="Contains the words" />
+                                                                                                        </div>
+                                                                                                        <button type="submit" class="btn btn-primary btn-block">Search</button>
+                                                                                                    </form>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                    
+                                                                                </div>
+                                                                                  <!-- <tr>
+                                                                                      <td class="col-md-9"><strong>Hemanth</strong><br/><small>Super Partner</small></td>
+                                                                                      <td class="col-md-3 text-right"><strong>Slab-1%</strong></td>
+                                                                                  </tr>
+                                                                                  <tr>
+                                                                                    <td class="col-md-9"><strong>Varun</strong><br/><small>Super Partner</small></td>
+                                                                                    <td class="col-md-3 text-right"><strong>Slab-1%</strong></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                  <td class="col-md-9"><strong>Arun</strong><br/><small>Super Partner</small></td>
+                                                                                  <td class="col-md-3 text-right"><strong>Slab-1%</strong></td>
+                                                                              </tr>
+                                                                              <tr>
+                                                                                <td class="col-md-9"><strong>Total</strong></td>
+                                                                                <td class="col-md-3 text-right"><strong>13%</strong></td>
+                                                                            </tr> -->
+                                    
+                                    
+                                                                              </tbody>
+                                                                          </table>
+                                                                           <table  class="table">
+                                                                            <tbody>
+                                    
+                                                                              <tr>
+                                                                                  <td class="col-md-9"><h5>Srikanth</h5><br/><small>Sales Partner</small>-SP 3486</td>
+                                                                                  <td class="col-md-3 text-right"> <input type="text" value="10%" class="form-control" placeholder="Search here..." /></td>
+                                                                              </tr>
+                                                                              </tbody>
+                                                                           </table>
+                                                                      </div>
+                                                                       </div>
+                                                                  </div>
+                                                      </div>
+                                                      <div class="col-md-12">
+                                                        <div class="card"> <!--form info card-->
+                                    
+                                                            <div class="header">
+                                                                <h2>Holiday Info</h2>
+                                                            </div>
+                                                             <div class="body">
+                                                              <div class="table-responsive">
+                                                                <table class="table">
+                                                                    <thead class="thead-dark">
+                                                                        <tr>
+                                                                            <th>Description</th>
+                                                                            <th class="text-right">Detatils</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                    
+                                                                        <tr>
+                                                                            <td class="col-md-9">Start</td>
+                                                                            <td class="col-md-3 text-right"> <input type="text" value="Hyderabad" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td class="col-md-9">Destination</td>
+                                                                          <td class="col-md-3 text-right"> <input type="text" value="Goa" class="form-control" placeholder="Search here..." /></td>
+                                                                      </tr>
+                                                                        <tr>
+                                                                            <td class="col-md-9">Start Date</td>
+                                                                            <td class="col-md-3 text-right"> <input type="date" value="10%" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="col-md-9">End Date</td>
+                                                                            <td class="col-md-3 text-right"><input type="date" value="10%" class="form-control" placeholder="Search here..." /></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                          <td class="col-md-9">Duration</td>
+                                                                          <td class="col-md-3 text-right"><input type="text" value="3Nights/4Days" class="form-control" placeholder="Search here..." /></td>
+                                                                      </tr>
+                                    
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                             </div>
+                                                            </div>
+                                                      </div>
+                                    
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                                <div class="col-md-12">
+                                                  <div class="card"><!--customer details--> 
+                                                            <div class="body">
+                                                                <div>
+                                                                    <h4>Customer Details</h4>
+                                                                </div> 
+                                                              <div class="row clearfix">
+                                                                <div class="col-md-6">
+                                                                    <div class="card"><!--pax details-->
+                                                                        <div class="header">
+                                                                            <h2>Pax Details</h2>
+                                                                        </div>
+                                                                        <div class="body social_counter">
+                                                                            <ul class=" list-unstyled basic-list">
+                                                                                <li>  <div class="input-group input-group-sm mb-3">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Adults(12+ Years)</span>
+                                                                                    </div>
+                                                                                    <input type="number"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                </div></li>
+                                                                                <li> <div class="input-group input-group-sm mb-3">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Children(2-11 Years)</span>
+                                                                                    </div>
+                                                                                    <input type="number"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                </div></li>
+                                                                                <li> <div class="input-group input-group-sm mb-3">
+                                                                                    <div class="input-group-prepend">
+                                                                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Infants(0-2 Years)</span>
+                                                                                    </div>
+                                                                                    <input type="number"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                </div> </li>
+                                                                                 <li>
+                                                                                    <div class="input-group input-group-sm mb-3">
+                                                                                        <div class="input-group-prepend">
+                                                                                            <span class="input-group-text" id="inputGroup-sizing-sm"> Total Passengers</span>
+                                                                                        </div>
+                                                                                        <input type="number"  value="4" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                    </div>
+                                                                                 </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6"><!--confirmation info-->
+                                                                    <div class="card">
+                                                                        <div class="header">
+                                                                            <strong>Confirmation Info</strong>
+                                                                        </div>
+                                                                        <div class="body">
+                                                                            <span for="basic-url">Package Confirmed Date</span>
+                                                                             <div class="input-group mb-3">
+                                                                                <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                                                             </div>
+                                                                                <span for="basic-url">Sales Team</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <select class="custom-select" id="inputGroupSelect01">
+                                                                                    <option selected>Choose...</option>
+                                                                                    <option value="1">Team 1</option>
+                                                                                    <option value="2">Team 2</option>
+                                                                                    <option value="3">Team 3</option>
+                                                                                    <option value="4">Team 4</option>
+                                                                                    <option value="5">Team 5</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                                <span for="basic-url">Itinerary Team</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <select class="custom-select" id="inputGroupSelect01">
+                                                                                    <option selected>Choose...</option>
+                                                                                    <option value="1">Team 1</option>
+                                                                                    <option value="2">Team 2</option>
+                                                                                    <option value="3">Team 3</option>
+                                                                                    <option value="4">Team 4</option>
+                                                                                    <option value="5">Team 5</option>
+                                                                                  </select>
+                                                                                </div>
+                                                                                <span>Itinerary Executive</span>
+                                                                                <div class="input-group mb-3">
+                                                                                    <input type="text" value="Kalyan Reddy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  disabled />
+                                                                                </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                    
+                                                                  <div class="col-md-12 "><!--payment info-->
+                                                                    <div class="card">
+                                                                        <div class="header">
+                                                                            <h2>Payment Info</h2>
+                                                                        </div>
+                                                                        <div class="body">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table">
+                                                                                    <thead class="thead-dark">
+                                                                                        <tr>
+                                                                                            <th>Description</th>
+                                                                                            <th class="text-right">Amount</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                    
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Total Package Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Land Package Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Flight Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="text-right">
+                                                                                                <p>Extra Fees:</p>
+                                                                                                <p>Total Amount:</p>
+                                                                                                <p>Advance Amout:</p>
+                                                                                                <p>Balance Due:</p>
+                                                                                            </td>
+                                                                                            <td class="text-right">
+                                                                                                <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                                                <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                                                <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                                                <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="text-right">
+                                                                                                <h6>Total:</h6>
+                                                                                            </td>
+                                                                                            <td class="text-danger text-right">
+                                                                                                 <i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                  </div>
+                                    
+                                                              </div>
+                                                            </div>
+                                                          
+                                                    </div>
+                                                </div>
+                                    
+                                            </div>
+                                          </div>
+                                              <!-- travel information (total taravel cost table is pending) -->
+                                    
+                                              <div class="row clearfix">
+                                                <div class="col-lg-12 col-md-12  col-sm-12 ">
+                                                  <div class="col-md-12">
+                                                    <div class="card"><!--Flight Information-->
+                                                      <div class="body"><!--Flight Information-->
+                                                              <div class="input-group mb-3">
+                                                                  <div class="card"><!--Choosing transport-->
+                                                                      <div class="header">
+                                                                          <h4>Transport Info<small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small></h4>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                        <li class="d-flex align-items-center mb-2">
+                                                                          <label class="toggle-switch theme-switch">
+                                                                              <input type="checkbox">
+                                                                              <span class="toggle-switch-slider"></span>
+                                                                          </label>
+                                                                          <span class="ml-3">If Correct</span>
+                                                                      </li>
+                                                                       </div>
+                                                                      <div class="body">
+                                                                          <div class="row clearfix">
+                                                                              <div class="col-md-6">
+                                                                                  <select class="custom-select" id="inputGroupSelect01">
+                                                                                      <option selected>Choose...</option>
+                                                                                      <option value="1">Flight</option>
+                                                                                      <option value="2">Train</option>
+                                                                                      <option value="3">Bus</option>
+                                                                                    </select>
+                                                                              </div>
+                                                                              <div class="col-md-6">
+                                                                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                    
+                                                                  </div>
+                                                                  <div class="card"><!--flight pricing and etc-->
+                                                                      <div class="body">
+                                                                        <div class="row clearfix">
+                                                                             <div class="row clearfix">
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span for="basic-url">Flight Source</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                        <input type="text" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                      </div>
+                                                                                      </div>
+                                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span for="basic-url">Price as on</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                   <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                     <span for="basic-url">Choosen Type</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                        <select class="custom-select" id="inputGroupSelect01">
+                                                                                          <option selected>Choose...</option>
+                                                                                          <option value="1">One Way</option>
+                                                                                          <option value="2">Return</option>
+                                                                                        </select>
+                                                                                      </div>
+                                                                                   </div>
+                                                                              </div>
+                                                                        </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="card"><!--Flight DEtails One way-->
+                                                                      <div class="header">
+                                                                          <h2>Flight Info</h2>
+                                                                      </div>
+                                                                      <div class="body">
+                                                                          <div class="row clearfix">
+                                                                              <div class="col-md-12">
+                                                                                  <span for="basic-url">Summary</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-12">
+                                                                                  <span>Onward Flight Details</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                    
+                                                                              </div>
+                                    
+                                                                              <div class="col-md-12">
+                                                                                  <span>IF Connecting Flights</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <div class="input-group-prepend">
+                                                                                          <div class="input-group-text">
+                                                                                          <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-12" >
+                                                                                  <div class="row clearfix">
+                                                                                      <div class="col-md-6">
+                                                                                          <span>Checkin Baggage (weight)</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                           </div>
+                                                                                      </div>
+                                                                                      <div class="col-md-6">
+                                                                                          <span>Flight Duration</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                          </div>
+                                    
+                                                                                      </div>
+                                                                                  </div>
+                                                                             </div>
+                                                                             <div class="col-md-12 ">
+                                                                              <div class="card">
+                                                                                  <div class="body">
+                                                                                      <div class="table-responsive">
+                                                                                          <table class="table">
+                                                                                              <thead class="thead-dark">
+                                                                                                  <tr>
+                                                                                                      <th>Description</th>
+                                                                                                      <th class="text-right">Amount</th>
+                                                                                                  </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                    
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Flight Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Additional Baggage Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Total Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                    
+                                    
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                    
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="card"><!--Flight DEtails Two way-->
+                                                                      <div class="header">
+                                                                          <h2>Flight Info</h2>
+                                                                      </div>
+                                                                      <div class="body">
+                                                                          <div class="row clearfix">
+                                                                              <div class="col-md-12">
+                                                                                  <span for="basic-url">Summary</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-12">
+                                                                                  <span>Onward Flight Details</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-12">
+                                                                                  <span>Return Flight Details</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                    
+                                                                              </div>
+                                    
+                                                                              <div class="col-md-12">
+                                                                                  <span>IF Connecting Flights</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <div class="input-group-prepend">
+                                                                                          <div class="input-group-text">
+                                                                                          <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-12" >
+                                                                                  <div class="row clearfix">
+                                                                                      <div class="col-md-6">
+                                                                                          <span>Checkin Baggage (weight)</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                           </div>
+                                                                                      </div>
+                                                                                      <div class="col-md-6">
+                                                                                          <span>Flight Duration</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                          </div>
+                                    
+                                                                                      </div>
+                                                                                  </div>
+                                                                             </div>
+                                                                             <div class="col-md-12 ">
+                                                                              <div class="card">
+                                                                                  <div class="body">
+                                                                                      <div class="table-responsive">
+                                                                                          <table class="table">
+                                                                                              <thead class="thead-dark">
+                                                                                                  <tr>
+                                                                                                      <th>Description</th>
+                                                                                                      <th class="text-right">Amount</th>
+                                                                                                  </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                    
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Flight Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Additional Baggage Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Total Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                    
+                                    
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                    
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                   <div class="col-md-12">
+                                                    <div class="card"><!--Train Details-->
+                                                      <div class="header">
+                                                          <h4>Train Details</h4>
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                            <li class="d-flex align-items-center mb-2">
+                                                              <label class="toggle-switch theme-switch">
+                                                                  <input type="checkbox">
+                                                                  <span class="toggle-switch-slider"></span>
+                                                              </label>
+                                                              <span class="ml-3">If Correct</span>
+                                                          </li>
+                                                           </div>
+                                                          <div class="body">
+                                                              <div class="input-group mb-3">
+                                                                  <div class="card"><!--Train pricing and etc-->
+                                                                      <div class="body">
+                                                                             <div class="row clearfix">
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span for="basic-url">Train Source</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                        <input type="text" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                      </div>
+                                                                                      </div>
+                                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span for="basic-url">Price as on</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                    </div>
+                                                                                   <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                     <span for="basic-url">Choosen Type</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                        <select class="custom-select" id="inputGroupSelect01">
+                                                                                          <option selected>Choose...</option>
+                                                                                          <option value="1">One Way</option>
+                                                                                        </select>
+                                                                                      </div>
+                                                                                   </div>
+                                                                        </div>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="card"><!--Train DEtails-->
+                                                                      <div class="header">
+                                                                          <h2>Train Info</h2>
+                                                                      </div>
+                                                                      <div class="body">
+                                                                          <div class="row clearfix">
+                                                                              <div class="col-md-12">
+                                                                                  <span>Train Name&No.</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                  </div>
+                                                                              </div>
+                                                                              <div class="col-md-6">
+                                                                                  <span>From</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                   </div>
+                                                                              </div>
+                                                                              <div class="col-md-6">
+                                                                                  <span>To</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                   </div>
+                                                                              </div>
+                                    
+                                                                              <div class="col-md-12" >
+                                                                                  <div class="row clearfix">
+                                                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                          <span>Train Duration</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                          <span>Class</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                          </div>
+                                                                                      </div>
+                                                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                          <span>Availability</span>
+                                                                                          <div class="input-group mb-3">
+                                                                                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                          </div>
+                                                                                      </div>
+                                                                                  </div>
+                                                                             </div>
+                                                                             <div class="col-md-12 ">
+                                                                              <div class="card">
+                                                                                  <div class="body">
+                                                                                      <div class="table-responsive">
+                                                                                          <table class="table">
+                                                                                              <thead class="thead-dark">
+                                                                                                  <tr>
+                                                                                                      <th>Description</th>
+                                                                                                      <th class="text-right">Amount</th>
+                                                                                                  </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Number of Pax</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Train Cost(per person)</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">GST</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Total Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                    
+                                    
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                            </div>
+                                                                          </div>
+                                    
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                    </div>
+                                                   </div>
+                                                   <div class="col-md-12">
+                                                    <div class="card"><!--Bus details-->
+                                                      <div class="header">
+                                                          <h4>Bus Details</h4>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <li class="d-flex align-items-center mb-2">
+                                                          <label class="toggle-switch theme-switch">
+                                                              <input type="checkbox">
+                                                              <span class="toggle-switch-slider"></span>
+                                                          </label>
+                                                          <span class="ml-3">If Correct</span>
+                                                      </li>
+                                                       </div>
+                                                      <div class="body">
+                                                          <div class="input-group mb-3">
+                                                              <div class="card"><!--Bus pricing and etc-->
+                                                                  <div class="body">
+                                                                         <div class="row clearfix">
+                                                                              <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                  <span for="basic-url">Bus Source</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                    <input type="text" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                                                  </div>
+                                                                                  </div>
+                                                                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                  <span for="basic-url">Price as on</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                      <input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                  </div>
+                                                                                </div>
+                                                                               <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                 <span for="basic-url">Choosen Type</span>
+                                                                                  <div class="input-group mb-3">
+                                                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                                                      <option selected>Choose...</option>
+                                                                                      <option value="1">One Way</option>
+                                                                                    </select>
+                                                                                  </div>
+                                                                               </div>
+                                                                    </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="card"><!--Bus DEtails-->
+                                                                  <div class="header">
+                                                                      <h2>Bus Info</h2>
+                                                                  </div>
+                                                                  <div class="body">
+                                                                      <div class="row clearfix">
+                                                                          <div class="col-md-12">
+                                                                              <span>Bus Name</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>From</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>To</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                    
+                                                                          <div class="col-md-12" >
+                                                                              <div class="row clearfix">
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span>Start Date&Time</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span>Reach Date&Time</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span>Duration</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                  </div>
+                                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                                      <span>Class</span>
+                                                                                      <div class="input-group mb-3">
+                                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                         </div>
+                                                                         <div class="col-md-12 ">
+                                                                          <div class="card">
+                                                                              <div class="body">
+                                                                                  <div class="table-responsive">
+                                                                                      <table class="table">
+                                                                                          <thead class="thead-dark">
+                                                                                              <tr>
+                                                                                                  <th>Description</th>
+                                                                                                  <th class="text-right">Amount</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">Number of Pax</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">Bus Cost(per person)</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">Total Cost</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+                                    
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                   </div>
+                                                  <div class="col-md-12">
+                                                    <div class="card"><!--Hotel Details-->
+                                                      <div class="header">
+                                                          <h4>Hotel Details</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <li class="d-flex align-items-center mb-2">
+                                                          <label class="toggle-switch theme-switch">
+                                                              <input type="checkbox">
+                                                              <span class="toggle-switch-slider"></span>
+                                                          </label>
+                                                          <span class="ml-3">If Correct</span>
+                                                      </li>
+                                                       </div>
+                                                      <div class="header"></div>
+                                                      <div class="body">
+                                                          <div class="row clearfix">
+                                                              <span>Add Accomedation</span>
+                                                              <div class="col-md-6">
+                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="body">
+                                                          <div class="input-group mb-3">
+                                                              <div class="card">
+                                                                  <div class="body">
+                                                                      <div class="row clearfix">
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Location</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                             <span for="basic-url">Hotel Name</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Contact Person</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Contact Number</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="tel" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Hotel Category</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Vendor</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Check-in</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Check-out</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Room Category</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                             <span for="basic-url">Meal Plan</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Room Occupancy</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Confirmation</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <div class="input-group-prepend">
+                                                                                      <span class="input-group-text">Upload</span>
+                                                                                  </div>
+                                                                                  <div class="custom-file">
+                                                                                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                                                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                          <div class="col-md-12">
+                                                                              <span for="basic-url">Hotel Supplementaries</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></textarea>
+                                    
+                                                                                </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="body">
+                                                          <div class="input-group mb-3">
+                                                              <div class="card">
+                                                                  <div class="body">
+                                                                      <div class="row clearfix">
+                                                                          <div class="col-md-12 ">
+                                                                              <div class="card">
+                                                                                  <div class="body">
+                                                                                      <div class="table-responsive">
+                                                                                          <table class="table">
+                                                                                              <thead class="thead-dark">
+                                                                                                  <tr>
+                                                                                                      <th>Description</th>
+                                                                                                      <th class="text-right">Values</th>
+                                                                                                  </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">No.of Rooms</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-building"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">No.of Nights</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-moon-o"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Per Room Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Supplimentary Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Total Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                            </div>
+                                    
+                                    
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-12">
+                                                    <div class="card"><!--cab Details-->
+                                                      <div class="header">
+                                                          <h4>Cab Details</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                        <li class="d-flex align-items-center mb-2">
+                                                          <label class="toggle-switch theme-switch">
+                                                              <input type="checkbox">
+                                                              <span class="toggle-switch-slider"></span>
+                                                          </label>
+                                                          <span class="ml-3">If Correct</span>
+                                                      </li>
+                                                       </div>
+                                                      <div class="body">
+                                                          <div class="row clearfix">
+                                                              <span>Add Accomedation</span>
+                                                              <div class="col-md-6">
+                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                              </div>
+                                                              <div class="col-md-6">
+                                                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="body">
+                                                          <div class="input-group mb-3">
+                                                              <div class="card">
+                                                                  <div class="body">
+                                                                      <div class="row clearfix">
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Location</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Source Name</span>
+                                                                                 <div class="input-group mb-3">
+                                                                                    <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                 </div>
+                                                                           </div>
+                                                                          <div class="col-md-6">
+                                                                             <span for="basic-url">Travels Name</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Contact Number</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="tel" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Vehicle Name</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Vehicle Type</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Seating Capacity</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span>Provisioned for</span>
+                                                                              <div class="input-group mb-3">
+                                                                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                               </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Start Date</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Stop Date</span>
+                                                                                <div class="input-group mb-3">
+                                                                                  <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                          <div class="col-md-6">
+                                                                              <span for="basic-url">Verification</span>
+                                                                                <div class="input-group mb-3">
+                                                                                   <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <div class="body">
+                                                          <div class="input-group mb-3">
+                                                              <div class="card">
+                                                                  <div class="body">
+                                                                      <div class="row clearfix">
+                                                                          <div class="col-md-12 ">
+                                                                              <div class="card">
+                                                                                  <div class="body">
+                                                                                      <div class="table-responsive">
+                                                                                          <table class="table">
+                                                                                              <thead class="thead-dark">
+                                                                                                  <tr>
+                                                                                                      <th>Description</th>
+                                                                                                      <th class="text-right">Amount</th>
+                                                                                                  </tr>
+                                                                                              </thead>
+                                                                                              <tbody>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">No.of Units</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Units Per Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                                  <tr>
+                                                                                                      <td class="col-md-9">Total Cab Cost</td>
+                                                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                                  </tr>
+                                                                                              </tbody>
+                                                                                          </table>
+                                                                                      </div>
+                                                                                  </div>
+                                                                              </div>
+                                                                            </div>
+                                    
+                                    
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                               <div class="col-md-12">
+                                                <div class="card"><!--Supplement Details-->
+                                                  <div class="header">
+                                                      <h4>Supplementary Info</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <li class="d-flex align-items-center mb-2">
+                                                      <label class="toggle-switch theme-switch">
+                                                          <input type="checkbox">
+                                                          <span class="toggle-switch-slider"></span>
+                                                      </label>
+                                                      <span class="ml-3">If Correct</span>
+                                                  </li>
+                                                   </div>
+                                                  <div class="body">
+                                                      <div class="row clearfix">
+                                                          <span>Add Accomedation</span>
+                                                          <div class="col-md-6">
+                                                               <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+                                                          <div class="col-md-6">
+                                                              <button class="btn btn-secondary" type="button">Add More+</button>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="body">
+                                                      <div class="input-group mb-3">
+                                                          <div class="card">
+                                                              <div class="body">
+                                                                  <div class="row clearfix">
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Supplementary Type</span>
+                                                                            <div class="input-group mb-3">
+                                                                               <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                            </div>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Supplement Details</span>
+                                                                             <div class="input-group mb-3">
+                                                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                             </div>
+                                                                       </div>
+                                                                      <div class="col-md-6">
+                                                                         <span for="basic-url">Service Location</span>
+                                                                            <div class="input-group mb-3">
+                                                                               <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                            </div>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Vendor Name</span>
+                                                                             <div class="input-group mb-3">
+                                                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                             </div>
+                                                                       </div>
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Contact Number</span>
+                                                                            <div class="input-group mb-3">
+                                                                              <input type="tel" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                            </div>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Start Date</span>
+                                                                            <div class="input-group mb-3">
+                                                                              <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                            </div>
+                                                                      </div>
+                                                                      <div class="col-md-6">
+                                                                          <span for="basic-url">Stop Date</span>
+                                                                            <div class="input-group mb-3">
+                                                                              <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                            </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="body">
+                                                      <div class="input-group mb-3">
+                                                          <div class="card">
+                                                              <div class="body">
+                                                                  <div class="row clearfix">
+                                                                      <div class="col-md-12 ">
+                                                                          <div class="card">
+                                                                              <div class="body">
+                                                                                  <div class="table-responsive">
+                                                                                      <table class="table">
+                                                                                          <thead class="thead-dark">
+                                                                                              <tr>
+                                                                                                  <th>Description</th>
+                                                                                                  <th class="text-right">Amount</th>
+                                                                                              </tr>
+                                                                                          </thead>
+                                                                                          <tbody>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">No.of Units</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">Cost Per Unit</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                              <tr>
+                                                                                                  <td class="col-md-9">Total Supplement Cost</td>
+                                                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                              </tr>
+                                                                                          </tbody>
+                                                                                      </table>
+                                                                                  </div>
+                                                                              </div>
+                                                                          </div>
+                                                                        </div>
+                                    
+                                    
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                               </div>
+                                              <div class="col-md-12 "><!--payment info-->
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>Price Info</h2>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                      <li class="d-flex align-items-center mb-2">
+                                                        <label class="toggle-switch theme-switch">
+                                                            <input type="checkbox">
+                                                            <span class="toggle-switch-slider"></span>
+                                                        </label>
+                                                        <span class="ml-3">If Correct</span>
+                                                    </li>
+                                                     </div>
+                                                    <div class="body">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead class="thead-dark">
+                                                                    <tr>
+                                                                        <th>Description</th>
+                                                                        <th>Percent</th>
+                                                                        <th class="text-right">Amount</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                    
+                                                                    <tr>
+                                                                        <td>Net Land Cost</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Company Loading on Land Cost</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Cost to Company</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Partner Commision</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Cost to be sold</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>GST</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Landing Cost after GST&Commissions</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Actual Flight Cost</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Loading(%)on Flight Cost</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Total Flight Cost</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Total Travel Insurance</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Cruise Cost/Chopper/others(Vendor Price)</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Agents Commision on Cruise</td>
+                                                                        <td><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                                                        <td><i class="fa fa-inr"></i> <input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-right">
+                                                                            <p>EMI Cost:</p>
+                                                                            <p>Total Pax:</p>
+                                    
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                            <p><i class="fa fa-users"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-right">
+                                                                            <p>Package Cost Per Person(with Flights):</p>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-right">
+                                                                            <p>Land Cost per Person:</p>
+                                                                            <p>Flight Cost per Person:</p>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                            <p><i class="fa fa-inr"></i><input class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                        </td>
+                                    
+                                                                    </tr>
+                                    
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                               <div class="col-md-12">
+                                                <div class="card"><!--day wise itinerary-->
+                                                  <div class="header">
+                                                      <h4>Daywise Itinerary</h4>
+                                                  </div>
+                                                   
+                                                  <div class="body">
+                                                      <div class="row clearfix">
+                                                          <div class="col-md-12">
+                                                               <div class="row clearfix">
+                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                      <span>Day-1</span>
+                                                                      <div class="input-group mb-3">
+                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                      <span>Location</span>
+                                                                      <div class="input-group mb-3">
+                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                      <span>Kms</span>
+                                                                      <div class="input-group mb-3">
+                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                      <span>Meal Plan</span>
+                                                                      <div class="input-group mb-3">
+                                                                          <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                      </div>
+                                                                  </div>
+                                                               </div>
+                                                          </div>
+                                                          <span>Tour Plan</span>
+                                                          <div class="col-md-12">
+                                                              <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  ></textarea>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                               </div>
+                                               <div class="col-md-12">
+                                                <div class="card"><!--Inclusions-->
+                                                  <div class="header">
+                                                      <h4>Package Inclusions</h4>
+                                                  </div>
+                                                  <div class="body">
+                                                      <div class="row clearfix">
+                                                          <div class="col-lg-6 col-md-12">
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox"><span>5 Nights Hotel Accomodation in 3 Star</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox" checked><span>Meet and Great at Chandigarh Airport</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox"><span>Daily Breakfast(no breakfast on Day 1) and Daily Dinner(no Dinner on Last Day)</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox"><span>All Tours and Transfers</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox" checked><span>Sightseeing's as per Itinerary</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox"><span>Water Bottles and Hot Water as per hotel policies</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox"><span>Customer Support 24X7</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label><input type="checkbox" checked><span>All Applicable Taxes including GST</span></label>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                               </div>
+                                               <div class="col-md-12">
+                                                <div class="card"><!--exclusions-->
+                                                  <div class="header">
+                                                      <h4>Package Exclusions</h4>
+                                                  </div>
+                                                  <div class="body">
+                                                      <div class="row clearfix">
+                                                          <div class="col-lg-6 col-md-12">
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Lunch or any other extra meals</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Personal Expenses</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Early Checkin and Late Checkout</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Entry Tickets</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Extra Sightseeing's</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Trips for Guides and Drivers</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Rohtang Pass</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Snow Activities and Adventure Activities</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Room heater</span></label>
+                                                              </div>
+                                                              <div class="fancy-checkbox">
+                                                                  <label ><input   type="checkbox"><span>Anything other than mentioned in above Inclusions</span></label>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                </div>
+                                               </div>
+                                              <div class="col-md-12 "><!--Remarks page info-->
+                                                <div class="card">
+                                                    <div class="header">
+                                                        <h2>Package Remarks</h2>
+                                                    </div>
+                                                    <div class="body">
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                                <thead class="thead-grey">
+                                                                    <tr>
+                                                                        <th>Remarks</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                    
+                                                                    <tr>
+                                    
+                                                                        <td><textarea class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea></td>
+                                                                    </tr>
+                                                                     
+                                    
+                                    
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                    
+                                    
+                                        <div style="justify-content: center;" class="input-group-append">
+                                            <button class="btn btn-secondary" type="submit">Confirm Quality</button>
+                                        </div>
