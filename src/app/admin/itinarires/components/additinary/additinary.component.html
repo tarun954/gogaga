@@ -1,566 +1,522 @@
 <div class="container-fluid">
-    <div class="block-header">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <h2>Itinerary Form</h2>
-          <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
-            <li class="breadcrumb-item">Itineraries</li>
-            <li class="breadcrumb-item active">Itinerary Form</li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="d-flex flex-row-reverse">
-            <div class="page_action">
-              <!-- <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
-              <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button> -->
-            </div>
-            <div class="p-2 d-flex">
+  <div class="block-header">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <h2>Itinerary Form</h2>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+          <li class="breadcrumb-item">Itineraries</li>
+          <li class="breadcrumb-item active">Itinerary Form</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="d-flex flex-row-reverse">
+          <div class="page_action">
+            <!-- <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+            <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button> -->
+          </div>
+          <div class="p-2 d-flex">
 
-            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row clearfix">
-      <form [formGroup]="itineraryForm">
-        <div class="col-lg-12 col-md-12  col-sm-12 ">
-          <div class="card">
-            <div class="header">
-              <h4>Add Client</h4>
-            </div>
-            <div class="body">
-              <div class="row clearfix">
+  </div>
+  <div class="row clearfix">
+    <form [formGroup]="itineraryForm">
+      <div class="col-lg-12 col-md-12  col-sm-12 ">
+        <div class="card">
+          <div class="header">
+            <h4>Add Client</h4>
+          </div>
+          <div class="body">
+            <div class="row clearfix">
+              <div class="col-md-6">
+                  <span for="basic-url">Form Filled By</span>
+                  <div class="input-group mb-3"> 
+                    <input formControlName="formraiser" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <span for="basic-url">Package Type</span>
+                  <div class="input-group mb-3">
+                    <select  formControlName="packagetype" class="custom-select" id="inputGroupSelect01">
+                      <option    *ngFor="let item of packagetype" [value]="item.value" >{{item.name}}</option>
+                    </select> 
+                  </div>
+              </div>
+             
+            <!-- <div class="col-md-6">
+              <span for="basic-url">Trip Type</span>
+              <select  formControlName="type" class="custom-select" id="inputGroupSelect01">
+                <option    *ngFor="let trip of triptype" [value]="trip.value" >{{trip.name}}</option>
+              </select> 
+             </div> -->
+               
                 <div class="col-md-6">
-                    <span for="basic-url">Form Filled By</span>
-                    <div class="input-group mb-3"> 
-                      <input formControlName="formraiser" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                  <span for="basic-url">Package Type</span>
+                  <span for="basic-url">Customer Type</span>
                     <div class="input-group mb-3">
-                      <select  formControlName="packagetype" class="custom-select" id="inputGroupSelect01">
-                        <option    *ngFor="let item of packagetype" [value]="item.value" >{{item.name}}</option>
+                      <select  formControlName="customertype" class="custom-select" id="inputGroupSelect01">
+                       <option    *ngFor="let cust of customertype" [value]="cust.value" >{{cust.name}}</option>
                       </select> 
                     </div>
                 </div>
-               
-              <!-- <div class="col-md-6">
-                <span for="basic-url">Trip Type</span>
-                <select  formControlName="type" class="custom-select" id="inputGroupSelect01">
-                  <option    *ngFor="let trip of triptype" [value]="trip.value" >{{trip.name}}</option>
-                </select> 
-               </div> -->
-                 
-                  <div class="col-md-6">
-                    <span for="basic-url">Customer Type</span>
-                      <div class="input-group mb-3">
-                        <select  formControlName="customertype" class="custom-select" id="inputGroupSelect01">
-                         <option    *ngFor="let cust of customertype" [value]="cust.value" >{{cust.name}}</option>
-                        </select> 
-                      </div>
-                  </div>
-                  <div class="col-md-6">
-                    <span for="basic-url">Customer Name</span>
-                      <div class="input-group mb-3">
-                        <input placeholder="enter customer name" disabled  type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                      </div>
-                  </div>
-                  <!-- add automatic number -->
-                  <!-- <div class="col-md-6">
-                    <span for="basic-url">Ref No:</span>
-                    <div class="input-group mb-3"> 
-                      <input type="text" formControlName="refno" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                <div class="col-md-6">
+                  <span for="basic-url">Customer Name</span>
+                    <div class="input-group mb-3">
+                      <input placeholder="enter customer name"   type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                     </div>
-                </div> -->
-  
-              </div>
+                </div>
+                <!-- add automatic number -->
+                <!-- <div class="col-md-6">
+                  <span for="basic-url">Ref No:</span>
+                  <div class="input-group mb-3"> 
+                    <input type="text" formControlName="refno" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+              </div> -->
+
             </div>
           </div>
-          <div class="card">
-            <div class="header">
-              <h4>Partner Details</h4>
-            </div>
-            <div class="body">
-              <div class="row clearfix">
-                <div class="col-md-6">
-                  <label>Single Selection</label>
-                  <div class="c_multiselect">
-                    <ng-multiselect-dropdown class="multiselect multiselect-custom" id="group_item_id"
-                      [settings]="singleSelectionSetting" [data]="groupByOption">
-                    </ng-multiselect-dropdown>
-                  </div>
+        </div>
+        <div class="card">
+          <div class="header">
+            <h4>Partner Details</h4>
+          </div>
+          <div class="body">
+            <div class="row clearfix">
+              <div class="col-md-6">
+                <label>Single Selection</label>
+                <div class="c_multiselect">
+                  <ng-multiselect-dropdown class="multiselect multiselect-custom" id="group_item_id"
+                    [settings]="singleSelectionSetting" [data]="groupByOption">
+                  </ng-multiselect-dropdown>
                 </div>
+              </div>
+              <div class="col-md-6">
+                  <span for="basic-url">Select Partner</span>
+                  <div class="input-group mb-3">
+                    <select  formControlName="partnerdetails" class="custom-select" id="inputGroupSelect01">
+                     <option    *ngFor="let part of partnerdetails" [value]="part.value" >{{part.name}}</option>
+                    </select> 
+                  </div>
+                </div> 
                 <div class="col-md-6">
-                    <span for="basic-url">Select Partner</span>
-                    <div class="input-group mb-3">
-                      <select  formControlName="partnerdetails" class="custom-select" id="inputGroupSelect01">
-                       <option    *ngFor="let part of partnerdetails" [value]="part.value" >{{part.name}}</option>
-                      </select> 
+                  <span for="basic-url">Source Name*</span>
+                  <div class="input-group mb-3">
+                    <input formControlName="sourcename" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
+                </div> 
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="header">
+            <h4>Customer Information</h4>
+          </div>
+          <div class="body"> 
+            <div class="card">
+              <div class="input-group mb-3">
+                <div class="body">
+                  <div class="row clearfix">
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Name*</span>
+                      <div class="input-group mb-3">
+                        <input formControlName="customername" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
                     </div>
-                  </div> 
-                  <div class="col-md-6">
-                    <span for="basic-url">Source Name*</span>
-                    <div class="input-group mb-3">
-                      <input formControlName="sourcename" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Number*</span>
+                      <div class="input-group mb-3">
+                        <input type="text" formControlName="customernumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
                     </div>
+                    <div class="col-md-6">
+                      <span for="basic-url">Customer Location</span>
+                      <div class="input-group mb-3">
+                        <input type="text" formControlName="customerlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <span for="basic-url">Prefered Time to Call</span><br/>
+                      <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="icon-clock"></i></span>
+                          </div>
+                          <input type="text" formControlName="preferfrom" class="form-control time12" placeholder="Ex: 11:59 pm">
+                      </div>
                   </div>
                    
-              </div>
-            </div>
-          </div>
-          <div class="card" >
-            <div class="header">
-              <h4>Customer Information</h4>
-            </div>
-            <div class="body"> 
-              <div class="card">
-                <div class="input-group mb-3">
-                  <div class="body">
-                    <div class="row clearfix">
-                      <div class="col-md-6">
-                        <span for="basic-url">Customer Name*</span>
-                        <div class="input-group mb-3">
-                          <input formControlName="customername" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <span for="basic-url">Customer Number*</span>
-                        <div class="input-group mb-3">
-                          <input type="text" formControlName="customernumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <span for="basic-url">Customer Location</span>
-                        <div class="input-group mb-3">
-                          <input type="text" formControlName="customerlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <span for="basic-url">Prefered Time to Call</span><br/>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="icon-clock"></i></span>
-                            </div>
-                            <input type="text" formControlName="preferfrom" class="form-control time12" placeholder="Ex: 11:59 pm">
-                        </div>
-                    </div>
-                    <!-- <div class="col-md-6">
-                         
-  
-                        <div class="col-md-6">
-                            <span for="basic-url">From</span>
-                            <div  class="input-group mb-3">
-                                <input type="time" formControlName="preferfrom" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                            </div>
-                            <span >To</span>
-                            <div class="input-group mb-3">
-                             <input type="time" formControlName="preferto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                            </div>
-                        </div>
-  
-                    </div> -->
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Holiday information -->
-          <div class="card">
-            <div class="header">
-                <h4>Holiday Information</h4>
-            </div>
-            <div class="body">
-                <div class="input-group mb-3">
-                    <div class="card">
-                        <div class="body">
-                          <div class="row clearfix">  
-                              <div class="col-md-6">
-                                <span for="basic-url">Holiday Destination</span>
-                                <div class="input-group mb-3">
-                                  <input type="text" formControlName="destination" placeholder="Holiday Destination" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                                </div>
+        </div>
+        <!-- Holiday information -->
+        <div class="card">
+          <div class="header">
+              <h4>Holiday Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                        <div class="row clearfix">  
+                            <div class="col-md-6">
+                              <span for="basic-url">Holiday Destination</span>
+                              <div class="input-group mb-3">
+                                <input type="text" formControlName="destination" placeholder="Holiday Destination" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
                               </div>
+                            </div>
+                            <div class="col-md-6">
+                              <span for="basic-url">Start Airport/Train/Bus</span>
+                              <div class="input-group mb-3">
+                                <input type="text" formControlName="startfrom" placeholder="Start from" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                              </div>
+                            </div> 
+                            <div class="col-md-12">
+                              <span for="basic-url">Cities To Visit</span>
+                               <div class="input-group mb-3">
+                                <tag-input formControlName="cities" [ngModel]="[]" style="width: 1000px;">
+                                  <tag-input-dropdown [showDropdownIfEmpty]="true" [dynamicUpdate]="false">
+                                  </tag-input-dropdown>
+                                </tag-input>  
+                               </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                              <span for="basic-url">Trip Start Date</span>
+                              <div class="input-group mb-3">
+                                  <input type="date" formControlName="tripdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                              <span for="basic-url">Trip End Date</span>
+                              <div class="input-group mb-3">
+                                  <input type="date" formControlName="enddate"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                              <span for="basic-url">Trip Duration</span>
+                              <div class="input-group mb-3">
+                                  <input  type="text" formControlName="duration" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                              <span for="basic-url">Date Flexibility</span>
+                               <div class="input-group mb-3">
+                                 <select  formControlName="travelflex" class="custom-select" id="inputGroupSelect01">
+                                   <option    *ngFor="let travel of travelflex" [value]="travel.value" >{{travel.name}}</option>
+                                  </select> 
+                               </div>
+                            </div>
+                             
+                         </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Passenger Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6"> 
+                                <span>Adults(< 12 Years)</span>
+                                <input type="number" formControlName="adults" class="form-control"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6"> 
+                                <span>Children(> 12 Years)</span>
+                                <input type="number" class="form-control" formControlName="child" aria-label="Small"  aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+ 
                               <div class="col-md-6">
-                                <span for="basic-url">Start Airport/Train/Bus</span>
-                                <div class="input-group mb-3">
-                                  <input type="text" formControlName="startfrom" placeholder="Start from" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                                </div>
+                                  <span>Infants(0-2 Years)</span>
+                                  <input type="number"  formControlName="infant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
                               </div> 
-                              <div class="col-md-12">
-                                <span for="basic-url">Cities To Visit</span>
-                                 <div class="input-group mb-3">
-                                  <!-- <tag-input [ngModel]="['BMW', 'Audi', 'Landrover', 'TATA']" style="width: 1000px;">
-                                    <tag-input-dropdown [showDropdownIfEmpty]="true" [dynamicUpdate]="false">
-                                    </tag-input-dropdown>
-                                  </tag-input> -->
-                                  <mat-form-field class="example-chip-list" appearance="fill">
-                                    <mat-label>Favorite Fruits</mat-label>
-                                    <mat-chip-grid #chipGrid aria-label="Enter fruits">
-                                      <mat-chip-row *ngFor="let fruit of fruits"
-                                                    (removed)="remove(fruit)"
-                                                    [editable]="true"
-                                                    (edited)="edit(fruit, $event)"
-                                                    aria-description="'press enter to edit ' + fruit.name">
-                                        {{fruit.name}}
-                                        <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
-                                          <mat-icon>cancel</mat-icon>
-                                        </button>
-                                      </mat-chip-row>
-                                      <input formControlName="cities" placeholder="New fruit..."
-                                             [matChipInputFor]="chipGrid"
-                                             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                                             [matChipInputAddOnBlur]="addOnBlur"
-                                             (matChipInputTokenEnd)="add($event)"/>
-                                    </mat-chip-grid>
-                                  </mat-form-field>
-                                  <!-- <select  formControlName="cities" class="custom-select" id="inputGroupSelect01">
-                                    <option    *ngFor="let city of cities" [value]="city.value" >{{city.name}}</option>
-                                   </select>  -->
-                                 </div>
+                              <div class="col-md-6">
+                                  <span>No of Passengers</span>
+                                  <input type="number" formControlName="passenger" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> 
+                                  
                               </div>
-                              <div class="col-lg-3 col-md-6">
-                                <span for="basic-url">Trip Start Date</span>
-                                <div class="input-group mb-3">
-                                    <input type="date" formControlName="tripdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                </div>
-                              </div>
-                              <div class="col-lg-3 col-md-6">
-                                <span for="basic-url">Trip End Date</span>
-                                <div class="input-group mb-3">
-                                    <input type="date" formControlName="enddate"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                </div>
-                              </div>
-                              <div class="col-lg-3 col-md-6">
-                                <span for="basic-url">Trip Duration</span>
-                                <div class="input-group mb-3">
-                                    <input  type="text" formControlName="duration" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
-                                </div>
-                              </div>
-                              <div class="col-lg-3 col-md-6">
-                                <span for="basic-url">Date Flexibility</span>
-                                 <div class="input-group mb-3">
-                                   <select  formControlName="travelflex" class="custom-select" id="inputGroupSelect01">
-                                     <option    *ngFor="let travel of travelflex" [value]="travel.value" >{{travel.name}}</option>
-                                    </select> 
-                                 </div>
-                              </div>
-                               
-                           </div>
-                        </div>
-                    </div>
-                </div>
-  
-            </div>
-  
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
           </div>
-          <div class="card">
-            <div class="header">
-                <h4>Passenger Information</h4>
-            </div>
-            <div class="body">
-                <div class="input-group mb-3">
-                    <div class="card">
-                        <div class="body">
-                            <div class="row clearfix">
-                                <div class="col-md-6"> 
-                                  <span>Adults(< 12 Years)</span>
-                                  <input type="number" formControlName="adults" class="form-control"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                </div>
-                                <div class="col-md-6"> 
-                                  <span>Children(> 12 Years)</span>
-                                  <input type="number" class="form-control" formControlName="child" aria-label="Small"  aria-describedby="inputGroup-sizing-sm" />
-                                </div>
-   
-                                <div class="col-md-6">
-                                    <span>Infants(0-2 Years)</span>
-                                    <input type="number"  formControlName="infant" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                </div> 
-                                <div class="col-md-6">
-                                    <span>No of Passengers</span>
-                                    <input type="number" formControlName="passenger" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> 
-                                    
-                                </div>
-                            </div>
-  
-                        </div>
-                    </div>
-                </div>
-            </div>
-  
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Hotel & Meal Plan Information</h4>
           </div>
-          <div class="card">
-            <div class="header">
-                <h4>Hotel & Meal Plan Information</h4>
-            </div>
-            <div class="body">
-                <div class="input-group mb-3">
-                    <div class="card">
-                        <div class="body">
-                            <div class="row clearfix">
-                                <div class="col-md-6">
-                                    <span for="basic-url">Hotel Standard</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="hstandard" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let standard of hstandard" [value]="standard.value" >{{standard.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                   <span for="basic-url">Hotel Type</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="htype" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let htype of htype" [value]="htype.value" >{{htype.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span for="basic-url">Room Type</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="roomtype" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let room of roomtype" [value]="room.value" >{{room.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span for="basic-url">Hotel/Room Preference</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="hpreference" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let preference of hpreference" [value]="preference.value" >{{preference.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span>Number of Rooms</span>
-                                    <input type="number" formControlName="numofrooms" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                </div>
-                                <div class="col-md-6">
-                                    <span>Any Specific Requirement Regarding Accommodation</span>
-                                     <textarea type="text" formControlName="specific" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></textarea>
-                                </div>
-                                <div class="col-md-6">
-                                    <span for="basic-url">Meal Plan</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="meal" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let food of meal" [value]="food.value" >{{food.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span for="basic-url">Food Preferences</span>
-                                      <div class="input-group mb-3">
-                                        <select  formControlName="foodpreferences" class="custom-select" id="inputGroupSelect01">
-                                          <option    *ngFor="let fpreference of foodpreferences" [value]="fpreference.value" >{{fpreference.name}}</option>
-                                         </select>
-                                      </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <span>Any Specific Requirement Regarding Meal</span>
-                                     <textarea type="text" formControlName="specificreq" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-            </div>
-  
-          </div>
-          <div class="card">
-            <div class="header">
-                <h4>Sight Seeings & Attractions Information</h4>
-            </div>
-            <div class="body">
-                <div class="input-group mb-3">
-                    <div class="card">
-                        <div class="body">
-                            <div class="row clearfix">
-                                <div class="col-md-6">
-                                    <span>Any Specific Tours Or Excursions Required</span>
-                                    <textarea type="text" formControlName="specifictour" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-            <div class="card">
-                <div class="header">
-                     <h4>Select Quick Inclusions</h4>
-                </div>
-                <div class="body">
-                    <div class="input-group mb-3">
-                        <div class="card">
-                            <div class="body">
-                                <div class="row clearfix">
-                                    <div class="col-md-6">
-                                      <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Option 1</span>
-                                      </label> 
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6">
+                                  <span for="basic-url">Hotel Standard</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="hstandard" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let standard of hstandard" [value]="standard.value" >{{standard.name}}</option>
+                                       </select>
                                     </div>
-                                    <div class="col-md-6"> 
-                                        <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Honeymoon Inclusions</span>
-                                      </label>
+                              </div>
+                              <div class="col-md-6">
+                                 <span for="basic-url">Hotel Type</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="htype" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let htype of htype" [value]="htype.value" >{{htype.name}}</option>
+                                       </select>
                                     </div>
-                                    <div class="col-md-6"> 
-                                      <label class="fancy-checkbox">
-                                      <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                      <span>Traveol Insurance</span>
-                                    </label>
-                                   </div> 
-                                   <div class="col-md-6"> 
-                                    <label class="fancy-checkbox">
-                                    <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                    <span>Adventure Activities</span>
-                                  </label>
-                                  </div> 
-                                    <div class="col-md-6"> 
-                                        <label class="fancy-checkbox">
-                                        <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                        <span>Guide</span>
-                                      </label>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Room Type</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="roomtype" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let room of roomtype" [value]="room.value" >{{room.name}}</option>
+                                       </select>
                                     </div>
-                                    <div class="col-md-6"> 
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Hotel/Room Preference</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="hpreference" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let preference of hpreference" [value]="preference.value" >{{preference.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Number of Rooms</span>
+                                  <input type="number" formControlName="numofrooms" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Any Specific Requirement Regarding Accommodation</span>
+                                   <textarea type="text" formControlName="specific" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Meal Plan</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="meal" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let food of meal" [value]="food.value" >{{food.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span for="basic-url">Food Preferences</span>
+                                    <div class="input-group mb-3">
+                                      <select  formControlName="foodpreferences" class="custom-select" id="inputGroupSelect01">
+                                        <option    *ngFor="let fpreference of foodpreferences" [value]="fpreference.value" >{{fpreference.name}}</option>
+                                       </select>
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                  <span>Any Specific Requirement Regarding Meal</span>
+                                   <textarea type="text" formControlName="specificreq" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="header">
+              <h4>Sight Seeings & Attractions Information</h4>
+          </div>
+          <div class="body">
+              <div class="input-group mb-3">
+                  <div class="card">
+                      <div class="body">
+                          <div class="row clearfix">
+                              <div class="col-md-6">
+                                  <span>Any Specific Tours Or Excursions Required</span>
+                                  <textarea type="text" formControlName="specifictour" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+          <div class="card">
+              <div class="header">
+                   <h4>Select Quick Inclusions</h4>
+              </div>
+              <div class="body">
+                  <div class="input-group mb-3">
+                      <div class="card">
+                          <div class="body">
+                              <div class="row clearfix"> 
+                                  <div *ngFor="let inclusion of inclusionsArray; let i = index;" class="col-md-6"> 
                                       <label class="fancy-checkbox">
-                                      <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                      <span>Entrance Tickets</span>
+                                      <input (change)="onChange($event)"   [value]="inclusion" type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                      <span>{{inclusion}}</span>
                                     </label>
                                   </div>
-                                    <div class="col-md-6"> 
-                                      <label class="fancy-checkbox">
-                                      <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                      <span>Day-1 Breakfast</span>
-                                    </label>
-                                   </div>
-                                   <div class="col-md-6"> 
+                                  <!-- <div class="col-md-6"> 
                                     <label class="fancy-checkbox">
                                     <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                    <span>Early Chicken</span>
+                                    <span>Traveol Insurance</span>
                                   </label>
-                                </div>
-                                <div class="col-md-6"> 
+                                 </div> 
+                                 <div class="col-md-6"> 
                                   <label class="fancy-checkbox">
                                   <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                  <span>Plate Chicken</span>
+                                  <span>Adventure Activities</span>
                                 </label>
-                              </div>
-                                    <div class="col-md-6"> 
+                                </div> 
+                                  <div class="col-md-6"> 
                                       <label class="fancy-checkbox">
                                       <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                      <span>Birthday/Anniversary Inclusions</span>
+                                      <span>Guide</span>
                                     </label>
                                   </div>
                                   <div class="col-md-6"> 
                                     <label class="fancy-checkbox">
                                     <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
-                                    <span>Vehicle Preference</span>
+                                    <span>Entrance Tickets</span>
                                   </label>
-                                </div> 
                                 </div>
+                                  <div class="col-md-6"> 
+                                    <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                    <span>Day-1 Breakfast</span>
+                                  </label>
+                                 </div>
+                                 <div class="col-md-6"> 
+                                  <label class="fancy-checkbox">
+                                  <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                  <span>Early Chicken</span>
+                                </label>
+                              </div>
+                              <div class="col-md-6"> 
+                                <label class="fancy-checkbox">
+                                <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                <span>Plate Chicken</span>
+                              </label>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="header">
-                    <h4>Budget Information</h4>
-               </div>
-               <div class="body">
-                   <div class="input-group mb-3">
-                       <div class="card">
-                           <div class="body">
-                                <div class="row clearfix">
-                                     <div class="col-md-6">
-                                      <!-- <ng-multiselect-dropdown class="multiselect multiselect-custom" id="group_item_id"
-                                               [settings]="singleSelectionSetting" [data]="groupByOption">
-                                              </ng-multiselect-dropdown> -->
-                                              <span>Budget For Entire Package</span>
-                                              <select  formControlName="meal" class="custom-select" id="inputGroupSelect01">
-                                                <option    *ngFor="let food of budget" [value]="food.value" >{{food.name}}</option>
-                                               </select>
-                                         
-                                        <!-- <input type="range" /> -->
-                                     </div>
-                                     <div class="col-md-6">
-                                      <span>Rupees</span>
-                                      <input type="text" formControlName="numofrooms" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                  </div>
-                                     
+                                  <div class="col-md-6"> 
+                                    <label class="fancy-checkbox">
+                                    <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                    <span>Birthday/Anniversary Inclusions</span>
+                                  </label>
                                 </div>
-  
-                           </div>
-                       </div>
-                   </div>
-               </div>
-            </div>
-            <div class="card">
-                <div class="header">
-                    <h4>Competetive Quotation Information</h4>
-               </div>
-               <div class="body">
-                   <div class="input-group mb-3">
-                       <div class="card">
-                           <div class="body">
-                                <div class="row clearfix">
-                                      <div class="col-md-6">
-                                        <angular-file-uploader
-                                        formControlName="pdf" [config]="afuConfig">
-                                        </angular-file-uploader>
-                                        <span>Please Upload Competetive Quote If Any</span>
-                                        <div class="input-group mb-3">
-  
-                                            <!-- <div class="custom-file"> 
-                                                <input type="file" formControlName="pdf" id="file" 
-                                                type="file"  
-                                                (change)="onFileChange($event)" accept="document/*" class="custom-file-input" id="inputGroupFile03">
-                                                <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
-                                            </div> -->
-                                        </div>
-                                        <p>Only .xls, .xslx and .csv are allowed. Click download sample to get sample excel file.</p>
-                                      </div> 
+                                <div class="col-md-6"> 
+                                  <label class="fancy-checkbox">
+                                  <input type="checkbox" name="checkbox" required data-parsley-errors-container="#error-checkbox">
+                                  <span>Vehicle Preference</span>
+                                </label>
+                              </div>  -->
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Budget Information</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                   <div class="col-md-6">
+                                    <!-- <ng-multiselect-dropdown class="multiselect multiselect-custom" id="group_item_id"
+                                             [settings]="singleSelectionSetting" [data]="groupByOption">
+                                            </ng-multiselect-dropdown> -->
+                                            <span>Budget For Entire Package</span>
+                                            <select  formControlName="meal" class="custom-select" id="inputGroupSelect01">
+                                              <option    *ngFor="let food of budget" [value]="food.value" >{{food.name}}</option>
+                                             </select>
+                                       
+                                      <!-- <input type="range" /> -->
+                                   </div>
+                                   <div class="col-md-6">
+                                    <span>Rupees</span>
+                                    <input type="text" formControlName="numofrooms" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
                                 </div>
-  
-                           </div>
-                       </div>
-                   </div>
-               </div>
-            </div>
-            <div class="card">
-                <div class="header">
-                    <h4>Inputs & Comments</h4>
-               </div>
-               <div class="body">
-                   <div class="input-group mb-3">
-                       <div class="card">
-                           <div class="body">
-                                <div class="row clearfix">
-                                      <div class="col-md-6">
-                                        <span>Form Raiser Inputs & Comments If Any</span>
-                                         <textarea type="text" formControlName="comments" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                   
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Competetive Quotation Information</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <angular-file-uploader
+                                      formControlName="pdf" [config]="afuConfig">
+                                      </angular-file-uploader>
+                                      <span>Please Upload Competetive Quote If Any</span>
+                                      <div class="input-group mb-3">
+
+                                          <!-- <div class="custom-file"> 
+                                              <input type="file" formControlName="pdf" id="file" 
+                                              type="file"  
+                                              (change)="onFileChange($event)" accept="document/*" class="custom-file-input" id="inputGroupFile03">
+                                              <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                                          </div> -->
                                       </div>
-                                </div>
-  
-                           </div>
-                       </div>
-                   </div>
-               </div>
-            </div>
-  
-  
-           
-        </div>
-        <div style="justify-content: center;" class="input-group-append">
-          <button (click)="additinerary()" class="btn btn-secondary" type="submit">Submit</button>
+                                      <p>Only .xls, .xslx and .csv are allowed. Click download sample to get sample excel file.</p>
+                                    </div> 
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+          <div class="card">
+              <div class="header">
+                  <h4>Inputs & Comments</h4>
+             </div>
+             <div class="body">
+                 <div class="input-group mb-3">
+                     <div class="card">
+                         <div class="body">
+                              <div class="row clearfix">
+                                    <div class="col-md-6">
+                                      <span>Form Raiser Inputs & Comments If Any</span>
+                                       <textarea type="text" formControlName="comments" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                    </div>
+                              </div>
+
+                         </div>
+                     </div>
+                 </div>
+             </div>
+          </div>
+
+
+         
       </div>
-      </form>
-       
+      <div style="justify-content: center;" class="input-group-append">
+        <button (click)="additinerary()" class="btn btn-secondary" type="submit">Submit</button>
     </div>
-  </div>
+    </form>
      
+  </div>
+</div>
+   

@@ -13,4 +13,23 @@ export class PaymentComponent {
     { date: 'April 1, 2021', title: 'Event 4', description: 'Description of Event 4' },
     { date: 'May 1, 2021', title: 'Event 5', description: 'Description of Event 5' }
   ];
+  newRecord = '';
+  newObject = {
+    firstName: '',
+    lastName: ''
+  };
+  data: any[] = [];
+  names: any[] = [];
+
+  onEnter() {
+    this.data.push(this.newRecord);
+    this.newRecord = '';
+    if(this.newObject.firstName && this.newObject.lastName) {
+      this.names.push(this.newObject);
+    }
+    this.newObject = {
+      firstName: '',
+      lastName: ''
+    };
+  }
 }

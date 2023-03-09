@@ -12,6 +12,8 @@ import { SuperComponent } from './super/super.component';
 import { SalesstatementComponent } from './salesstatement/salesstatement.component';
 import { SuperstatementComponent } from './superstatement/superstatement.component';
 import { SuperreportComponent } from './superreport/superreport.component';
+import { PendingComponent } from './pending/pending.component';
+import { SalereportComponent } from './salereport/salereport.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,9 @@ const routes: Routes = [
       },{
         path: 'addpartner',
         component: PartnerformComponent
+      },{
+        path: 'pending',
+        component: PendingComponent
       },
       {
         path: 'leadgenerator',
@@ -39,8 +44,8 @@ const routes: Routes = [
         component: SalesComponent
       },
       {
-        path: 'salesreport',
-        component: SalesreportComponent
+        path: 'salereport',
+        component: SalereportComponent
       },
       {
         path: 'superpartnerreport',

@@ -19,17 +19,42 @@ export class PendingComponent {
   constructor(private service:AuthService, private dialog:MatDialog){
         this.Loaduser();
   }
-  userlist:any;
+  userlist:any; 
   dataSource:any;
+  teamlist:any;
   Loaduser(){
     this.service.GetAll().subscribe(res=>{
-      this.userlist = res;
+      this.userlist = res; 
+      this.teamlist = res;
+      this.dataSource=new MatTableDataSource(this.teamlist);
       this.dataSource=new MatTableDataSource(this.userlist);  
       this.dataSource.paginator = this.paginator;
       this.dataSource.sort = this.sort; 
     }) 
   }
-  displayedColumns: string[] = ['username', 'name', 'email','role','status', 'action'];
+  displayedColumns: string[] = ['username', 'name', 'email','role','team','status', 'action'];
+  team =[
+    {
+      "name":"Team 1"  ,
+      "vlaue":"Team 1"
+      },
+      {
+        "name":"Team 2"  ,
+        "vlaue":"Team 2"
+        },
+        {
+          "name":"Team 3"  ,
+          "vlaue":"Team 3"
+        },{
+          "name":"Team 4"  ,
+          "vlaue":"Team 4"
+          },
+          {
+            "name":"Team 5"  ,
+            "vlaue":"Team 5"
+          },
+        
+  ]
   role= [
     {
       "name": "Dom Team Lead",

@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { PartnersigupComponent } from './partnersigup/partnersigup.component';
+import { PartnerloginComponent } from './partnerlogin/partnerlogin.component';
 
 const routes: Routes = [
   {
@@ -11,8 +13,16 @@ const routes: Routes = [
     data: { title: ':: Gogaga :: Holidays ::' },
   },
   {
+    path: 'partnerlogin',
+    component: PartnerloginComponent,
+    data: { title: ':: Gogaga :: Holidays ::' },
+  },
+  {
     path:'signup',
     component:SignupComponent
+  },{
+    path:'partnersignup',
+    component:PartnersigupComponent
   },
   {
     path: '**',

@@ -29,6 +29,7 @@
       "name": "international",
       "email": "international@gmail.com",
       "role": "int team lead",
+      "team": "Team 1",
       "isactive": true,
       "password": "inttl"
     },
@@ -37,6 +38,7 @@
       "name": "international",
       "email": "international@gmail.com",
       "role": "international",
+      "team": "Team 1",
       "isactive": true,
       "password": "int"
     },
@@ -45,6 +47,7 @@
       "name": "domestic",
       "email": "domestic@gmail.com",
       "role": "dom team lead",
+      "team": "Team 2",
       "isactive": true,
       "password": "domtl"
     },
@@ -53,8 +56,18 @@
       "name": "domestic",
       "email": "domestic@gmail.com",
       "role": "domestic",
+      "team": "Team 1",
       "isactive": true,
       "password": "dom"
+    },
+    {
+      "id": "opsteam",
+      "name": "ops",
+      "email": "ops@gmail.com",
+      "role": "operations",
+      "team": "Team 1",
+      "isactive": true,
+      "password": "123456"
     }
   ],
   "leadlist": [
@@ -121,6 +134,28 @@
     {
       "name": "HRAdmin",
       "code": "hradmin"
+    }
+  ],
+  "team": [
+    {
+      "name": "Team 1",
+      "code": "Team 1"
+    },
+    {
+      "name": "Team 2",
+      "code": "Team 2"
+    },
+    {
+      "name": "Team 3",
+      "code": "Team 3"
+    },
+    {
+      "name": "Team 4",
+      "code": "Team 4"
+    },
+    {
+      "name": "Team 5",
+      "code": "Team 5"
     }
   ],
   "versions": [
@@ -705,56 +740,179 @@
       "transactionnumber": "TR12345",
       "type": "credit",
       "id": 1
+    },
+    {
+      "transactiondate": "2023-03-03",
+      "transactionparticular": "Salary",
+      "transactiontype": "salary",
+      "ghrn": "GHRN12345",
+      "amount": "20000",
+      "bankname": "SBI",
+      "transactionnumber": "1234565",
+      "type": "debit",
+      "id": 2
     }
   ],
-  "Super Partners":[
+  "roles": [
     {
-        "name":"(2002) BHAGYALAXMI TOURS AND TRAVELS - GULBARGHA-NORTH KARNATAKA (2+14)",
-        "code":"(2002) BHAGYALAXMI TOURS AND TRAVELS - GULBARGHA-NORTH KARNATAKA (2+14)"
+      "name": "Super Parner",
+      "code": "Super Parner"
     },
     {
-        "name":"(2003) VILAS SEVENTILAL SHAH - MAYUR SUMATILAL RATHOD - VAPI - GUJARAT.(2+10)",
-        "code":"(2003) VILAS SEVENTILAL SHAH - MAYUR SUMATILAL RATHOD - VAPI - GUJARAT.(2+10)"
+      "name": "Sales Partner",
+      "code": "Sales Partner"
     },
     {
-        "name":"(2008) GOGAGA HOLIDAYS - OWN BUSINESS",
-        "code":"(2008) GOGAGA HOLIDAYS - OWN BUSINESS"
+      "name": "Master Partner",
+      "code": "Master Partner"
     },
     {
-        "name":"(2010) SAI NARENDRAKUMAR ANCHALA/HEMANTH SAIKUMAR MEDEHAL VALMIKI - RAYALASEEMA-PRAKASAM - NELLORE(2+10)",
-        "code":"(2010) SAI NARENDRAKUMAR ANCHALA/HEMANTH SAIKUMAR MEDEHAL VALMIKI - RAYALASEEMA-PRAKASAM - NELLORE(2+10)"
+      "name": "Lead Generator",
+      "code": "Lead Generator"
+    }
+  ],
+  "partnerlogin": [
+    {
+      "id": "Master Partner",
+      "name": "Tharun",
+      "email": "tarunn@gmail.com",
+      "role": "Master Partner",
+      "isactive": true,
+      "password": "MasterPartner"
+    }
+  ],
+  "teamlist": [
+    {
+      "name": "varun",
+      "team": "Team 1",
+      "role": "dom team lead",
+      "id": 1
+    }
+  ],
+  "payables": [
+    {
+      "bookingconfirm": "2023-02-25",
+      "fadvance": "12000",
+      "fdifference": "0",
+      "fbooked": "12000",
+      "fpaymentdate": "2023-02-25",
+      "fpending": "0",
+      "fconfirmation": "GHRN123456",
+      "fpaymenttype": "Complete Payment",
+      "fpaymentstatus": "Closed",
+      "tadvance": "1250",
+      "tbooked": "",
+      "tdifference": "0",
+      "tpaymentdate": "2023-02-25",
+      "tpending": "0",
+      "tconfirmation": "GHRN123456",
+      "tpaymenttype": "Complete Payment",
+      "tpaymentstatus": "Closed",
+      "badvance": "1000",
+      "bbooked": "1000",
+      "bdifference": "0",
+      "bpaymentdate": "2023-02-25",
+      "bpending": "0",
+      "bconfirmation": "GHRN123456",
+      "bpaymenttype": "Complete Payment",
+      "bpaymentstatus": "Closed",
+      "negotiationonhotels": "0",
+      "netpayable": "225000",
+      "blockedtill": "2023-02-25",
+      "paymentdeadline": "2023-03-03",
+      "finalpay": "225000",
+      "advancepaid": "225000",
+      "hpaymenttype": "Complete Payment",
+      "paymentdate": "2023-02-25",
+      "pendingpayable": "0",
+      "hpaymentstatus": "Closed",
+      "confirmationno": "GHRN123456",
+      "negotiationoncab": "0",
+      "cnetpayable": "12000",
+      "cblockedtill": "2023-02-25",
+      "cpaymentdeadline": "2023-02-27",
+      "cfinalpay": "12000",
+      "cadvancepaid": "12000",
+      "cpaymenttype": "Complete Payment",
+      "cpaymentdate": "2023-02-25",
+      "cpendingpayable": "0",
+      "cpaymentstatus": "Closed",
+      "cconfirmationno": "GHRN123456",
+      "crsuppliers": "Nothing",
+      "crpayables": "Nothing",
+      "negotiationoncruise": "",
+      "crnetpayable": "",
+      "cradvance": "0",
+      "crbooked": "0",
+      "crdifference": "",
+      "crpaymenttype": "Complete Payment",
+      "crpaymentdate": "2023-02-25",
+      "crpendingpayable": "0",
+      "crpaymentstatus": "Pending",
+      "crconfirmationno": "Nothing",
+      "id": 1
     },
     {
-        "name":"(2011) RAJASHRI YELLAPU -JANARDHANA REDDY JANGAMAREDDYGARI - TELANGANA",
-        "code":"(2011) RAJASHRI YELLAPU -JANARDHANA REDDY JANGAMAREDDYGARI - TELANGANA"
-    },
-    {
-        "name":"(2012) BHARGAV.P/ MANASWINI.L SOWJANYA.M/VAIBHAV.P (2+10)",
-        "code":"(2012) BHARGAV.P/ MANASWINI.L SOWJANYA.M/VAIBHAV.P (2+10)"
-    },
-    {
-        "name":"(2013) SOMASHEKAR SP - MYSORE - SOUTH KARNATAKA ( 2+12 )",
-        "code":"(2013) SOMASHEKAR SP - MYSORE - SOUTH KARNATAKA ( 2+12 )"
-    },
-    {
-        "name":"(2014) RAMANJANEYULU YERRAMSETTI( AP - Guntur , Krishna Dist , West Godavari , East Godavari, Vishakapatnam",
-        "code":"(2014) RAMANJANEYULU YERRAMSETTI( AP - Guntur , Krishna Dist , West Godavari , East Godavari, Vishakapatnam"
-    },
-    {
-        "name":"(2015) RISEIN TECH PRIVATE LIMITED - INDIA.",
-        "code":"(2015) RISEIN TECH PRIVATE LIMITED - INDIA."
-    },
-    {
-        "name":"(2016) CHEEKURI NAGARAJU - BANGALORE - KARNATAKA",
-        "code":"(2016) CHEEKURI NAGARAJU - BANGALORE - KARNATAKA"
-    },
-    {
-        "name":"(2017) RAVIKANTY REDDY JANGAMREDDYGARI/J ESWHWARAMMA - HYDERABAD",
-        "code":"(2017) RAVIKANTY REDDY JANGAMREDDYGARI/J ESWHWARAMMA - HYDERABAD"
-    },
-    {
-        "name":"(2018) GOGAGA ONLINE LEADS",
-        "code":"(2018) GOGAGA ONLINE LEADS"
+      "bookingconfirm": "",
+      "fadvance": "5000",
+      "fdifference": "",
+      "fbooked": "",
+      "fpaymentdate": "",
+      "fpending": "",
+      "fconfirmation": "",
+      "fpaymenttype": "",
+      "fpaymentstatus": "",
+      "tadvance": "",
+      "tbooked": "",
+      "tdifference": "",
+      "tpaymentdate": "",
+      "tpending": "",
+      "tconfirmation": "",
+      "tpaymenttype": "",
+      "tpaymentstatus": "",
+      "badvance": "",
+      "bbooked": "",
+      "bdifference": "",
+      "bpaymentdate": "",
+      "bpending": "",
+      "bconfirmation": "",
+      "bpaymenttype": "",
+      "bpaymentstatus": "",
+      "negotiationonhotels": "",
+      "netpayable": "",
+      "blockedtill": "",
+      "paymentdeadline": "",
+      "finalpay": "",
+      "advancepaid": "",
+      "hpaymenttype": "",
+      "paymentdate": "",
+      "pendingpayable": "",
+      "hpaymentstatus": "",
+      "confirmationno": "",
+      "negotiationoncab": "",
+      "cnetpayable": "",
+      "cblockedtill": "",
+      "cpaymentdeadline": "",
+      "cfinalpay": "",
+      "cadvancepaid": "",
+      "cpaymenttype": "",
+      "cpaymentdate": "",
+      "cpendingpayable": "",
+      "cpaymentstatus": "",
+      "cconfirmationno": "",
+      "crsuppliers": "",
+      "crpayables": "",
+      "negotiationoncruise": "",
+      "crnetpayable": "",
+      "cradvance": "",
+      "crbooked": "",
+      "crdifference": "",
+      "crpaymenttype": "",
+      "crpaymentdate": "",
+      "crpendingpayable": "",
+      "crpaymentstatus": "",
+      "crconfirmationno": "",
+      "id": 2
     }
   ]
 }

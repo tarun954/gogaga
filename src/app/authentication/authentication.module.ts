@@ -11,6 +11,9 @@ import { AuthComponent } from './auth/auth.component';
 import { MaterialModule } from 'src/Material-Module';
 import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
 import { ToastrModule } from 'ngx-toastr';
+import { PartnersigupComponent } from './partnersigup/partnersigup.component';
+import { PartnerpopComponent } from './partnerpop/partnerpop.component';
+import { PartnerloginComponent } from './partnerlogin/partnerlogin.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ToastrModule } from 'ngx-toastr';
     ErrorpageComponent,
     SignupComponent,
     AuthComponent,
-    UpdatepopupComponent
+    UpdatepopupComponent,
+    PartnersigupComponent,
+    PartnerpopComponent,
+    PartnerloginComponent
   ],
   imports: [
     CommonModule,

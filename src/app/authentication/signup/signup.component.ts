@@ -16,6 +16,7 @@ export class SignupComponent {
     name:this.builder.control('',Validators.required),
     email:this.builder.control('',Validators.compose([Validators.required,Validators.email])),
     role:this.builder.control(''),
+    team:this.builder.control(''),
     isactive:this.builder.control(false),
     password:this.builder.control('',Validators.required)
   })

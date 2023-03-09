@@ -27,7 +27,7 @@ export class SubmittedComponent {
   }
   displayedColumns: string[] = ['id refno raisedate', 'itinerary  formraiser sourcename', 'customername customernumber','destination tripdate passenger','assign', 'action','upload'];
   dataSource!: MatTableDataSource<any>;
-
+  
   @ViewChild(MatPaginator)paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort; 
   ngOnInit(): void {

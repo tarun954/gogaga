@@ -66,9 +66,7 @@ export class TopMenuComponent {
 
     this.layoutServiceService.toggleLeftBar();
 
-    setTimeout(() => {
-      that.layoutServiceService.loaderHide();
-    }, 500);
+    
   }
 
   fullWidthToggle() {

@@ -13,11 +13,13 @@ export class UpdatepopupComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data:any,private toastr:ToastrService,
     private dialog:MatDialogRef<UpdatepopupComponent>){}
   rolelist:any;
+  teamlist:any;
   registerform = this.builder.group({
     id:this.builder.control(''),
     name:this.builder.control(''),
     email:this.builder.control(''),
     role:this.builder.control('',Validators.required),
+    team:this.builder.control('',Validators.required),
     isactive:this.builder.control(false),
     password:this.builder.control('')
   })
@@ -26,13 +28,17 @@ export class UpdatepopupComponent implements OnInit {
       this.service.GetAllRole().subscribe(res=>{
         this.rolelist=res;
       })
+      this.service.GetAllTeam().subscribe(res=>{
+        this.teamlist=res;
+      })
       if(this.data.usercode!=null && this.data.usercode!=''){
         this.service.Getbycode(this.data.usercode).subscribe(res=>{
           this.editdata=res;
           this.registerform.setValue({id:this.editdata.id,
             name:this.editdata.name,
             email:this.editdata.email,password:this.editdata.password,
-            role:this.editdata.role,isactive:this.editdata.isactive })
+            role:this.editdata.role,isactive:this.editdata.isactive,
+            team:this.editdata.team})
         })
       }
   }

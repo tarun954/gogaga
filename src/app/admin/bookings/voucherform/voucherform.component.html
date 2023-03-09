@@ -1,383 +1,2027 @@
- 
-    <div class="container-fluid">
-      <div class="block-header">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <h2>Voucher</h2>
-                <ul class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
-                    <li class="breadcrumb-item">Table</li>
-                    <li class="breadcrumb-item active">Table Filter</li>
-                </ul>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="d-flex flex-row-reverse">
-                    <div class="page_action">
-                        <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download Voucher</button>
-                        <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
-                    </div>
-                    <div class="p-2 d-flex">
-
-                    </div>
-                </div>
-            </div>
+<div id="voucher" #voucher>
+  <div class="block-header">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Booking Form</h2>
         </div>
-      </div>
-
-        <div class="col-md-12">
-          <div class="card">
-            <div class="header">
-              <h4>Create Voucher</h4>
-            </div>
-            <div class="body">
-              <div class="row clearfix">
-                <div class="col-md-6">
-                    <span for="basic-url">Itinerary Reference Number</span>
-                    <div class="input-group mb-3">
-                      <input type="text" disabled value="GHRN15428" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                  <span for="basic-url">Booking ID</span>
-                  <div class="input-group mb-3">
-                    <input type="text" disabled value="GHRDOM-85462-15-0001" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-              </div>
-                <div class="col-md-6">
-                  <span for="basic-url">Client Name</span>
-                  <div class="input-group mb-3">
-                    <input type="text" disabled value="Rajashekar Reddy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Contact Number</span>
-                <div class="input-group mb-3">
-                  <input type="tel" disabled value="9865465654" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Trip Start Date</span>
-                <div class="input-group mb-3">
-                  <input type="date" disabled value="9865465654" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Trip End Date</span>
-                <div class="input-group mb-3">
-                  <input type="date" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Duration</span>
-                <div class="input-group mb-3">
-                  <input type="text" disabled value="4Nights/5Days" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              <div class="col-md-6">
-                 <div class="row clearfix">
-                  <span for="basic-url">Customer Support Team</span>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="input-group mb-3">
-                    <input type="text"  value="Yoganand" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                 </div>
-                 <div class="col-md-6">
-                  <div class="input-group mb-3">
-                    <input type="tel"  value="8546541615" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                 </div>
-                 </div>
-              </div>
-              <div class="col-md-12">
-                <div class="row clearfix">
-                  <span for="basic-url">Operations Team</span>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="input-group mb-3">
-                    <input type="text" disabled value="Kalyan" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="input-group mb-3">
-                    <input type="tel" disabled value="9845465446" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="input-group mb-3">
-                    <input type="email" disabled value="kalyan@gogagaholidays.in" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                 </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Trip Start Location</span>
-                <div class="input-group mb-3">
-                  <input type="text" disabled value="Hyderabad" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <span for="basic-url">Destination</span>
-                <div class="input-group mb-3">
-                  <input type="text" disabled value="Kerala" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                </div>
-              </div>
-              </div>
-              <div class="table-responsive">
-                <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
-                    <thead>
-                        <tr>
-                            <th>Location</th>
-                            <th>HotelName</th>
-                            <th>HotelStandard</th>
-                            <th>HotelAddress</th>
-                            <th>Check Date&Time</th>
-                            <th>Checkout Date&Time</th>
-                            <th>Duration</th>
-                            <th>RoomStandard</th>
-                            <th>Supplemantary Inclusions</th>
-                            <th>Confirmation Number from Source</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                              <input type="text" disabled value="Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                            </td>
-                            <td><input type="text" disabled value="Hotel C7 Munnar" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="text" disabled value="4 Star" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="datetime-local" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="text" disabled value="2 Nights" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td><input type="text" disabled value="Superior" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                            <td></td>
-                            <td><input type="text" disabled value="SDH-MR/1245" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></td>
-                        </tr>
-
-                </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      <div class="col-md-12">
-        <div class="card">
-          <div class="body">
-            <div class="row clearfix">
-               <div class="col-md-6">
-                 <span>Supplimentary Inclusions</span>
-                 <div class="input-group mb-3">
-                   <input type="text" value="Rohtang Pass" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                 </div>
-               </div>
-                 <div class="col-md-6">
-                  <span>Activity Date</span>
-                  <div class="input-group mb-3">
-                   <input type="date" value="Rohtang Pass" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                  </div>
-                 </div>
-                 <div class="col-md-6">
-                   <span>Transport Info</span>
-                   <div class="input-group mb-3">
-                     <input type="text" value="Innova Crysta" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                   </div>
-                 </div>
-                 <div class="col-md-6">
-                   <span>Seating Capacity</span>
-                   <div class="input-group mb-3">
-                     <input type="text" value="7+1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                   </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <button class="btn btn-secondary">Add More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-       <div class="col-md-12">
-        <div class="card"><!--day wise itinerary-->
-          <div class="header">
-              <h4>Daywise Itinerary</h4>
-          </div>
-          <div class="body">
-              <div class="row clearfix">
-                  <div class="col-md-12">
-                       <div class="row clearfix">
-                          <div class="col-lg-3 col-md-6 col-sm-12">
-                              <span>Day-1</span>
-                              <div class="input-group mb-3">
-                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 col-sm-12">
-                              <span>Location</span>
-                              <div class="input-group mb-3">
-                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 col-sm-12">
-                              <span>Kms</span>
-                              <div class="input-group mb-3">
-                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                              </div>
-                          </div>
-                          <div class="col-lg-3 col-md-6 col-sm-12">
-                              <span>Meal Plan</span>
-                              <div class="input-group mb-3">
-                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                              </div>
-                          </div>
-                       </div>
-                  </div>
-                  <span>Tour Plan</span>
-                  <div class="col-md-12">
-                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  ></textarea>
-                  </div>
-              </div>
-          </div>
-        </div>
-       </div>
-       <!--Flight Component has to be rendered from booking form-->
-      <div class="col-md-12">
-        <div class="card"><!--Inclusions-->
-          <div class="header">
-              <h4>Package Inclusions</h4>
-          </div>
-          <div class="body">
-              <div class="row clearfix">
-                  <div class="col-lg-6 col-md-12">
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox"><span>5 Nights Hotel Accomodation in 3 Star</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox" checked><span>Meet and Great at Chandigarh Airport</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox"><span>Daily Breakfast(no breakfast on Day 1) and Daily Dinner(no Dinner on Last Day)</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox"><span>All Tours and Transfers</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox" checked><span>Sightseeing's as per Itinerary</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox"><span>Water Bottles and Hot Water as per hotel policies</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox"><span>Customer Support 24X7</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label><input type="checkbox" checked><span>All Applicable Taxes including GST</span></label>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-secondary">Add More</button>
-              </div>
-          </div>
-        </div>
-       </div>
-       <div class="col-md-12">
-        <div class="card"><!--exclusions-->
-          <div class="header">
-              <h4>Package Exclusions</h4>
-          </div>
-          <div class="body">
-              <div class="row clearfix">
-                  <div class="col-lg-6 col-md-12">
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Lunch or any other extra meals</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Personal Expenses</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Early Checkin and Late Checkout</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Entry Tickets</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Extra Sightseeing's</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Trips for Guides and Drivers</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Rohtang Pass</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Snow Activities and Adventure Activities</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Room heater</span></label>
-                      </div>
-                      <div class="fancy-checkbox">
-                          <label style="color: red;"><input   type="checkbox"><span>Anything other than mentioned in above Inclusions</span></label>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6">
-                <button class="btn btn-secondary">Add More</button>
-              </div>
-          </div>
-        </div>
-       </div>
-       <div class="col-md-12">
-        <div class="card"><!--Important Notes-->
-          <div class="header">
-            <h6>Important Notes</h6>
-            <hr/>
-          </div>
-          <div class="body">
-              <div class="row clearfix">
-                  <div class="col-md-12">
-                    1) All the travellers sould reach the airport 2 hours before the Flight departure.
-                    <br/>2) All the travellers are advised to know the flight delay orCancellations in advance from the airlines to avoid trip cancellation
-                    <br/>3) Please carry baggage as per the tickets issued and any excess baggage additonal to the baggage provided will be charged by the airlines as per the airlines baggage
-                    <br/>policy
-                    <br/>4) Please note any rescheduling, Cancellation, Amendments from Airlines, Any Corrections are subjected to Your Choosen Airlines policies. Gogaga Holidays will not hold
-                    <br/>any responsibility in regards to any above mentioned corrections.
-                    <br/>IMPORTANT NOTES
-                    <br/>5) The Voucher is not allowed for any corrections and Changes, further any additonal services can be provided subject to service availability and on payment of additional
-                    <br/>charges.
-                    <br/>6) The hotels envisaged in the Vouchers cannot be changed, and no refund is allowed on the booking of hotel and services
-                    <br/>7) All the travellers should follow the timings as per the Holiday Vouchers, and any delay or no show in transfers the company will not hold and responsibility.
-                    <br/>8) For any Public Holidays, Natural Calamaties, Sudden unexpected Government Decessions the company will not hold responsible for Sightseeings and transfers.
-                  </div>
-              </div>
-          </div>
-        </div>
-       </div>
-       <div class="col-md-12">
-        <div class="card"><!--Important Notes-->
-          <div class="header">
-            <h6>Cancellation Policy</h6>
-            <hr/>
-          </div>
-          <div class="body">
-              <div class="row clearfix">
-                  <div class="col-md-12">
-                    Cancellation / Amendment notice received Cancellation charges per person
-                     Up to 30 days prior to date of departure Initial deposit amount or 25% of tour cost if full paid
-                     Between 15 days to 29 days prior to departure 50% of tour cost
-                     Less than 14 days to 8 days 75% of tour cost
-                     Less than 8 days to 72 hrs. 100% non refundable
-                     Note : Cancellation Policy is not negotiable in any condition and air ticket Cancellation as per airlines policy
-                  </div>
-              </div>
-          </div>
-        </div>
-       </div>
-      <div class="col-md-12">
-        <div class="card">
-          <div class="row clearfix">
-            <div style="justify-content: center;" class="input-group-append">
-              <button class="btn btn-primary" type="button">Submit</button>
-          </div>
-           </div>
-        </div>
-      </div>
     </div>
-   
+  </div>
+      <div class="row clearfix">
+        <div class="col-lg-12 col-md-12  col-sm-12 ">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="header">
+                <h4>GHRN</h4>
+              </div>
+              <div class="body">
+                <div class="row clearfix">
+                  <div class="col-md-12">
+                     <div class="row clearfix">
+                      <div class="col-md-6">
+                        <h6>PDF</h6>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>EXCEL</h6>
+                      </div>
+                     </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card"> <!--form info card-->
+
+                        <div class="header">
+                            <h2>Customer Info</h2>
+                        </div>
+                         <div class="body">
+                          <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Description</th>
+                                        <th class="text-right">Detatils</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="col-md-9">Customer Name</td>
+                                        <td class="col-md-3 text-right"><input [(ngModel)]="datas.customername"  type="text"   class="form-control"   /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">Email ID</td>
+                                        <td class="col-md-3 text-right"><input   type="text"  class="form-control"   /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">Contact No.</td>
+                                        <td class="col-md-3 text-right"><input [(ngModel)]="datas.customernumber" type="tel"   class="form-control"   /></td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                         </div>
+                        </div>
+                </div>
+                  <div class="col-md-12">
+                      <div class="card"> <!--form info card-->
+
+                          <div class="header">
+                              <h2>Form Info</h2>
+                          </div>
+                           <div class="body">
+                            <div class="table-responsive">
+                              <table class="table">
+                                  <thead class="thead-dark">
+                                      <tr>
+                                          <th>Description</th>
+                                          <th class="text-right">Detatils</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+
+                                      <tr>
+                                          <td class="col-md-9">Form Raisedf by</td>
+                                          <td class="col-md-3 text-right"><input [(ngModel)]="datas.formraiser"  class="form-control" /></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="col-md-9">Package Type:</td>
+                                          <td class="col-md-3 text-right"><input [(ngModel)]="datas.packagetype" class="form-control" /></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="col-md-9">Customer Type:</td>
+                                          <td class="col-md-3 text-right"><input [(ngModel)]="datas.customertype" class="form-control" /></td>
+                                      </tr>
+
+
+                                  </tbody>
+                              </table>
+                          </div>
+                           </div>
+                          </div>
+                  </div> 
+                  <div class="col-md-12">
+                    <div class="card"><!--pax details-->
+                        <div class="header">
+                            <h2>Pax Details</h2>
+                        </div>
+                        <div class="body social_counter">
+                            <ul class=" list-unstyled basic-list">
+                                <li>  <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Adults(12+ Years)</span>
+                                    </div>
+                                    <input type="number"  class="form-control" aria-label="Small" [(ngModel)]="datas.adults" aria-describedby="inputGroup-sizing-sm">
+                                </div></li>
+                                <li> <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Children(2-11 Years)</span>
+                                    </div>
+                                    <input type="number"  class="form-control" aria-label="Small" [(ngModel)]="datas.child" aria-describedby="inputGroup-sizing-sm">
+                                </div></li>
+                                <li> <div class="input-group input-group-sm mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="inputGroup-sizing-sm">Number of Infants(0-2 Years)</span>
+                                    </div>
+                                    <input type="number"  class="form-control" aria-label="Small" [(ngModel)]="datas.infant" aria-describedby="inputGroup-sizing-sm">
+                                </div> </li>
+                                 <li>
+                                    <div class="input-group input-group-sm mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="inputGroup-sizing-sm"> Total Passengers</span>
+                                        </div>
+                                        <input type="number"   class="form-control" aria-label="Small" [(ngModel)]="datas.passenger" aria-describedby="inputGroup-sizing-sm">
+                                    </div>
+                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                        
+                  <div class="col-md-12">
+                    <div class="card"> <!--form info card-->
+
+                        <div class="header">
+                            <h2>Holiday Info</h2>
+                        </div>
+                         <div class="body">
+                          <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Description</th>
+                                        <th class="text-right">Detatils</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td class="col-md-9">Start</td>
+                                        <td class="col-md-3 text-right"> <input type="text"  [(ngModel)]="datas.startfrom"   class="form-control" placeholder="Search here..." /></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="col-md-9">Destination</td>
+                                      <td class="col-md-3 text-right"> <input type="text"  [(ngModel)]="datas.destination" class="form-control" placeholder="Search here..." /></td>
+                                  </tr>
+                                    <tr>
+                                        <td class="col-md-9">Start Date</td>
+                                        <td class="col-md-3 text-right"> <input type="date" [(ngModel)]="datas.tripdate"  class="form-control" placeholder="Search here..." /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-md-9">End Date</td>
+                                        <td class="col-md-3 text-right"><input type="date" [(ngModel)]="datas.enddate"  class="form-control" placeholder="Search here..." /></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="col-md-9">Duration</td>
+                                      <td class="col-md-3 text-right"><input type="text"  [(ngModel)]="datas.duration"  class="form-control" placeholder="Search here..." /></td>
+                                  </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                         </div>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+             
+</div>
+      </div>
+
+          <!-- travel information (total taravel cost table is pending) -->
+
+            
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12  col-sm-12 ">
+                    <div class="col-md-12">
+                        <div class="card"><!--customer details-->
+                          <div class="row clearfix">
+                                  <div class="body">
+                                      <div class="col-md-12"><!--Partner Info-->
+                                          <div    class="card">
+                                              <div class="header">
+                                                  <h2>Partner Info</h2>
+                                              </div>
+                                               <div class="body">
+                                                <div class="table-responsive">
+                                                  <table class="table">
+                                                      <thead class="thead-dark">
+                                                          <tr>
+                                                              <th>Description</th>
+                                                              <th class="text-right">Detatils</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody> 
+                                                        <tr >
+                                                            <td>
+                                                                <div>
+                                                                    <div class="col-md-12">
+                                                                        <div class="input-group" id="adv-search">
+                                                                            <input type="text" class="form-control" placeholder="Search here..." />
+                                                                            <div class="input-group-btn">
+                                                                                <div class="btn-group" role="group">
+                                                                                    <div class="dropdown dropdown-lg">
+                                                                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                                                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                                                                            <form class="form-horizontal" role="form">
+                                                                                                <div class="form-group">
+                                                                                                <label for="filter">Filter by</label>
+                                                                                                <select class="form-control">
+                                                                                                    <option value="0" selected>All Iconic</option>
+                                                                                                    <option value="1">Featured</option>
+                                                                                                    <option value="2">Most popular</option>
+                                                                                                    <option value="3">Top rated</option>
+                                                                                                    <option value="4">Most commented</option>
+                                                                                                </select>
+                                                                                                </div>
+                                                                                                <div class="form-group">
+                                                                                                    <input class="form-control" type="text" placeholder="Author" />
+                                                                                                </div>
+                                                                                                <div class="form-group">
+                                                                                                    <input class="form-control" type="text" placeholder="Contains the words" />
+                                                                                                </div>
+                                                                                                <button type="submit" class="btn btn-primary btn-block">Search</button>
+                                                                                            </form>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button type="button" class="btn btn-primary"><span class="icon-magnifier" aria-hidden="true"></span></button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="body">
+                                                                         
+                                                                        <p class="mb-0">Search Result For "Bootstrap 4 admin"</p>
+                                                                        <strong> About 16,853 result ( 0.13 seconds)</strong>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-content padding-0">
+                                                                    
+                                                                </div>
+                                                            </td>
+                                                        </tr> 
+                                                      </tbody>
+                                                  </table>
+                                                   <table  class="table">
+                                                    <tbody>
+            
+                                                      <tr>
+                                                          <td class="col-md-9"><h5>Srikanth</h5><br/><small>Super Partner</small>-SP 3486</td>
+                                                          <td class="col-md-3 text-right"> <input type="text" [(ngModel)]="data.sup"    class="form-control" placeholder="Search here..." /></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="col-md-9"><h5>Srikanth</h5><br/><small>Sales Partner</small>-SP 3486</td>
+                                                        <td class="col-md-3 text-right"> <input type="text" [(ngModel)]="data.sap"     class="form-control" placeholder="Search here..." /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-md-9"><h5>Srikanth</h5><br/><small>Lead Generator</small>-SP 3486</td>
+                                                        <td class="col-md-3 text-right"> <input type="text" [(ngModel)]="data.lg"  class="form-control" placeholder="Search here..." /></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="col-md-9"><h5>Srikanth</h5><br/><small>Total</small></td>
+                                                        <td class="col-md-3 text-right"> <input type="text" [(ngModel)]="data.final"     class="form-control" placeholder="Search here..." /></td>
+                                                    </tr>
+                                                      </tbody>
+                                                   </table>
+                                              </div>
+                                               </div>
+                                          </div>
+                                     </div>
+                                       
+                                      <div class="col-md-12"><!--confirmation info-->
+                                          <div class="card">
+                                              <div class="header">
+                                                  <strong>Confirmation Info</strong>
+                                              </div>
+                                              <div class="body">
+                                                  <span for="basic-url">Package Confirmed Date</span>
+                                                   <div class="input-group mb-3">
+                                                      <input type="date"[(ngModel)]="data.confirmdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                                   </div>
+                                                      <span for="basic-url">Sales Team</span>
+                                                      <div class="input-group mb-3">
+                                                        <select [(ngModel)]="data.sales" class="custom-select" id="inputGroupSelect01">
+                                                            <option    *ngFor="let item of sales" [value]="item.value" >{{item.name}}</option>
+                                                          </select> 
+                                                      </div>
+                                                      <span for="basic-url">Itinerary Team</span>
+                                                      <div class="input-group mb-3">
+                                                        <select [(ngModel)]="data.itinearyt" class="custom-select" id="inputGroupSelect02">
+                                                            <option    *ngFor="let iti of itinearyt" [value]="iti.value" >{{iti.name}}</option>
+                                                          </select> 
+                                                      </div>
+                                                      <span>Itinerary Executive</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="text" [(ngModel)]="data.executive"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                              </div>
+                                          </div>
+                                      </div>
+          
+                                        <div class="col-md-12 "><!--payment info-->
+                                          <div class="card">
+                                              <div class="header">
+                                                  <h2>Payment Info</h2>
+                                              </div>
+                                              <div class="body">
+                                                  <div class="table-responsive">
+                                                      <table class="table">
+                                                          <thead class="thead-dark">
+                                                              <tr>
+                                                                  <th>Description</th>
+                                                                  <th class="text-right">Amount</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+          
+                                                              <tr>
+                                                                  <td class="col-md-9">Total Package Cost</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i> <input [(ngModel)]="data.packagecost" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                                              </tr> 
+                                                              <tr>
+                                                                  <td class="text-right">
+                                                                       
+                                                                      <p>Advance Amout:</p>
+                                                                      <p>Balance Due:</p>
+                                                                  </td>
+                                                                  <td class="text-right"> 
+                                                                      <p><i class="fa fa-inr"></i><input [(ngModel)]="data.advance" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                      <p><i class="fa fa-inr"></i><input [(ngModel)]="data.balance" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                                                  </td>
+                                                              </tr> 
+                                                          </tbody>
+                                                      </table>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                  </div>
+                                </div>
+                          </div>
+                      </div>
+                  <div class="col-md-12">
+                    <div class="card"><!--Flight Information-->
+                      <div class="body"><!--Flight Information-->
+                              <div class="input-group mb-3">
+                                  <div class="card"><!--Choosing transport-->
+                                      <div class="header">
+                                          <h4>Transport Info<small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small></h4>
+                                      </div>
+                                      <div class="body">
+                                          <div class="row clearfix">
+                                              <div class="col-md-6">
+                                                <select [(ngModel)]="data.transport" class="custom-select" id="inputGroupSelect03">
+                                                    <option    *ngFor="let tran of transport" [value]="tran.value" >{{tran.name}}</option>
+                                                  </select>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                                              </div>
+                                          </div>
+                                      </div>
+    
+                                  </div>
+                                  <div class="card"><!--flight pricing and etc-->
+                                      <div class="body">
+                                        <div class="row clearfix">
+                                             <div class="row clearfix">
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span for="basic-url">Flight Source</span>
+                                                      <div class="input-group mb-3">
+                                                        <input type="text"[(ngModel)]="data.fsource" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                      </div>
+                                                      </div>
+                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span for="basic-url">Price as on</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="datetime-local"[(ngModel)]="data.fpriceas" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                    </div>
+                                                   <div class="col-lg-3 col-md-6 col-sm-12">
+                                                     <span for="basic-url">Choosen Type</span>
+                                                      <div class="input-group mb-3">
+                                                        <select [(ngModel)]="data.flighttype" class="custom-select" id="inputGroupSelect04">
+                                                            <option    *ngFor="let flight of flighttype" [value]="flight.value" >{{flight.name}}</option>
+                                                          </select>
+                                                      </div>
+                                                   </div>
+                                              </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="card"><!--Flight DEtails One way-->
+                                      <div class="header">
+                                            <div class="row clearfix">
+                                                <div class="col-md-6">
+                                                    <h2>Flight Info</h2>
+                                                   </div> 
+                                                  <div class="col-md-6">
+                                                    <h2> </h2>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                       
+                                      <div class="body">
+                                          <div class="row clearfix"> 
+                                              <div class="col-md-12">
+                                                  <span for="basic-url">Summary</span>
+                                                  <div class="input-group mb-3">
+                                                      <textarea type="text"[(ngModel)]="data.summary1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <span>Onward Flight Details</span>
+                                                  <div class="input-group mb-3">
+                                                      <textarea type="text"[(ngModel)]="data.flightdetails1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+    
+                                              </div>
+                                              <div class="col-md-12">
+                                                <span>Return Flight Details</span>
+                                                <div class="input-group mb-3">
+                                                    <textarea type="text" class="form-control"[(ngModel)]="data.return" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                </div> 
+                                              </div>
+    
+                                              <div class="col-md-12">
+                                                  <span>IF Connecting Flights</span>
+                                                  <div class="input-group mb-3">
+                                                      <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                          <input type="checkbox" aria-label="Checkbox for following text input">
+                                                          </div>
+                                                      </div>
+                                                      <textarea type="text"[(ngModel)]="data.connecting1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12" >
+                                                  <div class="row clearfix">
+                                                      <div class="col-md-6">
+                                                          <span>Checkin Baggage (weight)</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.baggage1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                           </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                          <span>Flight Duration</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.fduration1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+    
+                                                      </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-12 ">
+                                              <div class="card">
+                                                  <div class="body">
+                                                      <div class="table-responsive">
+                                                          <table class="table">
+                                                              <thead class="thead-dark">
+                                                                  <tr>
+                                                                      <th>Description</th>
+                                                                      <th class="text-right">Amount</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+    
+                                                                  <tr>
+                                                                      <td class="col-md-9">Flight Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.flightcost1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Additional Baggage Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.addbaggage1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Total Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input class="form-control"[(ngModel)]="data.tcost1"   aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+    
+    
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                
+                                                    <div >
+                                                        
+                                                        <div   class="col-md-12"   >
+                                                            <span>Summary</span>
+                                                             <div class="input-group mb-3">
+                                                                <textarea type="text"[(ngModel)]="data.summary2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                  
+                                                             </div>  
+                                                        </div>
+                                                        <div   class="col-md-12"   >
+                                                            <span>Onward Flight Details</span>
+                                                             <div class="input-group mb-3">
+                                                                <textarea type="text" [(ngModel)]="data.flightdetails2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+
+                                                             </div>  
+                                                        </div>
+                                                        <div    class="col-md-12"  >
+                                                            <span>IF Connecting Flights</span>
+                                                             <div class="input-group mb-3">
+                                                                 <div class="input-group-prepend">
+                                                                     <div class="input-group-text">
+                                                                     <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                     </div>
+                                                                 </div>
+                                                                 <textarea type="text"[(ngModel)]="data.connecting2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                             </div> 
+                                                        </div>
+                                                        <div  class="col-md-12"  >
+                                                                <div class="row clearfix">
+                                                                    <div class="col-md-6">
+                                                                        <span>Checkin Baggage (weight)</span>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="text"[(ngModel)]="data.baggage2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                         </div>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <span>Flight Duration</span>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="text"[(ngModel)]="data.fduration2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                        </div>
+                  
+                                                                    </div>
+                                                                </div>
+                                                            
+                                                             
+                                                        </div>
+                                                        <div class="col-md-12"  >
+                                                            <div class="card">
+                                                                <div class="body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table">
+                                                                            <thead class="thead-dark">
+                                                                                <tr>
+                                                                                    <th>Description</th>
+                                                                                    <th class="text-right">Amount</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                  
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Flight Cost</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.flightcost2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Additional Baggage Cost</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.addbaggage2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Total Cost</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.tcost2"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr>
+                  
+                  
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          </div> 
+                                                    </div> 
+                                                 
+                                            </div>
+                                          </div>
+    
+                                      </div>
+                                  </div>
+                                  <!-- <div class="card"> 
+                                      <div class="header">
+                                          <h2>Flight Info</h2>
+                                      </div>
+                                      <div class="body">
+                                          <div class="row clearfix">
+                                              <div class="col-md-12">
+                                                  <span for="basic-url">Summary</span>
+                                                  <div class="input-group mb-3">
+                                                      <textarea type="text"[(ngModel)]="data.summary2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <span>Onward Flight Details</span>
+                                                  <div class="input-group mb-3">
+                                                      <textarea type="text"[(ngModel)]="data.flightdetails2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12">
+                                                  <span>Return Flight Details</span>
+                                                  <div class="input-group mb-3">
+                                                      <textarea type="text" class="form-control"[(ngModel)]="data.return" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+    
+                                              </div>
+    
+                                              <div class="col-md-12">
+                                                  <span>IF Connecting Flights</span>
+                                                  <div class="input-group mb-3">
+                                                      <div class="input-group-prepend">
+                                                          <div class="input-group-text">
+                                                          <input type="checkbox" aria-label="Checkbox for following text input">
+                                                          </div>
+                                                      </div>
+                                                      <textarea type="text"[(ngModel)]="data.connecting2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-12" >
+                                                  <div class="row clearfix">
+                                                      <div class="col-md-6">
+                                                          <span>Checkin Baggage (weight)</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.baggage2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                           </div>
+                                                      </div>
+                                                      <div class="col-md-6">
+                                                          <span>Flight Duration</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.fduration2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+    
+                                                      </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-12 ">
+                                              <div class="card">
+                                                  <div class="body">
+                                                      <div class="table-responsive">
+                                                          <table class="table">
+                                                              <thead class="thead-dark">
+                                                                  <tr>
+                                                                      <th>Description</th>
+                                                                      <th class="text-right">Amount</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+    
+                                                                  <tr>
+                                                                      <td class="col-md-9">Flight Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.flightcost2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Additional Baggage Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.addbaggage2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Total Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.tcost2" [(ngModel)]="tcost2" (ngModelChange)="totalfp()" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+    
+    
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                          </div>
+    
+                                      </div>
+                                  </div> -->
+                              </div>
+                      </div>
+                    </div>
+                  </div>
+                   <div class="col-md-12">
+                    <div class="card"><!--Train Details-->
+                      <div class="header">
+                          <h4>Train Details</h4>
+                          </div>
+                          <div class="body">
+                              <div class="input-group mb-3">
+                                  <div class="card"><!--Train pricing and etc-->
+                                      <div class="body">
+                                             <div class="row clearfix">
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span for="basic-url">Train Source</span>
+                                                      <div class="input-group mb-3">
+                                                        <input type="text"[(ngModel)]="data.tsource" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                      </div>
+                                                      </div>
+                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span for="basic-url">Price as on</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="datetime-local"[(ngModel)]="data.tpriceas" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                    </div>
+                                                   <div class="col-lg-3 col-md-6 col-sm-12">
+                                                     <span for="basic-url">Choosen Type</span>
+                                                      <div class="input-group mb-3">
+                                                        <select [(ngModel)]="data.traintype" class="custom-select" id="inputGroupSelect05">
+                                                            <option    *ngFor="let train of traintype" [value]="train.value" >{{train.name}}</option>
+                                                          </select>
+                                                      </div>
+                                                   </div>
+                                        </div>
+                                      </div>
+                                  </div>
+                                  <div class="card"><!--Train DEtails-->
+                                      <div class="header">
+                                          <h2>Train Info</h2>
+                                      </div>
+                                      <div class="body">
+                                          <div class="row clearfix">
+                                              <div class="col-md-12">
+                                                  <span>Train Name&No.</span>
+                                                  <div class="input-group mb-3">
+                                                      <input type="text"[(ngModel)]="data.trainname" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <span>From</span>
+                                                  <div class="input-group mb-3">
+                                                      <input type="text"[(ngModel)]="data.tfrom"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                   </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                  <span>To</span>
+                                                  <div class="input-group mb-3">
+                                                      <input type="text"[(ngModel)]="data.tto" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                   </div>
+                                              </div>
+    
+                                              <div class="col-md-12" >
+                                                  <div class="row clearfix">
+                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                          <span>Train Duration</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.tduration" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                          <span>Class</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.class" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-lg-3 col-md-6 col-sm-12">
+                                                          <span>Availability</span>
+                                                          <div class="input-group mb-3">
+                                                              <input type="text"[(ngModel)]="data.availability" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-12 ">
+                                              <div class="card">
+                                                  <div class="body">
+                                                      <div class="table-responsive">
+                                                          <table class="table">
+                                                              <thead class="thead-dark">
+                                                                  <tr>
+                                                                      <th>Description</th>
+                                                                      <th class="text-right">Amount</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Number of Pax</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.no" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Train Cost(per person)</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.perperson"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr> 
+                                                                  <tr>
+                                                                      <td class="col-md-9">Total Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.ttotal"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+    
+    
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                            <div class="col-md-12">  
+                                                        <div   class="col-md-12"  >
+                                                            <span>Train Name&No.</span>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text"[(ngModel)]="data.trainname1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                            </div> 
+                                                        </div>
+                                                        <div   class="col-md-6"  >
+                                                            <span>From</span>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text"[(ngModel)]="data.tfrom1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                             </div> 
+                                                        </div>
+                                                        <div    class="col-md-6" >
+                                                             
+                                                                <span>To</span>
+                                                                <div class="input-group mb-3">
+                                                                    <input type="text"[(ngModel)]="data.tto1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                 </div> 
+                                                        </div>
+                                                        <div  class="col-md-12" > 
+                                                                <div class="row clearfix">
+                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                        <span>Train Duration</span>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="text"[(ngModel)]="data.tduration1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                        <span>Class</span>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="text"[(ngModel)]="data.class1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                        <span>Availability</span>
+                                                                        <div class="input-group mb-3">
+                                                                            <input type="text"[(ngModel)]="data.availability1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div> 
+                                                        </div>
+                                                        <div class="col-md-12" >
+                                                            <div class="card">
+                                                                <div class="body">
+                                                                    <div class="table-responsive">
+                                                                        <table class="table">
+                                                                            <thead class="thead-dark">
+                                                                                <tr>
+                                                                                    <th>Description</th>
+                                                                                    <th class="text-right">Amount</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Number of Pax</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.no1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Train Cost(per person)</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.perperson1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr> 
+                                                                                <tr>
+                                                                                    <td class="col-md-9">Total Cost</td>
+                                                                                    <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.ttotal1"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                </tr>
+                  
+                  
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          </div> 
+                                                     
+                                                     
+                                                
+                                            </div>
+                                          </div>
+    
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+    
+    
+                    </div>
+                   </div>
+                   <div class="col-md-12">
+                    <div class="card"><!--Bus details-->
+                      <div class="header">
+                          <h4>Bus Details</h4>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="card"><!--Bus pricing and etc-->
+                                  <div class="body">
+                                         <div class="row clearfix">
+                                              <div class="col-lg-3 col-md-6 col-sm-12">
+                                                  <span for="basic-url">Bus Source</span>
+                                                  <div class="input-group mb-3">
+                                                    <input type="text"[(ngModel)]="data.bsource" placeholder="Start Stop" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                                  </div>
+                                                  </div>
+                                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                                  <span for="basic-url">Price as on</span>
+                                                  <div class="input-group mb-3">
+                                                      <input type="datetime-local"[(ngModel)]="data.bpriceas" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                  </div>
+                                                </div>
+                                               <div class="col-lg-3 col-md-6 col-sm-12">
+                                                 <span for="basic-url">Choosen Type</span>
+                                                  <div class="input-group mb-3">
+                                                    <select [(ngModel)]="data.bustype" class="custom-select" id="inputGroupSelect06">
+                                                        <option    *ngFor="let bus of bustype" [value]="bus.value" >{{bus.name}}</option>
+                                                      </select>
+                                                  </div>
+                                               </div>
+                                    </div>
+                                  </div>
+                              </div>
+                              <div class="card"><!--Bus DEtails-->
+                                  <div class="header">
+                                      <h2>Bus Info</h2>
+                                  </div>
+                                  <div class="body">
+                                      <div class="row clearfix">
+                                          <div class="col-md-12">
+                                              <span>Bus Name</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"[(ngModel)]="data.bname" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                              </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>From</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"  class="form-control"[(ngModel)]="data.bfrom" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>To</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"  class="form-control" aria-label="Small"[(ngModel)]="data.bto" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+    
+                                          <div class="col-md-12" >
+                                              <div class="row clearfix">
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span>Start Date&Time</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="datetime-local"[(ngModel)]="data.startdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span>Reach Date&Time</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="datetime-local"[(ngModel)]="data.reachdate" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span>Duration</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="text"[(ngModel)]="data.bduration" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                  </div>
+                                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                                      <span>Class</span>
+                                                      <div class="input-group mb-3">
+                                                          <input type="text"[(ngModel)]="data.bclass" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                         </div>
+                                         <div class="col-md-12 ">
+                                          <div class="card">
+                                              <div class="body">
+                                                  <div class="table-responsive">
+                                                      <table class="table">
+                                                          <thead class="thead-dark">
+                                                              <tr>
+                                                                  <th>Description</th>
+                                                                  <th class="text-right">Amount</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td class="col-md-9">Number of Pax</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.bno"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td class="col-md-9">Bus Cost(per person)</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.bper"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td class="col-md-9">Total Cost</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.btotal"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-12"> 
+                                                    
+                                                    <div   class="col-md-12"  >
+                                                        <span>Bus Name</span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"[(ngModel)]="data.bname1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                        </div> 
+                                                    </div>
+                                                    <div   class="col-md-6"  >
+                                                        <span>From</span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text"[(ngModel)]="data.bfrom1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                         </div> 
+                                                    </div>
+                                                    <div    class="col-md-6" >
+                                                         
+                                                            <span>To</span>
+                                                            <div class="input-group mb-3">
+                                                                <input type="text"[(ngModel)]="data.bto1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                             </div> 
+                                                    </div>
+                                                    <div  class="col-md-12" > 
+                                                        <div class="row clearfix">
+                                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                <span>Start Date&Time</span>
+                                                                <div class="input-group mb-3">
+                                                                    <input type="datetime-local"[(ngModel)]="data.startdate1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                <span>Reach Date&Time</span>
+                                                                <div class="input-group mb-3">
+                                                                    <input type="datetime-local"[(ngModel)]="data.reachdate1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                <span>Duration</span>
+                                                                <div class="input-group mb-3">
+                                                                    <input type="text"[(ngModel)]="data.bduration1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-md-6 col-sm-12">
+                                                                <span>Class</span>
+                                                                <div class="input-group mb-3">
+                                                                    <input type="text"[(ngModel)]="data.bclass1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="col-md-12" >
+                                                        <div class="card">
+                                                            <div class="body">
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead class="thead-dark">
+                                                                            <tr>
+                                                                                <th>Description</th>
+                                                                                <th class="text-right">Amount</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="col-md-9">Number of Pax</td>
+                                                                                <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.bno1"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="col-md-9">Bus Cost(per person)</td>
+                                                                                <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.bper1"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="col-md-9">Total Cost</td>
+                                                                                <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.btotal1"     class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                     
+                                                 
+                                        </div>
+                                      </div>
+    
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                   </div>
+                  <div class="col-md-12">
+                    <div class="card"><!--Hotel Details-->
+                      <div class="header">
+                          <h4>Hotel Details</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                      </div>
+                      <div class="header"></div>
+                      <div class="body">
+                          <div class="row clearfix">
+                              <span>Add Accomedation</span>
+                              <div class="col-md-6">
+                                   <input type="text"[(ngModel)]="data.addaccomodation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6">
+                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="card">
+                                  <div class="body">
+                                      <div class="row clearfix">
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Location</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.alocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <span for="basic-url">Hotel Name</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.ahotel" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Contact Person</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.acontact" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Contact Number</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="tel"[(ngModel)]="data.anumber" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Hotel Category</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"[(ngModel)]="data.acategory" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Vendor</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"[(ngModel)]="data.avendor" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Check-in</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="date"[(ngModel)]="data.acheckin" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Check-out</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="date"[(ngModel)]="data.acheckout" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Room Category</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.aroom" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                             <span for="basic-url">Meal Plan</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.amealplan" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Room Occupancy</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.aoccupancy" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Confirmation</span>
+                                              <div class="input-group mb-3">
+                                                  <div class="input-group-prepend">
+                                                      <span class="input-group-text">Upload</span>
+                                                  </div>
+                                                  <div class="custom-file">
+                                                      <input type="file"[(ngModel)]="data.aconfirm" class="custom-file-input" id="inputGroupFile01">
+                                                      <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="col-md-12">
+                                              <span for="basic-url">Hotel Supplementaries</span>
+                                                <div class="input-group mb-3">
+                                                  <textarea type="text"[(ngModel)]="data.asuppliment" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></textarea>
+    
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="card">
+                                  <div class="body">
+                                      <div class="row clearfix">
+                                          <div class="col-md-12 ">
+                                              <div class="card">
+                                                  <div class="body">
+                                                      <div class="table-responsive">
+                                                          <table class="table">
+                                                              <thead class="thead-dark">
+                                                                  <tr>
+                                                                      <th>Description</th>
+                                                                      <th class="text-right">Values</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  <tr>
+                                                                      <td class="col-md-9">No.of Rooms</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-building"></i><small><input [(ngModel)]="data.ano" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">No.of Nights</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-moon-o"></i><small><input [(ngModel)]="data.anight" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Per Room Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.arcost" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Supplimentary Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.asupp" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Total Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.atotal"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </div>
+                                                       
+                                                  </div>
+                                                  <div class="col-md-12"> 
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Location</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.alocation1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Hotel Name</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.ahotel1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Contact Person</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.acontact1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Contact Number</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.anumber1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Hotel Category</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.acategory1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span>Vendor</span>
+                                                                  <div class="input-group mb-3">
+                                                                      <input type="text"[(ngModel)]="data.avendor1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                   </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Check-in</span>
+                                                                 <div class="input-group mb-3">
+                                                                   <input type="date"[(ngModel)]="data.acheckin1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                 </div>
+                                                            </div>
+
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Check-out</span>
+                                                                <div class="input-group mb-3">
+                                                                  <input type="date"[(ngModel)]="data.acheckout1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Room Category</span>
+                                                                <div class="input-group mb-3">
+                                                                   <input type="text"[(ngModel)]="data.aroom1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                </div>
+                                                            </div>
+                                                            <div   class="col-md-12"  >
+                                                                <span for="basic-url">Meal Plan</span>
+                                                                 <div class="input-group mb-3">
+                                                                    <input type="text"[(ngModel)]="data.amealplan1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                 </div>
+                                                            </div>
+                                                            <div   class="col-md-6"  >
+                                                                <div class="col-md-6">
+                                                                    <span for="basic-url">Room Occupancy</span>
+                                                                      <div class="input-group mb-3">
+                                                                         <input type="text"[(ngModel)]="data.aoccupancy1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                      </div>
+                                                                </div>
+                                                            </div>
+                                                            <div    class="col-md-6" >
+                                                                <span for="basic-url">Confirmation</span>
+                                                                <div class="input-group mb-3">
+                                                                    <div class="input-group-prepend">
+                                                                        <span class="input-group-text">Upload</span>
+                                                                    </div>
+                                                                    <div class="custom-file">
+                                                                        <input type="file"[(ngModel)]="data.aconfirm1" class="custom-file-input" id="inputGroupFile01">
+                                                                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div  class="col-md-12" > 
+                                                                <span for="basic-url">Hotel Supplementaries</span>
+                                                                 <div class="input-group mb-3">
+                                                                   <textarea type="text"[(ngModel)]="data.asuppliment1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" ></textarea>
+
+                                                                 </div>
+                                                            </div>
+                                                            <div class="col-md-12" >
+                                                                <div class="card">
+                                                                    <div class="body">
+                                                                        <div class="table-responsive">
+                                                                            <table class="table">
+                                                                                <thead class="thead-dark">
+                                                                                    <tr>
+                                                                                        <th>Description</th>
+                                                                                        <th class="text-right">Values</th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td class="col-md-9">No.of Rooms</td>
+                                                                                        <td class="col-md-3 text-right"><i class="fa fa-building"></i><small><input [(ngModel)]="data.ano1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="col-md-9">No.of Nights</td>
+                                                                                        <td class="col-md-3 text-right"><i class="fa fa-moon-o"></i><small><input [(ngModel)]="data.anight1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="col-md-9">Per Room Cost</td>
+                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.arcost1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="col-md-9">Supplimentary Cost</td>
+                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.asupp1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="col-md-9">Total Cost</td>
+                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.atotal1"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                              </div>
+                                                             
+                                                         
+                                                </div>
+                                              </div>
+                                            </div>
+    
+    
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="card"><!--cab Details-->
+                      <div class="header">
+                          <h4>Cab Details</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                      </div>
+                      <div class="body">
+                          <div class="row clearfix">
+                              <span>Add Transport</span>
+                              <div class="col-md-6">
+                                   <input type="text"[(ngModel)]="data.addtrans" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                              </div>
+                              <div class="col-md-6">
+                                  <button class="btn btn-secondary" type="button">Add More+</button>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="card">
+                                  <div class="body">
+                                      <div class="row clearfix">
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Location</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.tlocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Source Name</span>
+                                                 <div class="input-group mb-3">
+                                                    <input type="text"[(ngModel)]="data.travelsource" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                 </div>
+                                           </div>
+                                          <div class="col-md-6">
+                                             <span for="basic-url">Travels Name</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text"[(ngModel)]="data.travelsname" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Contact Number</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="tel"[(ngModel)]="data.tcontact" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Vehicle Name</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"[(ngModel)]="data.tvehicle" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Vehicle Type</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text"[(ngModel)]="data.tvehitype" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Seating Capacity</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text" class="form-control"[(ngModel)]="data.tseating" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span>Provisioned for</span>
+                                              <div class="input-group mb-3">
+                                                  <input type="text" class="form-control"[(ngModel)]="data.tprovision" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                               </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Start Date</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="date" class="form-control"[(ngModel)]="data.travelstart" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Stop Date</span>
+                                                <div class="input-group mb-3">
+                                                  <input type="date" class="form-control"[(ngModel)]="data.travelend" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                              <span for="basic-url">Verification</span>
+                                                <div class="input-group mb-3">
+                                                   <input type="text" class="form-control"[(ngModel)]="data.tverification" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="body">
+                          <div class="input-group mb-3">
+                              <div class="card">
+                                  <div class="body">
+                                      <div class="row clearfix">
+                                          <div class="col-md-12 ">
+                                              <div class="card">
+                                                  <div class="body">
+                                                      <div class="table-responsive">
+                                                          <table class="table">
+                                                              <thead class="thead-dark">
+                                                                  <tr>
+                                                                      <th>Description</th>
+                                                                      <th class="text-right">Amount</th>
+                                                                  </tr>
+                                                              </thead>
+                                                              <tbody>
+                                                                  <tr>
+                                                                      <td class="col-md-9">No.of Units</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.nounit" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Units Per Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.noper" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                      <td class="col-md-9">Total Cab Cost</td>
+                                                                      <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.totalcab"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                  </tr>
+                                                              </tbody>
+                                                          </table>
+                                                      </div> 
+                                                  </div>
+                                              </div>
+                                            </div>
+    
+    
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+               <div class="col-md-12">
+                <div class="card"><!--Supplement Details-->
+                  <div class="header">
+                      <h4>Supplementary Info</h4><small>Input groups include support for custom selects and custom file inputs. Browser default versions of these are not supported.</small>
+                  </div>
+                  <div class="body">
+                      <div class="row clearfix">
+                          <span>Add Supplimentary</span>
+                          <div class="col-md-6">
+                               <input type="text"[(ngModel)]="data.addsuppli" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                          </div>
+                          <div class="col-md-6">
+                              <button class="btn btn-secondary" type="button">Add More+</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="body">
+                      <div class="input-group mb-3">
+                          <div class="card">
+                              <div class="body">
+                                  <div class="row clearfix">
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Supplementary Type</span>
+                                            <div class="input-group mb-3">
+                                               <input type="text"[(ngModel)]="data.suppitype"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Supplement Details</span>
+                                             <div class="input-group mb-3">
+                                                <input type="text"[(ngModel)]="data.suppidetails" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                             </div>
+                                       </div>
+                                      <div class="col-md-6">
+                                         <span for="basic-url">Service Location</span>
+                                            <div class="input-group mb-3">
+                                               <input type="text"[(ngModel)]="data.suppilocation" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Vendor Name</span>
+                                             <div class="input-group mb-3">
+                                                <input type="text"[(ngModel)]="data.suppivendor" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                             </div>
+                                       </div>
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Contact Number</span>
+                                            <div class="input-group mb-3">
+                                              <input type="tel"[(ngModel)]="data.suppicontact" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Start Date</span>
+                                            <div class="input-group mb-3">
+                                              <input type="date"[(ngModel)]="data.suppistart" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                            </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <span for="basic-url">Stop Date</span>
+                                            <div class="input-group mb-3">
+                                              <input type="date"[(ngModel)]="data.suppiend" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                            </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="body">
+                      <div class="input-group mb-3">
+                          <div class="card">
+                              <div class="body">
+                                  <div class="row clearfix">
+                                      <div class="col-md-12 ">
+                                          <div class="card">
+                                              <div class="body">
+                                                  <div class="table-responsive">
+                                                      <table class="table">
+                                                          <thead class="thead-dark">
+                                                              <tr>
+                                                                  <th>Description</th>
+                                                                  <th class="text-right">Amount</th>
+                                                              </tr>
+                                                          </thead>
+                                                          <tbody>
+                                                              <tr>
+                                                                  <td class="col-md-9">No.of Units</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.suppino"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td class="col-md-9">Cost Per Unit</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.suppiper" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                              <tr>
+                                                                  <td class="col-md-9">Total Supplement Cost</td>
+                                                                  <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input   [(ngModel)]="data.suppitotal"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                              </tr>
+                                                          </tbody>
+                                                      </table>
+                                                  </div>
+                                                   
+                                              </div>
+                                          </div>
+                                        </div>
+    
+    
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12"> 
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Supplementary Type</span>
+                                        <div class="input-group mb-3">
+                                           <input type="text"[(ngModel)]="data.suppitype1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                        </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Suppliment Details</span>
+                                      <div class="input-group mb-3">
+                                        <input type="date"[(ngModel)]="data.suppidetails1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Service Location</span>
+                                      <div class="input-group mb-3">
+                                        <input type="date"[(ngModel)]="data.suppilocation1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Vendor Name</span>
+                                      <div class="input-group mb-3">
+                                        <input type="date"[(ngModel)]="data.suppivendor1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Contact Number</span>
+                                      <div class="input-group mb-3">
+                                        <input type="date"[(ngModel)]="data.suppicontact1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span>Start Date</span>
+                                        <div class="input-group mb-3">
+                                            <input type="text"[(ngModel)]="data.suppistart1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                         </div>
+                                  </div>
+                                  <div   class="col-md-12"  >
+                                      <span for="basic-url">Stop Date</span>
+                                       <div class="input-group mb-3">
+                                         <input type="date"[(ngModel)]="data.suppiend1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                       </div>
+                                  </div>
+
+                                   
+                                  <div class="col-md-12" >
+                                      <div class="card">
+                                          <div class="body">
+                                              <div class="table-responsive">
+                                                  <table class="table">
+                                                      <thead class="thead-dark">
+                                                          <tr>
+                                                              <th>Description</th>
+                                                              <th class="text-right">Amount</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <td class="col-md-9">No.of Units</td>
+                                                              <td class="col-md-3 text-right"><i class="fa fa-users"></i><small><input [(ngModel)]="data.suppino1"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="col-md-9">Cost Per Unit</td>
+                                                              <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input [(ngModel)]="data.suppiper1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                          </tr>
+                                                          <tr>
+                                                              <td class="col-md-9">Total Supplement Cost</td>
+                                                              <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input   [(ngModel)]="data.suppitotal1"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                   
+                               
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+              <div class="col-md-12 "><!--payment info-->
+                <div class="card">
+                    <div class="header">
+                        <h2>Cost Sheet</h2>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table   class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Percent</th>
+                                        <th class="text-right">Amount</th>
+                                    </tr>
+                                </thead> 
+                                <tbody>
+                                     
+                                    <tr>
+                                        <td>Net Land Cost</td>
+                                        <td></td> 
+                                        <td><i class="fa fa-inr"></i><input class="form-control" [(ngModel)]="data.netcost"  aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Company Loading on Land Cost</td>
+                                        <td><input [(ngModel)]="data.companyper" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.companycost"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cost to Company</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.ccost"    class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Partner Commision</td>
+                                        <td><input [(ngModel)]="data.partnerper"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                        <td><i class="fa fa-inr"></i> <input   [(ngModel)]="data.partnercost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cost to be sold</td>
+                                        <td> </td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.scost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>GST</td>
+                                        <td><input [(ngModel)]="data.gstper"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.gstcost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Landing Cost after GST&Commissions</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.agstcost" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Actual Flight Cost</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.afc"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loading(%)on Flight Cost</td>
+                                        <td><input [(ngModel)]="data.fper"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.flcost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Flight Cost</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.totalfcost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total Travel Insurance</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.totaltcost"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cruise Cost/Chopper/others(Vendor Price)</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.cruisecost"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Agents Commision on Cruise</td>
+                                        <td><input [(ngModel)]="data.agentsper" class="form-control"  aria-label="Small" aria-describedby="inputGroup-sizing-sm" /></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.agentscost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Total Land</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.totallcost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr>
+                                    <tr> 
+                                        <td>Total Flight Cost</td>
+                                        <td></td>
+                                        <td><i class="fa fa-inr"></i> <input [(ngModel)]="data.totalfcost"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /> </td>
+                                    </tr >
+                                    <tr>
+                                        <td >
+                                            <h6>Total Package Cost:</h6>
+                                        </td>
+                                        <td></td>
+                                        <td class="text-danger">
+                                             
+                                             <i class="fa fa-inr"></i><input [(ngModel)]="data.totalp"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Land Cost per Person:</p>
+                                            <p>Flight Cost per Person:</p>
+                                        </td>
+                                        <td>
+                                            <p><i class="fa fa-users"></i><input [(ngModel)]="data.lpp"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                            <p><i class="fa fa-users"></i><input [(ngModel)]="data.fpp"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                        </td>
+                                        <td>
+                                            <p><i class="fa fa-inr"></i><input [(ngModel)]="data.lcpp"     class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                            <p><i class="fa fa-inr"></i><input [(ngModel)]="data.fcpp"     class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                        </td>
+                                    </tr> 
+                                    <tr>
+                                        <td>
+                                            <p>EMI Percentage:</p>
+                                            <p>Package Cost Including EMI:</p>  
+                                        </td>
+                                        <td>
+                                            <p><input [(ngModel)]="data.emicost"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                        </td>
+                                        <td>
+                                             
+                                            <p><i class="fa fa-users"></i><input [(ngModel)]="data.packagecoste"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></p>
+                                             
+                                        </td> 
+                                    </tr>
+                                     
+    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+               <div class="col-md-12">
+                <div class="card"><!--day wise itinerary-->
+                  <div class="header">
+                      <h4>Daywise Itinerary</h4>
+                  </div> 
+                  <div class="body">
+                      <div class="row clearfix">
+                          <div class="col-md-12">
+                               <div class="row clearfix">
+                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                      <span>Day-1</span>
+                                      <div class="input-group mb-3">
+                                          <input [(ngModel)]="data.day1" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                      <span>Location</span>
+                                      <div class="input-group mb-3">
+                                          <input [(ngModel)]="data.dlocation" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                      <span>Kms</span>
+                                      <div class="input-group mb-3">
+                                          <input [(ngModel)]="data.dkms" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 col-md-6 col-sm-12">
+                                      <span>Meal Plan</span>
+                                      <div class="input-group mb-3">
+                                          <input [(ngModel)]="data.dmeal" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                      </div>
+                                  </div>
+                               </div>
+                          </div>
+                          <span>Tour Plan</span>
+                          <div class="col-md-12">
+                              <textarea type="text"[(ngModel)]="data.dtour" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  ></textarea>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-md-12">
+                <div class="card"><!--Inclusions-->
+                  <div class="header">
+                      <h4>Package Inclusions</h4>
+                  </div>
+                  <div class="body">
+                      <div class="row clearfix">
+                          <div class="col-lg-6 col-md-12">
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox"><span>5 Nights Hotel Accomodation in 3 Star</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox" checked><span>Meet and Great at Chandigarh Airport</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox"><span>Daily Breakfast(no breakfast on Day 1) and Daily Dinner(no Dinner on Last Day)</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox"><span>All Tours and Transfers</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox" checked><span>Sightseeing's as per Itinerary</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox"><span>Water Bottles and Hot Water as per hotel policies</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox"><span>Customer Support 24X7</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label><input type="checkbox" checked><span>All Applicable Taxes including GST</span></label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+               <div class="col-md-12">
+                <div class="card"><!--exclusions-->
+                  <div class="header">
+                      <h4>Package Exclusions</h4>
+                  </div>
+                  <div class="body">
+                      <div class="row clearfix">
+                          <div class="col-lg-6 col-md-12">
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Lunch or any other extra meals</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Personal Expenses</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Early Checkin and Late Checkout</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Entry Tickets</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Extra Sightseeing's</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Trips for Guides and Drivers</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Rohtang Pass</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Snow Activities and Adventure Activities</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Room heater</span></label>
+                              </div>
+                              <div class="fancy-checkbox">
+                                  <label ><input   type="checkbox"><span>Anything other than mentioned in above Inclusions</span></label>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               </div>
+              <div class="col-md-12 "><!--Remarks page info-->
+                <div class="card">
+                    <div class="header">
+                        <h2>Package Remarks</h2>
+                    </div>
+                    <div class="body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-grey">
+                                    <tr>
+                                        <th>Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+    
+                                    <tr>
+    
+                                        <td><textarea [(ngModel)]="data.r1" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" > </textarea></td>
+                                    </tr>
+                                     
+    
+    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="justify-content: center;" class="input-group-append">
+            <button class="btn btn-success btn-block" (click)="openPdf()">Download PDF</button>
+        </div>
+        <div class="col-md-4 text-right">
+           
+      </div>
+</div> 
+     
+ 
+           
+    
+  
+  
+        

@@ -19,6 +19,7 @@ import { ProceedComponent } from './components/proceed/proceed.component';
 import { DeleteddataComponent } from './components/deleteddata/deleteddata.component';
 import { AngularFileUploaderModule } from 'angular-file-uploader';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import { TagInputModule } from 'ngx-chips';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     ReactiveFormsModule,
     MaterialModule,
     MatDialogModule,
-    NgMultiSelectDropDownModule
+    NgMultiSelectDropDownModule,
+    TagInputModule
   ]
 })
 export class ItinariresModule { }

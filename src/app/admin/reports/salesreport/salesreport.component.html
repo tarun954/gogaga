@@ -1,1 +1,115 @@
-<p>salesreport works!</p>
+<!-- <div class="container-fluid">
+   
+
+</div> -->
+<div class="block-header">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <h2>Table Filter</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
+                <li class="breadcrumb-item">Table</li>
+                <li class="breadcrumb-item active">Table Filter</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="d-flex flex-row-reverse">
+                <div class="page_action">
+                    <button type="button" class="btn btn-primary"><i class="fa fa-download"></i> Download report</button>
+                    <button type="button" class="btn btn-secondary"><i class="fa fa-send"></i> Send report</button>
+                </div>
+                <div class="p-2 d-flex">
+  
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="header">
+                <h2>Pending Itineraries<small>Basic example without any additional modification classes</small> </h2>
+            </div>
+            <div class="body">
+                <div class="table-responsive">
+                     
+                    <div class="col-md-6">
+                      <div class="input-group mb-3"> 
+                        <input matInput type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" (keyup)="applyFilter($event)" placeholder="Search" #input>
+                      </div>
+                     </div>
+                    
+                    <div class="mat-elevation-z8">
+                      <table class="table table-bordered table-hover js-basic-example dataTable table-custom" mat-table [dataSource]="dataSource" matSort>
+  
+                        <tr matColumnDef="teamname">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Team Name</th>
+                          <td mat-cell *matCellDef="let row">{{row.teamname}}</td>
+                        </tr>
+                        <!-- ID Column -->
+                        <tr matColumnDef="itinerary">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Form Raiser</th>
+                          <td mat-cell *matCellDef="let row">{{row.itinerary}}</td>
+                        </tr>
+                          
+                        <!-- Name Column -->
+                        <tr matColumnDef="submitted">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Submitted Itineraries</th>
+                          <td mat-cell *matCellDef="let row">  {{row.submitted}}</td>
+                        </tr>
+                    
+                         
+                        <!-- role Column -->
+                        <tr matColumnDef="target">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Target</th>
+                           <td mat-cell *matCellDef="let row"> {{row.target}}</td>
+                        </tr> 
+                        <!-- Fruit Column -->
+                        <tr matColumnDef="netcost">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Total Land Cost</th>
+                          <td mat-cell *matCellDef="let row">  
+                          {{row.netcost}}</td>
+                        </tr>
+                        <tr matColumnDef="afc">
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Total Flight Cost</th>
+                          <td mat-cell *matCellDef="let row"> 
+                          {{row.afc}}</td>
+                        </tr>
+                        <tr matColumnDef="achievement">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Achievement</th>
+                             <td mat-cell *matCellDef="let row">  {{row.achievement}}</td>
+                          </tr> 
+                          <!-- Fruit Column -->
+                          <tr matColumnDef="totalp">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
+                            <td mat-cell *matCellDef="let row">  
+                            {{row.totalp}}</td>
+                          </tr>
+                          <tr matColumnDef="achievementper">
+                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Achievement Percentage</th>
+                            <td mat-cell *matCellDef="let row"> 
+                            {{row.achievementper}}</td>
+                          </tr>
+                    
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    
+                        <!-- Row shown when there is no matching data. -->
+                        <tr class="mat-row" *matNoDataRow>
+                          <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                        </tr>
+                      </table>
+                    
+                      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div>
+        
+    </div>
+  </div>

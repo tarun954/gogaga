@@ -7,6 +7,7 @@ import { RoleComponent } from './role/role.component';
 import { PendingComponent } from './pending/pending.component';
 import { RoleformComponent } from './roleform/roleform.component';
 import { UserComponent } from './user/user.component';
+import { TeamformComponent } from './teamform/teamform.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
         component: UsertableComponent,
         data: { title: ':: Gogaga Holidays :: Pending ::' },
       }, 
+      {
+        path: 'teamform',
+        component: TeamformComponent,
+        data: { title: ':: Gogaga Holidays :: Pending ::' },
+      },
       {
         path: 'team',
         component: TeamComponent,

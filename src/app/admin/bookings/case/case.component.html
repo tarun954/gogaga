@@ -33,7 +33,7 @@
                 </div>
                 <div class="body">
                    <div class="row clearfix">
-                    <div class="col-md-6">
+                    <div class="col-lg-4 col-md-12">
                         <div class="header">
                           <h4>Payables</h4>
                         </div>
@@ -47,32 +47,32 @@
                         <tbody>
                           <tr>
                             <td>Net Land Cost</td>
-                            <td>1,33,500</td>
+                            <td>{{data.netcost}}</td>
                           </tr>
                           <tr>
                             <td>Profit</td>
-                            <td>22562</td>
+                            <td>{{data.companycost}}</td>
                           </tr>
                           <tr>
                             <td>Partner Commisions</td>
-                            <td>22562</td>
+                            <td>{{data.partnercost}}</td>
                           </tr>
                           <tr>
                             <td>GST</td>
-                            <td>9806</td>
+                            <td>{{data.gstcost}}</td>
                           </tr>
                           <tr>
                             <td>Flight Cost</td>
-                            <td>35183</td>
+                            <td>{{data.afc}}</td>
                           </tr>
                           <tr>
                               <td><strong>Total Payables</strong></td>
-                            <td> <strong>201050</strong></td>
+                            <td> <strong>{{(data.totalp)-(data.companycost)}}</strong></td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-4 col-md-12">
                         <div class="header">
                           <h4>Recievables</h4>
                         </div>
@@ -86,12 +86,12 @@
                         <tbody>
                           <tr>
                             <td>Customer Payment</td>
-                            <td>242859</td>
+                            <td>{{data.totalp}}</td>
                           </tr>
                         </tbody>
                       </table>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-4 col-md-12">
                       <div class="header">
                         <h4>Profits</h4>
                       </div>
@@ -105,7 +105,7 @@
                         <tbody>
                           <tr>
                             <td>Profit from Calc</td>
-                            <td>40050</td>
+                            <td>{{data.companycost}}</td>
                           </tr>
                            
                           <tr>
@@ -122,11 +122,11 @@
                           </tr>
                           <tr>
                             <td><strong>Consolidated Profits</strong></td>
-                            <td><strong>49068</strong></td>
+                            <td><strong></strong></td>
                           </tr>
                           <tr>
                             <td><strong>Net Profits</strong></td><!--Profit from calc-->
-                            <td><strong>40050</strong></td>
+                            <td><strong>{{(data.companycost)}}</strong></td>
                           </tr>
                         </tbody>
                       </table>

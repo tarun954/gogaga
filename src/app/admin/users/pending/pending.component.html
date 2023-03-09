@@ -61,6 +61,10 @@
                                         <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
                                         <td mat-cell *matCellDef="let row"> {{row.name}} </td>
                                       </ng-container>
+                                      <ng-container matColumnDef="team">
+                                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Team </th>
+                                        <td mat-cell *matCellDef="let row"> {{row.team===''?'Un Assigned' : row.team}} </td>
+                                      </ng-container>
                                   
                                       <!-- Fruit Column -->
                                       <ng-container matColumnDef="status">

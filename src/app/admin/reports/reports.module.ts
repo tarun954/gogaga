@@ -6,6 +6,8 @@ import { ReportsComponent } from './reports/reports.component';
 import { OperationsreportComponent } from './operationsreport/operationsreport.component';
 import { SalesreportComponent } from './salesreport/salesreport.component';
 import { ProductreportComponent } from './productreport/productreport.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MaterialModule } from 'src/Material-Module';
 
 
 @NgModule({
@@ -17,7 +19,10 @@ import { ProductreportComponent } from './productreport/productreport.component'
   ],
   imports: [
     CommonModule,
-    ReportsRoutingModule
-  ]
+    ReportsRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MaterialModule
+    ]
 })
 export class ReportsModule { }

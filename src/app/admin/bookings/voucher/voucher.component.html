@@ -3,16 +3,20 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <h2>Voucher List</h2>
+                        <h2>Confirmed Packages</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="fa fa-dashboard"></i></a></li>
                             <li class="breadcrumb-item">Bookings</li>
-                            <li class="breadcrumb-item">Vouchers</li>
+                            <li class="breadcrumb-item active">Confirmed Packages</li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="d-flex flex-row-reverse">
                             <div class="page_action">
+                                
+                            </div>
+                            <div class="p-2 d-flex">
+
                             </div>
                         </div>
                     </div>
@@ -23,249 +27,136 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="header">
-                            <h2>Vouchers</h2>
-                            <ul class="header-dropdown">
-                                <!-- <li><a href="javascript:void(0);" class="btn btn-info" data-toggle="modal" data-target="#addcontact">Add New</a></li> -->
-                            </ul>
+                            <h2>Confirmed Packages<small>Basic example without any additional modification classes</small> </h2>
                         </div>
                         <div class="body">
                             <div class="table-responsive">
-                                <table class="table table-hover js-basic-example dataTable table-custom   m-b-0 c_list">
-                                    <thead class="thead-dark">
+                                <!-- <table class="table table-bordered table-hover js-basic-example dataTable table-custom">
+                                    <thead>
                                         <tr>
-                                            <th>Client Name</th>
-                                            <th>Phone</th>
-                                            <th>Trip Start Date</th>
-                                            <th>Destination</th>
-                                            <th>Raised by</th>
-                                            <th>Raised on</th>
-                                            <th>Action</th>
+                                            <th>Ref.no</th>
+                                            <th>Clent Details</th>
+                                            <th>Source</th>
+                                            <th>Package</th>
+                                            <th>Pax Details</th>
+                                            <th>Source Date</th>
+                                            <th>View</th>
+                                            <th>Actions</th>
+                                            <th>Remove</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <!-- <td class="width45">
-                                               <img src="../assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
-                                            </td> -->
+                                            <td>GHRN12345</td>
+                                            <td>Varun<br/>8877665544<br/>Hyderabad</td>
+                                            <td>Akash<br/>Hyderabad<br/>Super Partner</td>
+                                            <td>Goa<br/>14/12/2023<br/></td>
+                                            <td>5 Members<br/>2 Rooms<br/>Lunch&Dinner</td>
+                                            <td>10/12/2023<br/>Uday</td>
+                                            <td  ><button class="btn btn-primary"><i class="fa fa-calculator"></i></button> <button class="btn btn-secondary"><i class="fa fa-file"></i></button></td>
                                             <td>
-                                                <h6 class="mb-0">Marshall Nichols</h6>
-                                                <span>marshall-n@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0215</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>24 Jun, 2015</td>
-                                            <td>Web Designer</td>
-                                            <td>24 Jun, 2015</td>
-                                            <td>
-                                               <button [routerLink]="['/bookings/voucherform']" routerLinkActive="router-link-active"  type="button" class="btn btn-sm btn-outline-danger js-sweetalert" title="Create Itinerary" data-type="confirm"><i class="fa fa-edit"></i></button>
-                                              </td>
+                                                <div class="dropdown">
+                                                    <a class=" dropdown-toggle"   data-bs-toggle="dropdown" aria-expanded="false">
+                                                      Actions
+                                                    </a>
+                                                    <ul style="width: 100px;" class="dropdown-menu">
+                                                      <li><a [routerLink]="['/admin/bookings/qualityanalysis']" routerLinkActive="router-link-active"  class="dropdown-item">Quality Analysis</a></li>
+                                                      <li><a [routerLink]="['/admin/bookings/payment']" routerLinkActive="router-link-active"  class="dropdown-item">Payables</a></li>
 
-                                        </tr>
-                                        <!-- <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar2.jpg" class="rounded-circle avatar" alt="">
+                                                    </ul>
+                                                  </div>
                                             </td>
                                             <td>
-                                                <h6 class="mb-0">Susie Willis</h6>
-                                                <span>sussie-w@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0216</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>28 Jun, 2015</td>
-                                            <td>Web Developer</td>
+                                               
+                                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Cancel
+                                              </button>
+                                               
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title">Cancellation</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    having a date and time stamp for recording it in database
+                                                    <div class="modal-body">
+                                                      <span>Employee Name</span>
+                                                      <div class="input-group mb-3">
+                                                        <input  type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required />
+                                                      </div>
+                                                      <span>Reason for Cancellation</span>
+                                                      <div class="input-group mb-3">
+                                                      <textarea type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" required></textarea>
+                                                      </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Debra Stewart</h6>
-                                                <span>debra@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0218</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>21 July, 2015</td>
-                                            <td>Web Developer</td>
 
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar4.jpg" class="rounded-circle avatar" alt="">
+                                                    </div>
+                                                  <div class="modal-footer">
+                                                    <button    type="button" class="btn btn-primary">Cancel</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
                                             </td>
-                                            <td>
-                                                <h6 class="mb-0">Francisco Vasquez</h6>
-                                                <span>francis-v@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0222</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>18 Jan, 2016</td>
-                                            <td>Team Leader</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar5.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Jane Hunt</h6>
-                                                <span>jane-hunt@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0232</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>08 Mar, 2016</td>
-                                            <td>Android Developer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar6.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Darryl Day</h6>
-                                                <span>darryl.day@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0233</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>13 Nov, 2016</td>
-                                            <td>IOS Developer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Marshall Nichols</h6>
-                                                <span>marshall-n@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0215</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>24 Jun, 2015</td>
-                                            <td>Web Designer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar2.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Susie Willis</h6>
-                                                <span>sussie-w@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0216</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>28 Jun, 2015</td>
-                                            <td>Web Developer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar3.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Debra Stewart</h6>
-                                                <span>debra@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0218</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>21 July, 2015</td>
-                                            <td>Web Developer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar4.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Francisco Vasquez</h6>
-                                                <span>francis-v@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0222</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>18 Jan, 2016</td>
-                                            <td>Team Leader</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar5.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Jane Hunt</h6>
-                                                <span>jane-hunt@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0232</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>08 Mar, 2016</td>
-                                            <td>Android Developer</td>
-
-                                        </tr>
-                                        <tr>
-                                            <td class="width45">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                                <img src="../assets/images/xs/avatar6.jpg" class="rounded-circle avatar" alt="">
-                                            </td>
-                                            <td>
-                                                <h6 class="mb-0">Darryl Day</h6>
-                                                <span>darryl.day@gmail.com</span>
-                                            </td>
-                                            <td><span>LA-0233</span></td>
-                                            <td><span>+ 264-625-2583</span></td>
-                                            <td>13 Nov, 2016</td>
-                                            <td>IOS Developer</td>
-
-                                        </tr> -->
-                                    </tbody>
-                                </table>
-                            </div>
+                                        </tr> 
+                                </tbody>
+                                </table> -->
+                                <div class="col-md-6">
+                                  <div class="input-group mb-3"> 
+                                    <input matInput type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" (keyup)="applyFilter($event)" placeholder="Search" #input>
+                                  </div>
+                                 </div>
+                                
+                                <div class="mat-elevation-z8">
+                                  <table class="table table-bordered table-hover js-basic-example dataTable table-custom" mat-table [dataSource]="dataSource" matSort>
+              
+                                    <tr matColumnDef="id">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>ID/Ref No/RaiseDate</th>
+                                      <td mat-cell *matCellDef="let row"> GHRN{{row.id}}</td>
+                                    </tr>
+                                     
+                                      
+                                    <!-- Name Column -->
+                                    <tr matColumnDef="customername customernumber">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header> Customer Name  </th>
+                                      <td mat-cell *matCellDef="let row">  <b>{{row.customername}}</b><br>Ph: {{row.customernumber}} </td>
+                                    </tr>
+                                
+                                     
+                                    <!-- role Column -->
+                                    <tr matColumnDef="destination tripdate passenger">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Destination </th>
+                                       <td mat-cell *matCellDef="let row"> {{row.destination}}<br>Trip Date: {{row.tripdate}}<br>Pax: {{row.passenger}}</td>
+                                    </tr> 
+                                     
+                                    <!-- Fruit Column -->
+                                    <tr matColumnDef="action">
+                                      <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
+                                      <td mat-cell *matCellDef="let row"> 
+                                        <button class="btn btn-secondary" routerLink="/admin/bookings/voucherform/{{row.id}}" routerLinkActive="router-link-active"><i class="fa fa-edit"></i></button> 
+                                         
+                                      
+                                         
+                                      </td>
+                                    </tr>
+                                
+                                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                
+                                    <!-- Row shown when there is no matching data. -->
+                                    <tr class="mat-row" *matNoDataRow>
+                                      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                                    </tr>
+                                  </table>
+                                
+                                  <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                                </div>
+							         </div>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
-    
+     

@@ -12,6 +12,15 @@
         </mat-option>
        </mat-select>
        <div>
+        <mat-label>Team</mat-label>
+        <mat-select formControlName="team">
+         <mat-option value="">Select Team</mat-option>
+         <mat-option *ngFor="let item of teamlist" [value]="item.code">
+             {{item.name}}
+         </mat-option>
+        </mat-select>
+       </div>
+       <div>
         <mat-checkbox class="example-margin"formControlName="isactive" >Is Active</mat-checkbox>
        </div>
           <div>

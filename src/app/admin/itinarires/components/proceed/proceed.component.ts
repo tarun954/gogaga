@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, Input, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ApiService } from '../../../../services/api.service';
@@ -118,6 +118,8 @@ export class ProceedComponent {
   }) 
     
  }
+ 
+
  publish(){
   if(this.versionform.valid){
    console.log(this.versionform.value)
@@ -137,7 +139,11 @@ export class ProceedComponent {
   }
    
 }
+@Input()  count: number =0;
+@Output() value = new EventEmitter<number>();
+ 
  submit(){
-   
+  this.count = this.count+1
+  console.log(this.count)
  }
 }

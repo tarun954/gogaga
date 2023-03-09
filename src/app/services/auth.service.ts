@@ -9,7 +9,7 @@ export class AuthService {
    constructor(private http:HttpClient){
     
    }
-   apiurl='https://json-server-nvp8.onrender.com/signup';
+   apiurl='http://localhost:3000/signup';
     GetAll(){
       return this.http.get(this.apiurl);
     }
@@ -17,7 +17,10 @@ export class AuthService {
       return this.http.get(this.apiurl+'/'+id);
     }
     GetAllRole(){
-      return this.http.get('https://json-server-nvp8.onrender.com/role');
+      return this.http.get('http://localhost:3000/role');
+    }
+    GetAllTeam(){
+      return this.http.get('http://localhost:3000/team');
     }
 
     Proceedreg(inputdata:any){

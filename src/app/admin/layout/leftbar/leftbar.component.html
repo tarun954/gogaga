@@ -222,6 +222,9 @@
                               <li (click)="changeNavTab('partners')">
                                 <ul>
                                   <li>
+                                    <div class="view-item"><a [routerLink]="['partner/pending']" routerLinkActive="router-link-active"   > <span>Pending</span></a></div>
+                                  </li>
+                                  <li>
                                     <div class="view-item"><a [routerLink]="['partner/superpartner']" routerLinkActive="router-link-active"   > <span>Super Partner</span></a></div>
                                   </li>
                                   <li>
@@ -237,20 +240,20 @@
                                     <div class="view-item"><a [routerLink]="['partner/masterpartner']" routerLinkActive="router-link-active"   > <span>Master Partner</span></a></div>
                                   </li>
                                   <li>
-                                    <div class="view-item"><a [routerLink]="['partner/salesreport']" routerLinkActive="router-link-active"   > <span>Lead Generator</span></a></div>
+                                    <div class="view-item"><a [routerLink]="['partner/salereport']" routerLinkActive="router-link-active"   > <span>Sale Partner Report</span></a></div>
                                   </li>
                                   <li>
-                                    <div class="view-item"><a [routerLink]="['partner/superpartnerreport']" routerLinkActive="router-link-active"   > <span>Partner Form</span></a></div>
+                                    <div class="view-item"><a [routerLink]="['partner/superpartnerreport']" routerLinkActive="router-link-active"   > <span>Super Partner Report</span></a></div>
                                   </li>
                                   <li>
+                                    <div class="view-item"><a [routerLink]="['partner/salestatement']" routerLinkActive="router-link-active"   > <span>Sales Statement</span></a></div>
+                                  </li>
+                                  <li>
+                                    <div class="view-item"><a [routerLink]="['partner/superstatement']" routerLinkActive="router-link-active"   > <span>Super Statement</span></a></div>
+                                  </li>
+                                  <!-- <li>
                                     <div class="view-item"><a [routerLink]="['partner/salesstatement']" routerLinkActive="router-link-active"   > <span>Master Partner</span></a></div>
-                                  </li>
-                                  <li>
-                                    <div class="view-item"><a [routerLink]="['partner/superstatement']" routerLinkActive="router-link-active"   > <span>Partner Form</span></a></div>
-                                  </li>
-                                  <li>
-                                    <div class="view-item"><a [routerLink]="['partner/salesstatement']" routerLinkActive="router-link-active"   > <span>Master Partner</span></a></div>
-                                  </li>
+                                  </li> -->
                                 </ul>
                               </li>
   

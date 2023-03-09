@@ -9,6 +9,9 @@ import { TeamComponent } from './team/team.component';
 import { RoleComponent } from './role/role.component';
 import { PendingComponent } from './pending/pending.component';
 import { MaterialModule } from '../../../Material-Module';
+import { FormsComponent } from '../../forms/forms.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TeamformComponent } from './teamform/teamform.component';
 
 
 @NgModule({
@@ -18,13 +21,18 @@ import { MaterialModule } from '../../../Material-Module';
     TeamComponent,
     RoleComponent,
     PendingComponent,
-    UserComponent
+    UserComponent,
+    TeamformComponent
 
   ],
   imports: [
     CommonModule,
     MaterialModule,
-    UsersRoutingModule
+    UsersRoutingModule, 
+    ReactiveFormsModule,
+    FormsModule,
+    MaterialModule
+
   ]
 })
 export class UsersModule { }

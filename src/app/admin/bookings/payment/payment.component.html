@@ -58,6 +58,65 @@
             </div>
             </div> 
         </div>
+        <div>
+          Record: <input 
+  type="text"
+  placeholder="Enter Here"
+  [(ngModel)]="newRecord"
+  (keyup.enter)="onEnter()">
+
+<hr>
+
+<form (ngSubmit)="onEnter()">
+  First Name: <input name="firstName" [(ngModel)]="newObject.firstName">
+  Last Name: <input name="lastName" [(ngModel)]="newObject.lastName">
+  <button>Submit</button>
+</form>
+
+<hr>
+
+<div *ngIf="data.length > 0">
+  <h4>Records</h4>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>
+          Names
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let datum of data">
+        <td>
+          {{ datum }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div *ngIf="names.length > 0">
+  <h4>Names</h4>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let name of names">
+        <td>
+          {{ name.firstName }}
+        </td>
+        <td>
+          {{ name.lastName }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </div>
           <div class="col-lg-12 col-md-12 col-sm-12"><!--Payment File-->
             <div class="card">
               <div class="header">

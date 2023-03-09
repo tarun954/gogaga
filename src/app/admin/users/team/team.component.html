@@ -28,21 +28,16 @@
               <div class="col-md-12">
                   <div class="card">
                       <div class="header">
-                          <h2>DS - Design Team <small>Ranking 2th</small></h2>
+                          <h2>Domestic Team</h2>
                           <ul class="header-dropdown">
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-
+                            <button routerLink="/admin/users/teamform" class="btn btn-secondary" type="button"> 
+                                Add
                               </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a >Add</a></li>
-                              </ul>
-                            </div>
                           </ul>
                       </div>
                         <div class="col-md-12">
                           <div class="row clearfix">
-                            <div class="col-md-6">
+                            <!-- <div class="col-md-6">
                               <div class="card">
                                <div class="body">
                                  <h6 class="m-b-15">Info about Design Team <span class="badge badge-success float-right">New</span></h6>
@@ -71,15 +66,15 @@
                                  </div>
                                </div>
                               </div>
-                            </div>
-                            <div class="col-md-6">
+                            </div> -->
+                            <div class="col-md-12">
                              <div class="card">
                                <div class="header">
                                    <h2>Team List</h2>
                                </div>
                                <div class="body">
                                    <div class="table-responsive">
-                                       <table class="table table-hover mb-0 c_list">
+                                       <!-- <table class="table table-hover mb-0 c_list">
                                            <thead>
                                                <tr>
                                                    <th>Name</th>
@@ -101,8 +96,33 @@
                                                    </td>
                                                </tr>
                                            </tbody>
-                                       </table>
-                                   </div>
+                                       </table> -->
+                                       <div class="mat-elevation-z8">
+                                        <table class="table table-bordered table-hover js-basic-example dataTable table-custom" mat-table [dataSource]="dataSource" matSort>
+                    
+                                          <tr matColumnDef="name">
+                                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Employee Name</th>
+                                            <td mat-cell *matCellDef="let row">{{row.name}}</td>
+                                          </tr>
+                                          <!-- ID Column -->
+                                          <tr   matColumnDef="role">
+                                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Employee</th>
+                                            <td mat-cell *matCellDef="let row">{{row.role}}</td>
+                                          </tr>
+                                          <tr matColumnDef="team">
+                                            <th mat-header-cell *matHeaderCellDef mat-sort-header>Team</th>
+                                            <td  mat-cell *matCellDef="let row">{{row.team}}</td>
+                                          </tr>
+                                           
+                                          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                      
+                                          
+                                        </table>
+                                      
+                                        <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                                      </div>
+                                    </div>
                                </div>
                            </div>
                            </div>
@@ -111,7 +131,113 @@
                         </div>
                   </div>
               </div>
-              <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+              <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h2>International Team</h2>
+                        <ul class="header-dropdown">
+                          <button routerLink="/admin/users/teamform" class="btn btn-secondary" type="button"> 
+                              Add
+                            </button>
+                        </ul>
+                    </div>
+                      <div class="col-md-12">
+                        <div class="row clearfix">
+                          <!-- <div class="col-md-6">
+                            <div class="card">
+                             <div class="body">
+                               <h6 class="m-b-15">Info about Design Team <span class="badge badge-success float-right">New</span></h6>
+
+                               <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                               <ul class="list-unstyled team-info m-t-20">
+                                   <li class="m-r-15"><small class="text-muted">Team</small></li>
+                                   <li><img src="assets/images/xs/avatar1.jpg" title="Varun" alt="Avatar"></li>
+                                   <li><img src="assets/images/xs/avatar2.jpg" title="Avatar" alt="Avatar"></li>
+                                   <li><img src="assets/images/xs/avatar3.jpg" title="Avatar" alt="Avatar"></li>
+                                   <li><img src="assets/images/xs/avatar4.jpg" title="Avatar" alt="Avatar"></li>
+                                   <li><img src="assets/images/xs/avatar5.jpg" title="Avatar" alt="Avatar"></li>
+                               </ul>
+                               <div class="progress progress-xs progress-transparent custom-color-blue">
+                                   <div class="progress-bar" data-transitiongoal="87"></div>
+                               </div>
+
+                               <div class="row">
+                                   <div class="col-7">
+                                       <small>PROJECTS: 12</small>
+                                       <h6>BUDGET: 4,870 USD</h6>
+                                   </div>
+                                   <div class="col-5">
+                                       <div class="sparkline text-right m-t-10" data-type="bar" data-width="97%" data-height="26px" data-bar-Width="2" data-bar-Spacing="7" data-bar-Color="#7460ee">2,5,8,3,5,7,1,6</div>
+                                   </div>
+                               </div>
+                             </div>
+                            </div>
+                          </div> -->
+                          <div class="col-md-12">
+                           <div class="card">
+                             <div class="header">
+                                 <h2>Team List</h2>
+                             </div>
+                             <div class="body">
+                                 <div class="table-responsive">
+                                     <!-- <table class="table table-hover mb-0 c_list">
+                                         <thead>
+                                             <tr>
+                                                 <th>Name</th>
+                                                 <th>Position</th>
+                                                 <th>Action</th>
+                                             </tr>
+                                         </thead>
+                                             <tbody>
+                                             <tr>
+                                                 <td>
+                                                     <img src="assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
+                                                     <p class="c_name">Robert Hammer <span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
+                                                 </td>
+                                                 <td>
+                                                   <p class="c_name">Operations </p>
+                                                 </td>
+                                                 <td>
+                                                     <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
+                                                 </td>
+                                             </tr>
+                                         </tbody>
+                                     </table> -->
+                                     <div class="mat-elevation-z8">
+                                      <table class="table table-bordered table-hover js-basic-example dataTable table-custom" mat-table [dataSource]="dataSource" matSort>
+                  
+                                        <tr matColumnDef="name">
+                                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Employee Name</th>
+                                          <td mat-cell *matCellDef="let row">{{row.name}}</td>
+                                        </tr>
+                                        <!-- ID Column -->
+                                        <tr   matColumnDef="role">
+                                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Employee</th>
+                                          <td mat-cell *matCellDef="let row">{{row.role}}</td>
+                                        </tr>
+                                        <tr matColumnDef="team">
+                                          <th mat-header-cell *matHeaderCellDef mat-sort-header>Team</th>
+                                          <td  mat-cell *matCellDef="let row">{{row.team}}</td>
+                                        </tr>
+                                         
+                                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                                    
+                                        
+                                      </table>
+                                    
+                                      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+                                    </div>
+                                  </div>
+                             </div>
+                         </div>
+                         </div>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+              <!-- <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                   <div class="card">
                       <div class="header">
                           <h2>MT - Marketing Team <small>Ranking 4th</small></h2>
@@ -308,7 +434,7 @@
                           </div>
                       </div>
                   </div>
-              </div>
+              </div> -->
           </div>
       </div>
 

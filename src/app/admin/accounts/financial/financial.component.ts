@@ -12,7 +12,7 @@ import { ApiService } from '../../../services/api.service';
 })
 export class FinancialComponent implements OnInit{
   constructor(private api:ApiService){}
-  displayedColumns: string[] = ['transactionnumber','ghrn','transactiondate','transactionparticular','transactiontype','type','balance'];
+  displayedColumns: string[] = ['transactionnumber','ghrn','transactiondate','transactionparticular','transactiontype','type','amount','balance'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -28,9 +28,10 @@ export class FinancialComponent implements OnInit{
   ngOnInit(): void {
       this.getFinancial();
   }
- 
-
- 
+  type:any;
+   
+  balance: number = 10000;
+  
   getFinancial(){
     this.api.getfinancial().subscribe({
       next:(res)=>{

@@ -622,90 +622,136 @@
                                                       </div>
                                                   </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div formArrayName="flights">
-                                                        <div *ngFor="let auth of flights.controls; let i=index;">
-                                                            
-                                                            <div   class="col-md-12"  [formGroupName]="i">
-                                                                <span>Summary</span>
-                                                                 <div class="input-group mb-3">
-                                                                    <textarea type="text" formControlName="summary2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
-                                                                      
-                                                                 </div>  
-                                                            </div>
-                                                            <div   class="col-md-12"  [formGroupName]="i">
-                                                                <span>Onward Flight Details</span>
-                                                                 <div class="input-group mb-3">
-                                                                    <textarea type="text"  formControlName="flightdetails2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
-
-                                                                 </div>  
-                                                            </div>
-                                                            <div    class="col-md-12" [formGroupName]="i">
-                                                                <span>IF Connecting Flights</span>
-                                                                 <div class="input-group mb-3">
-                                                                     <div class="input-group-prepend">
-                                                                         <div class="input-group-text">
-                                                                         <input type="checkbox" aria-label="Checkbox for following text input">
-                                                                         </div>
-                                                                     </div>
-                                                                     <textarea type="text" formControlName="connecting2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
-                                                                 </div> 
-                                                            </div>
-                                                            <div  class="col-md-12" [formGroupName]="i">
-                                                                    <div class="row clearfix">
-                                                                        <div class="col-md-6">
-                                                                            <span>Checkin Baggage (weight)</span>
-                                                                            <div class="input-group mb-3">
-                                                                                <input type="text" formControlName="baggage2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                                                             </div>
-                                                                        </div>
-                                                                        <div class="col-md-6">
-                                                                            <span>Flight Duration</span>
-                                                                            <div class="input-group mb-3">
-                                                                                <input type="text" formControlName="fduration2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
-                                                                            </div>
-                      
-                                                                        </div>
-                                                                    </div>
-                                                                
-                                                                 
-                                                            </div>
-                                                            <div class="col-md-12" [formGroupName]="i">
-                                                                <div class="card">
-                                                                    <div class="body">
-                                                                        <div class="table-responsive">
-                                                                            <table class="table">
-                                                                                <thead class="thead-dark">
-                                                                                    <tr>
-                                                                                        <th>Description</th>
-                                                                                        <th class="text-right">Amount</th>
-                                                                                    </tr>
-                                                                                </thead>
-                                                                                <tbody>
-                      
-                                                                                    <tr>
-                                                                                        <td class="col-md-9">Flight Cost</td>
-                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="flightcost2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td class="col-md-9">Additional Baggage Cost</td>
-                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="addbaggage2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td class="col-md-9">Total Cost</td>
-                                                                                        <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="tcost2"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
-                                                                                    </tr>
-                      
-                      
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </div>
-                                                                    </div>
+                                                <!-- <div class="col-md-12">
+                                                    <div formArrayName="employees">
+                                                        <div *ngFor="let employee of employees().controls; let empIndex=index">
+                                                          <div
+                                                            [formGroupName]="empIndex"
+                                                            style="border: 1px solid blue; padding: 10px; width: 600px; margin: 5px;"
+                                                          >
+                                                            {{empIndex+1}}
+                                                            <span>Summary</span>
+                                                             <div class="input-group mb-3">
+                                                                <textarea type="text" formControlName="summary2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                  
+                                                             </div>   
+                                                    
+                                                            <button (click)="removeEmployee(empIndex)">Remove</button>
+                                                    
+                                                            <div formArrayName="skills" style="border: 1px solid green; margin: 5px;">
+                                                              <div
+                                                                *ngFor="let skill of employeeSkills(empIndex).controls; let skillIndex=index"
+                                                              >
+                                                                <div [formGroupName]="skillIndex">
+                                                                  {{skillIndex+1}} Skill :
+                                                                  <input type="text" formControlName="skill" />
+                                                                  Exp:
+                                                                  <input type="text" formControlName="exp" />
+                                                    
+                                                                  <button (click)="removeEmployeeSkill(empIndex,skillIndex)">
+                                                                    Remove
+                                                                  </button>
                                                                 </div>
                                                               </div>
-                                                            <button class="btn btn-primary"  (click)="removeAuthor(i)">Remove</button>
+                                                              <button type="button" (click)="addEmployeeSkill(empIndex)">
+                                                                Add Skill
+                                                              </button>
+                                                            </div>
+                                                          </div>
                                                         </div>
-                                                        <button class="btn btn-secondary" (click)="addMoreAuthor()" >Add more</button>
+                                                      </div>
+                                                    
+                                                      <p>
+                                                        <button type="button" (click)="addEmployee()">Add Employee</button>
+                                                      </p>
+                                                </div> -->
+                                                <div class="col-md-12">
+                                                    <div formArrayName="flights">
+                                                         <div *ngFor="let employee of flights().controls; let empIndex=index">
+                                                            <div  [formGroupName]="empIndex" >
+                                                                {{empIndex+1}}
+                                                                <div  class="col-md-12">
+                                                                    <span>Summary</span>
+                                                                     <div class="input-group mb-3">
+                                                                        <textarea type="text" formControlName="summary2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                          
+                                                                     </div>  
+                                                                </div>
+                                                                <div   class="col-md-12"  >
+                                                                    <span>Onward Flight Details</span>
+                                                                     <div class="input-group mb-3">
+                                                                        <textarea type="text"  formControlName="flightdetails2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+    
+                                                                     </div>  
+                                                                </div>
+                                                                <div    class="col-md-12" >
+                                                                    <span>IF Connecting Flights</span>
+                                                                     <div class="input-group mb-3">
+                                                                         <div class="input-group-prepend">
+                                                                             <div class="input-group-text">
+                                                                             <input type="checkbox" aria-label="Checkbox for following text input">
+                                                                             </div>
+                                                                         </div>
+                                                                         <textarea type="text" formControlName="connecting2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></textarea>
+                                                                     </div> 
+                                                                </div>
+                                                                <div  class="col-md-12" >
+                                                                        <div class="row clearfix">
+                                                                            <div class="col-md-6">
+                                                                                <span>Checkin Baggage (weight)</span>
+                                                                                <div class="input-group mb-3">
+                                                                                    <input type="text" formControlName="baggage2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                 </div>
+                                                                            </div>
+                                                                            <div class="col-md-6">
+                                                                                <span>Flight Duration</span>
+                                                                                <div class="input-group mb-3">
+                                                                                    <input type="text" formControlName="fduration2" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" />
+                                                                                </div>
+                          
+                                                                            </div>
+                                                                        </div>
+                                                                    
+                                                                     
+                                                                </div>
+                                                                 
+                                                                <div class="col-md-12" >
+                                                                    <div class="card">
+                                                                        <div class="body">
+                                                                            <div class="table-responsive">
+                                                                                <table class="table">
+                                                                                    <thead class="thead-dark">
+                                                                                        <tr>
+                                                                                            <th>Description</th>
+                                                                                            <th class="text-right">Amount</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                          
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Flight Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="flightcost2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Additional Baggage Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="addbaggage2"  class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td class="col-md-9">Total Cost</td>
+                                                                                            <td class="col-md-3 text-right"><i class="fa fa-inr"></i><small><input formControlName="tcost2"   class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"  /></small></td>
+                                                                                        </tr>
+                          
+                          
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                  </div>
+                                                                  <button class="btn btn-primary" (click)="removeEmployee(empIndex)">Remove</button>
+                                                            </div>
+                                                         </div>
+                                                        <button class="btn btn-secondary" type="button" (click)="addEmployee()">Add More</button>
                                                     </div>
                                                 </div>
                                               </div>
@@ -844,7 +890,7 @@
                                           <div class="header">
                                               <h2>Train Info</h2>
                                           </div>
-                                          <div class="body">
+                                          <div class="body"> 
                                               <div class="row clearfix">
                                                   <div class="col-md-12">
                                                       <span>Train Name&No.</span>

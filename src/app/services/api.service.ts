@@ -38,10 +38,10 @@ export class ApiService {
     return this.http.get<any>("https://json-server-nvp8.onrender.com/itinerary");
   }
   addfinancial(data:any):Observable<any>{
-    return this.http.post<any>("https://json-server-myna.onrender.com/financial",data)
+    return this.http.post<any>("http://localhost:3000/financial",data)
   }
   getfinancial():Observable<any>{
-    return this.http.get<any>("https://json-server-myna.onrender.com/financial");
+    return this.http.get<any>("http://localhost:3000/financial");
   }
    postBooking(data:any):Observable<any>{
     return this.http.post<any>("https://json-server-nvp8.onrender.com/booking",data)
@@ -67,8 +67,24 @@ export class ApiService {
   getversion():Observable<any>{
     return this.http.get<any>("https://json-server-nvp8.onrender.com/versions")
   }
-
-  
+  getroles():Observable<any>{
+    return this.http.get<any>("http://localhost:3000/signup")
+  }
+  postteam(data:any):Observable<any>{
+    return this.http.post<any>("http://localhost:3000/teamlist",data)
+  }
+  getteam( ):Observable<any>{
+    return this.http.get<any>("http://localhost:3000/teamlist")
+  }
+  postpayable(data:any):Observable<any>{
+    return this.http.post<any>("http://localhost:3000/payables/",data)
+   }
+  //  getpayablebyid(id:string):Observable<any>{
+  //    return this.http.get<any>("http://localhost:3000/payables/"+id)
+  //  }
+   getpayable():Observable<any>{
+     return this.http.get<any>("http://localhost:3000/payables/")
+    }
 
    
 }

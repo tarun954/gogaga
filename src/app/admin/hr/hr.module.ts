@@ -11,6 +11,7 @@ import { DepartmentsComponent } from './departments/departments.component';
 import { LeavereqComponent } from './leavereq/leavereq.component';
 import { HrComponent } from './hr/hr.component';
 import { RecieptsComponent } from './reciepts/reciepts.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,9 @@ import { RecieptsComponent } from './reciepts/reciepts.component';
   ],
   imports: [
     CommonModule,
-    HrRoutingModule
+    HrRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class HrModule { }

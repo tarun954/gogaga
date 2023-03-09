@@ -13,6 +13,9 @@ import { MasterpartnerComponent } from './masterpartner/masterpartner.component'
 import { SalesComponent } from './sales/sales.component';
 import { SuperComponent } from './super/super.component';
 import { PartnersComponent } from './partners/partners.component';
+import { PendingComponent } from './pending/pending.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../../../Material-Module';
 
 
 @NgModule({
@@ -28,12 +31,16 @@ import { PartnersComponent } from './partners/partners.component';
     MasterpartnerComponent,
     SalesComponent,
     SuperComponent,
-    PartnersComponent
+    PartnersComponent,
+    PendingComponent
 
   ],
   imports: [
     CommonModule,
-    PartnersRoutingModule
+    PartnersRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule
   ]
 })
 export class PartnersModule { }

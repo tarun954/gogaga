@@ -208,9 +208,7 @@ export class BookingformComponent implements OnInit {
       bus:this.formBuilder.array([]),
       hotels:this.formBuilder.array([]),
       cabs:this.formBuilder.array([]),
-      supplis:this.formBuilder.array([])
-
-
+      supplis:this.formBuilder.array([]), 
     });
     // this.bookingform.get('netcost')?.valueChanges.subscribe((selectedValue:any)=>{
     //   console.log("netcostvalue,",selectedValue)
@@ -446,7 +444,43 @@ export class BookingformComponent implements OnInit {
 
   convertToInt(val: any){
     return parseInt(val);
+  
   }
+  flights(): FormArray {
+    return this.bookingform.get('flights') as FormArray;
+  }
+  empIndex!: number
+  newFlight(): FormGroup {
+    return this.formBuilder.group({
+      summary2: '',
+      flightdetails2: '',
+      connecting2:'',
+      baggage2:'',
+      fduration2:'',
+      flightcost2:'',
+      addbaggage2:'',
+      tcost2:'',
+      // skills: this.formBuilder.array([])
+    });
+  }
+
+  addEmployee() {
+   
+    this.flights().push(this.newFlight());
+  }
+
+  removeEmployee(empIndex: number) {
+    this.flights().removeAt(empIndex);
+  }
+
+ 
+
+
+
+
+
+
+
    
   // totalfp(){
   //   this.afc = parseInt(this.tcost1)+parseInt(this.tcost2)+parseInt(this.ttotal)+parseInt(this.btotal1)+parseInt(this.ttotal1)+parseInt(this.btotal)
@@ -476,29 +510,7 @@ export class BookingformComponent implements OnInit {
     }) 
       
    }
-   public get flights() {
-    return <FormArray>this.bookingform.get('flights');
-  }
     
-  public addMoreAuthor(): void {
-    this.flights.push(this.getAuthorControl());
-  }
-  private getAuthorControl(): FormGroup {
-    return this.formBuilder.group({
-      summary2:'',
-      flightdetails2:'', 
-      connecting2:'',
-      baggage2:'',
-      fduration2:'',
-      flightcost2:'',
-      addbaggage2:'',
-      tcost2:'',
-    });
-  }
-
-  public removeAuthor(i: number): void {
-    this.flights.removeAt(i);
-  }
   public get trains() {
     return <FormArray>this.bookingform.get('trains');
   }

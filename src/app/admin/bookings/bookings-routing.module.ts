@@ -84,7 +84,7 @@ const routes: Routes = [
         data: { title: ':: Gogaga Holidays :: Pending ::' },
       },
       {
-        path:'voucherform',
+        path:'voucherform/:id',
         component:VoucherformComponent
       },
       {

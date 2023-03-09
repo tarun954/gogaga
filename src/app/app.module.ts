@@ -30,12 +30,12 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import Swal from 'sweetalert2'
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-import { AngularFileUploaderModule } from "angular-file-uploader";
+import { AngularFileUploaderModule } from "angular-file-uploader";  
 
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,  
     
   ],
   imports: [

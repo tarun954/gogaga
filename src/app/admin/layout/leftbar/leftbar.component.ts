@@ -47,6 +47,7 @@ export class LeftbarComponent implements OnInit, OnDestroy,DoCheck {
   ishradmin=true;
   isdomestic=true;
   @Input() username:any;
+  @Input() value:any;
   ngDoCheck(): void {
     let role=sessionStorage.getItem('role');
     if (role ==='admin') {
@@ -121,8 +122,7 @@ export class LeftbarComponent implements OnInit, OnDestroy,DoCheck {
   public isRtl: boolean = false;
   public menuClass: string = ''; 
   hmenu: boolean = false; 
-  isShowLeftBar!: String;
-  
+  isShowLeftBar!: String; 
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -131,7 +131,7 @@ export class LeftbarComponent implements OnInit, OnDestroy,DoCheck {
     private cdr: ChangeDetectorRef,
     private layoutServiceService: LayoutserviceService
   ) {
-     
+    let count=sessionStorage.getItem('count')
     let role=sessionStorage.getItem('role');
     if(role==='admin'){
       this.isadmin=true;
@@ -148,6 +148,7 @@ export class LeftbarComponent implements OnInit, OnDestroy,DoCheck {
       this.isdomestic=true;
     }
     this.username = role
+    this.value = count
     this.router.events
       .pipe(takeUntil(this.ngUnsubscribe))
       .subscribe((event) => {
